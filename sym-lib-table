@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name logicbone)(type Legacy)(uri ${KIPRJMOD}/logicbone.lib)(options "")(descr "Logicbone Schematic Symbols"))
+)
