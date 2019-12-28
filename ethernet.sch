@@ -1,0 +1,862 @@
+EESchema Schematic File Version 4
+LIBS:logicbone-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_Ethernet:KSZ9031RNXCA U?
+U 1 1 5DFD5A12
+P 5500 3150
+F 0 "U?" H 6650 1600 50  0000 C CNN
+F 1 "KSZ9031RNXCA" H 4600 1600 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm" H 5950 1600 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/00002117C.pdf" H 5500 1500 50  0001 C CNN
+	1    5500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DFD5ACF
+P 4900 1450
+F 0 "#PWR?" H 4900 1300 50  0001 C CNN
+F 1 "+3.3V" H 4915 1623 50  0000 C CNN
+F 2 "" H 4900 1450 50  0001 C CNN
+F 3 "" H 4900 1450 50  0001 C CNN
+	1    4900 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1550 4900 1500
+Wire Wire Line
+	4900 1500 4800 1500
+Wire Wire Line
+	4700 1500 4700 1550
+Wire Wire Line
+	4800 1550 4800 1500
+Connection ~ 4800 1500
+Wire Wire Line
+	4800 1500 4700 1500
+$Comp
+L Logicbone:VCORE #PWR?
+U 1 1 5DFD5B39
+P 5800 800
+F 0 "#PWR?" H 5800 650 50  0001 C CNN
+F 1 "VCORE" H 5817 973 50  0000 C CNN
+F 2 "" H 5800 800 50  0001 C CNN
+F 3 "" H 5800 800 50  0001 C CNN
+	1    5800 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1550 5900 1500
+Wire Wire Line
+	5900 1500 5800 1500
+Wire Wire Line
+	5400 1500 5400 1550
+Wire Wire Line
+	5500 1550 5500 1500
+Connection ~ 5500 1500
+Wire Wire Line
+	5500 1500 5400 1500
+Wire Wire Line
+	5600 1550 5600 1500
+Connection ~ 5600 1500
+Wire Wire Line
+	5600 1500 5500 1500
+Wire Wire Line
+	5700 1550 5700 1500
+Connection ~ 5700 1500
+Wire Wire Line
+	5700 1500 5600 1500
+Wire Wire Line
+	5800 1550 5800 1500
+Connection ~ 5800 1500
+Wire Wire Line
+	5800 1500 5700 1500
+$Comp
+L Device:L L?
+U 1 1 5DFD5EBE
+P 5400 1050
+F 0 "L?" H 5453 1096 50  0000 L CNN
+F 1 "L" H 5453 1005 50  0000 L CNN
+F 2 "" H 5400 1050 50  0001 C CNN
+F 3 "~" H 5400 1050 50  0001 C CNN
+	1    5400 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 850  5400 900 
+Wire Wire Line
+	5400 1200 5400 1300
+Text Label 5800 1300 2    50   ~ 0
+ETH_1V2
+Wire Wire Line
+	5400 1300 5800 1300
+Wire Wire Line
+	5400 1300 5400 1500
+Connection ~ 5400 1300
+Connection ~ 5400 1500
+$Comp
+L Device:L L?
+U 1 1 5DFD7682
+P 6100 1050
+F 0 "L?" H 6153 1096 50  0000 L CNN
+F 1 "L" H 6153 1005 50  0000 L CNN
+F 2 "" H 6100 1050 50  0001 C CNN
+F 3 "~" H 6100 1050 50  0001 C CNN
+	1    6100 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 850  6100 900 
+Wire Wire Line
+	6100 1200 6100 1300
+Wire Wire Line
+	6200 1550 6200 1500
+Wire Wire Line
+	6200 1500 6100 1500
+Connection ~ 6100 1500
+Wire Wire Line
+	6100 1500 6100 1550
+Wire Wire Line
+	6100 850  5800 850 
+Wire Wire Line
+	5800 800  5800 850 
+Connection ~ 5800 850 
+Wire Wire Line
+	5800 850  5400 850 
+Connection ~ 6100 1300
+Wire Wire Line
+	6100 1300 6100 1500
+Wire Wire Line
+	5100 1550 5100 1500
+Wire Wire Line
+	5100 1500 4900 1500
+Connection ~ 4900 1500
+Wire Wire Line
+	5200 1550 5200 1500
+Wire Wire Line
+	5200 1500 5100 1500
+Connection ~ 5100 1500
+Wire Wire Line
+	4900 1500 4900 1450
+Text Label 6550 1300 2    50   ~ 0
+ETH_AVDD
+Wire Wire Line
+	6100 1300 6550 1300
+Wire Wire Line
+	6400 1550 6400 1500
+Wire Wire Line
+	6400 1500 6200 1500
+Connection ~ 6200 1500
+Wire Wire Line
+	4200 2550 3500 2550
+Wire Wire Line
+	4200 2650 3500 2650
+Wire Wire Line
+	4200 2750 3500 2750
+Wire Wire Line
+	4200 2850 3500 2850
+Text Label 3500 2550 0    50   ~ 0
+ETH_TXD0
+Text Label 3500 2650 0    50   ~ 0
+ETH_TXD1
+Text Label 3500 2750 0    50   ~ 0
+ETH_TXD2
+Text Label 3500 2850 0    50   ~ 0
+ETH_TXD3
+Wire Wire Line
+	4200 3250 3500 3250
+Wire Wire Line
+	4200 3350 3500 3350
+Wire Wire Line
+	4200 3450 3500 3450
+Wire Wire Line
+	4200 3550 3500 3550
+Text Label 3500 3250 0    50   ~ 0
+ETH_RXD0
+Text Label 3500 3350 0    50   ~ 0
+ETH_RXD1
+Text Label 3500 3450 0    50   ~ 0
+ETH_RXD2
+Text Label 3500 3550 0    50   ~ 0
+ETH_RXD3
+Wire Wire Line
+	3650 6200 4350 6200
+Wire Wire Line
+	3650 6300 4350 6300
+Wire Wire Line
+	3650 6400 4350 6400
+Wire Wire Line
+	3650 6500 4350 6500
+Text Label 4350 6200 2    50   ~ 0
+ETH_TXD0
+Text Label 4350 6300 2    50   ~ 0
+ETH_TXD1
+Text Label 4350 6400 2    50   ~ 0
+ETH_TXD2
+Text Label 4350 6500 2    50   ~ 0
+ETH_TXD3
+Wire Wire Line
+	3650 6650 4350 6650
+Wire Wire Line
+	3650 6750 4350 6750
+Wire Wire Line
+	3650 6850 4350 6850
+Wire Wire Line
+	3650 6950 4350 6950
+Text Label 4350 6650 2    50   ~ 0
+ETH_RXD0
+Text Label 4350 6750 2    50   ~ 0
+ETH_RXD1
+Text Label 4350 6850 2    50   ~ 0
+ETH_RXD2
+Text Label 4350 6950 2    50   ~ 0
+ETH_RXD3
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DFE91B2
+P 2200 5150
+F 0 "#PWR?" H 2200 5000 50  0001 C CNN
+F 1 "+3.3V" H 2215 5323 50  0000 C CNN
+F 2 "" H 2200 5150 50  0001 C CNN
+F 3 "" H 2200 5150 50  0001 C CNN
+	1    2200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5150 2200 5200
+Wire Wire Line
+	2200 5200 2250 5200
+Wire Wire Line
+	2250 5300 2200 5300
+Wire Wire Line
+	2200 5300 2200 5200
+Connection ~ 2200 5200
+Text Label 3500 2450 0    50   ~ 0
+ETH_TXCTL
+Wire Wire Line
+	4200 2950 3500 2950
+Text Label 3500 2950 0    50   ~ 0
+ETH_TXCLK
+Wire Wire Line
+	4200 3150 3500 3150
+Wire Wire Line
+	4200 3650 3500 3650
+Text Label 3500 3650 0    50   ~ 0
+ETH_RXCLK
+Text Label 3500 3150 0    50   ~ 0
+ETH_RXCTL
+Text Label 3500 2250 0    50   ~ 0
+MDIO_DATA
+Text Label 3500 2150 0    50   ~ 0
+MDIO_CLK
+$Comp
+L power:GND #PWR?
+U 1 1 5DFF717F
+P 5600 5200
+F 0 "#PWR?" H 5600 4950 50  0001 C CNN
+F 1 "GND" H 5605 5027 50  0000 C CNN
+F 2 "" H 5600 5200 50  0001 C CNN
+F 3 "" H 5600 5200 50  0001 C CNN
+	1    5600 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5200 5600 5150
+Wire Wire Line
+	5600 5150 5500 5150
+Connection ~ 5600 5150
+Wire Wire Line
+	3650 5750 4350 5750
+Wire Wire Line
+	3650 5850 4350 5850
+Text Label 4350 5750 2    50   ~ 0
+MDIO_DATA
+Text Label 4350 5850 2    50   ~ 0
+MDIO_CLK
+Wire Wire Line
+	3650 7400 4350 7400
+Text Label 4350 7400 2    50   ~ 0
+ETH_TXCTL
+Wire Wire Line
+	3650 7300 4350 7300
+Text Label 4350 7300 2    50   ~ 0
+ETH_TXCLK
+Wire Wire Line
+	3650 7100 4350 7100
+Text Label 4350 7100 2    50   ~ 0
+ETH_RXCLK
+Wire Wire Line
+	3650 7200 4350 7200
+Text Label 4350 7200 2    50   ~ 0
+ETH_RXCTL
+$Comp
+L Device:R R?
+U 1 1 5E00CBC4
+P 5900 4950
+F 0 "R?" H 5830 4904 50  0000 R CNN
+F 1 "R" H 5830 4995 50  0000 R CNN
+F 2 "" V 5830 4950 50  0001 C CNN
+F 3 "~" H 5900 4950 50  0001 C CNN
+	1    5900 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 4750 5900 4800
+Wire Wire Line
+	5600 5150 5900 5150
+Wire Wire Line
+	5900 5150 5900 5100
+Wire Wire Line
+	5600 4750 5600 5150
+Wire Wire Line
+	5500 4750 5500 5150
+$Comp
+L Device:Crystal_GND24 Y?
+U 1 1 5E018E83
+P 7200 4650
+F 0 "Y?" H 7250 4850 50  0000 L CNN
+F 1 "25MHz" H 7100 4950 50  0000 L CNN
+F 2 "" H 7200 4650 50  0001 C CNN
+F 3 "~" H 7200 4650 50  0001 C CNN
+	1    7200 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4650 7050 4650
+Wire Wire Line
+	7400 4650 7350 4650
+$Comp
+L Device:C_Small C?
+U 1 1 5E01EDAF
+P 7000 4800
+F 0 "C?" H 6908 4846 50  0000 R CNN
+F 1 "C_Small" H 6908 4755 50  0000 R CNN
+F 2 "" H 7000 4800 50  0001 C CNN
+F 3 "~" H 7000 4800 50  0001 C CNN
+	1    7000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4250 7400 4650
+Wire Wire Line
+	6800 4250 7400 4250
+Wire Wire Line
+	7000 4700 7000 4650
+Wire Wire Line
+	7000 4650 7000 4350
+Wire Wire Line
+	6800 4350 7000 4350
+Connection ~ 7000 4650
+$Comp
+L Device:C_Small C?
+U 1 1 5E034F66
+P 7400 4800
+F 0 "C?" H 7308 4846 50  0000 R CNN
+F 1 "C_Small" H 7308 4755 50  0000 R CNN
+F 2 "" H 7400 4800 50  0001 C CNN
+F 3 "~" H 7400 4800 50  0001 C CNN
+	1    7400 4800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4700 7400 4650
+Connection ~ 7400 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5E03CFD8
+P 7200 5000
+F 0 "#PWR?" H 7200 4750 50  0001 C CNN
+F 1 "GND" H 7205 4827 50  0000 C CNN
+F 2 "" H 7200 5000 50  0001 C CNN
+F 3 "" H 7200 5000 50  0001 C CNN
+	1    7200 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 5000 7200 4950
+Wire Wire Line
+	7400 4900 7400 4950
+Wire Wire Line
+	7400 4950 7200 4950
+Connection ~ 7200 4950
+Wire Wire Line
+	7200 4950 7200 4850
+Wire Wire Line
+	7200 4950 7000 4950
+Wire Wire Line
+	7000 4950 7000 4900
+Wire Wire Line
+	4200 4350 3500 4350
+Text Label 3500 4350 0    50   ~ 0
+~ETH_RESET
+Wire Wire Line
+	3650 5950 4350 5950
+Text Label 4350 5950 2    50   ~ 0
+~ETH_RESET
+Text Label 3500 4050 0    50   ~ 0
+~ETH_INT
+Wire Wire Line
+	3500 4050 4200 4050
+Text Label 4350 6050 2    50   ~ 0
+~ETH_INT
+Wire Wire Line
+	4350 6050 3650 6050
+$Comp
+L Logicbone:ARJM11xx-502 J?
+U 1 1 5E06F0ED
+P 9100 3600
+F 0 "J?" H 9100 4537 60  0000 C CNN
+F 1 "ARJM11xx-502" H 9100 4431 60  0000 C CNN
+F 2 "" H 9100 3600 60  0001 C CNN
+F 3 "" H 9100 3600 60  0001 C CNN
+	1    9100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3950 8300 3950
+Wire Wire Line
+	6800 3850 8300 3850
+Wire Wire Line
+	6800 3650 8300 3650
+Wire Wire Line
+	6800 3550 8300 3550
+Wire Wire Line
+	6800 3350 8300 3350
+Wire Wire Line
+	6800 3250 8300 3250
+Wire Wire Line
+	6800 3050 8300 3050
+Wire Wire Line
+	6800 2950 8300 2950
+Text Label 6850 3950 0    50   ~ 0
+ETH_TRXD1P
+Text Label 6850 3850 0    50   ~ 0
+ETH_TRXD1N
+Text Label 6850 3650 0    50   ~ 0
+ETH_TRXD2P
+Text Label 6850 3550 0    50   ~ 0
+ETH_TRXD2N
+Text Label 6850 3350 0    50   ~ 0
+ETH_TRXD3P
+Text Label 6850 3250 0    50   ~ 0
+ETH_TRXD3N
+Text Label 6850 3050 0    50   ~ 0
+ETH_TRXD4P
+Text Label 6850 2950 0    50   ~ 0
+ETH_TRXD4N
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E08A00E
+P 10150 2700
+F 0 "#PWR?" H 10150 2550 50  0001 C CNN
+F 1 "+3.3V" H 10165 2873 50  0000 C CNN
+F 2 "" H 10150 2700 50  0001 C CNN
+F 3 "" H 10150 2700 50  0001 C CNN
+	1    10150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E08A052
+P 10250 2950
+F 0 "R?" H 10320 2996 50  0000 L CNN
+F 1 "R" H 10320 2905 50  0000 L CNN
+F 2 "" V 10180 2950 50  0001 C CNN
+F 3 "~" H 10250 2950 50  0001 C CNN
+	1    10250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E08A0E8
+P 10050 2950
+F 0 "R?" H 10120 2996 50  0000 L CNN
+F 1 "R" H 10120 2905 50  0000 L CNN
+F 2 "" V 9980 2950 50  0001 C CNN
+F 3 "~" H 10050 2950 50  0001 C CNN
+	1    10050 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 2800 10050 2750
+Wire Wire Line
+	10050 2750 10150 2750
+Wire Wire Line
+	10250 2750 10250 2800
+Wire Wire Line
+	10150 2700 10150 2750
+Connection ~ 10150 2750
+Wire Wire Line
+	10150 2750 10250 2750
+Wire Wire Line
+	10050 3400 10050 3100
+Wire Wire Line
+	10250 3700 10250 3100
+Wire Wire Line
+	9900 3400 10050 3400
+Wire Wire Line
+	9900 3700 10250 3700
+Wire Wire Line
+	9900 3500 10950 3500
+Text Label 10950 3500 2    50   ~ 0
+ETH_LED_L
+Wire Wire Line
+	9900 3800 10950 3800
+Text Label 10950 3800 2    50   ~ 0
+ETH_LED_R
+Wire Wire Line
+	4200 3950 3500 3950
+Wire Wire Line
+	4200 3850 3500 3850
+Text Label 3500 3950 0    50   ~ 0
+ETH_LED_R
+Text Label 3500 3850 0    50   ~ 0
+ETH_LED_L
+$Comp
+L Logicbone:ECP5UM-CABGA554 IC?
+U 8 1 5F753C9E
+P 2950 6700
+AR Path="/5E15C0BA/5F753C9E" Ref="IC?"  Part="8" 
+AR Path="/5DFD59AE/5F753C9E" Ref="IC?"  Part="8" 
+F 0 "IC?" H 2950 8465 50  0000 C CNN
+F 1 "ECP5UM-CABGA554" H 2950 8374 50  0000 C CNN
+F 2 "" H -550 5850 50  0001 C CNN
+F 3 "" H -550 5850 50  0001 C CNN
+	8    2950 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5400 2200 5400
+Wire Wire Line
+	2200 5400 2200 5300
+Connection ~ 2200 5300
+Wire Wire Line
+	2250 5500 2200 5500
+Wire Wire Line
+	2200 5500 2200 5400
+Connection ~ 2200 5400
+Wire Wire Line
+	4200 2450 3500 2450
+Wire Wire Line
+	4200 2250 3500 2250
+Wire Wire Line
+	4200 2150 3500 2150
+Text Label 850  1450 0    50   ~ 0
+ETH_LED_R
+Text Label 850  1250 0    50   ~ 0
+ETH_LED_L
+Text Label 850  1050 0    50   ~ 0
+ETH_RXCLK
+$Comp
+L Device:R R?
+U 1 1 5E6B25A9
+P 1600 1050
+F 0 "R?" V 1500 1050 50  0000 C CNN
+F 1 "10k" V 1600 1050 50  0000 C CNN
+F 2 "" V 1530 1050 50  0001 C CNN
+F 3 "~" H 1600 1050 50  0001 C CNN
+	1    1600 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E6B2670
+P 1600 1250
+F 0 "R?" V 1500 1250 50  0000 C CNN
+F 1 "10k" V 1600 1250 50  0000 C CNN
+F 2 "" V 1530 1250 50  0001 C CNN
+F 3 "~" H 1600 1250 50  0001 C CNN
+	1    1600 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E6B26D7
+P 1600 1450
+F 0 "R?" V 1500 1450 50  0000 C CNN
+F 1 "10k" V 1600 1450 50  0000 C CNN
+F 2 "" V 1530 1450 50  0001 C CNN
+F 3 "~" H 1600 1450 50  0001 C CNN
+	1    1600 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E6BE9DA
+P 1850 1550
+F 0 "#PWR?" H 1850 1300 50  0001 C CNN
+F 1 "GND" H 1855 1377 50  0000 C CNN
+F 2 "" H 1850 1550 50  0001 C CNN
+F 3 "" H 1850 1550 50  0001 C CNN
+	1    1850 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1550 1850 1450
+Wire Wire Line
+	1850 1450 1750 1450
+Connection ~ 1850 1450
+Wire Wire Line
+	1750 1250 1850 1250
+Wire Wire Line
+	1750 1050 1850 1050
+Wire Wire Line
+	1850 1050 1850 1250
+Connection ~ 1850 1250
+Wire Wire Line
+	1850 1250 1850 1450
+Text Notes 750  900  0    50   ~ 0
+PHYAD[2:0] = 000
+Text Label 850  2300 0    50   ~ 0
+ETH_RXD3
+Text Label 850  2500 0    50   ~ 0
+ETH_RXD2
+Text Label 850  2700 0    50   ~ 0
+ETH_RXD1
+Text Label 850  2900 0    50   ~ 0
+ETH_RXD0
+$Comp
+L Device:R R?
+U 1 1 5E6E8BAC
+P 1550 2300
+F 0 "R?" V 1450 2300 50  0000 C CNN
+F 1 "10k" V 1550 2300 50  0000 C CNN
+F 2 "" V 1480 2300 50  0001 C CNN
+F 3 "~" H 1550 2300 50  0001 C CNN
+	1    1550 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E6E8C9D
+P 1550 2500
+F 0 "R?" V 1450 2500 50  0000 C CNN
+F 1 "10k" V 1550 2500 50  0000 C CNN
+F 2 "" V 1480 2500 50  0001 C CNN
+F 3 "~" H 1550 2500 50  0001 C CNN
+	1    1550 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E6E8D0A
+P 1550 2700
+F 0 "R?" V 1450 2700 50  0000 C CNN
+F 1 "10k" V 1550 2700 50  0000 C CNN
+F 2 "" V 1480 2700 50  0001 C CNN
+F 3 "~" H 1550 2700 50  0001 C CNN
+	1    1550 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E6E8D92
+P 1550 2900
+F 0 "R?" V 1450 2900 50  0000 C CNN
+F 1 "10k" V 1550 2900 50  0000 C CNN
+F 2 "" V 1480 2900 50  0001 C CNN
+F 3 "~" H 1550 2900 50  0001 C CNN
+	1    1550 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  2900 1400 2900
+Wire Wire Line
+	1400 2700 850  2700
+Wire Wire Line
+	850  2500 1400 2500
+Wire Wire Line
+	850  2300 1400 2300
+Wire Wire Line
+	1800 2900 1700 2900
+Wire Wire Line
+	1700 2700 1800 2700
+Wire Wire Line
+	1800 2700 1800 2900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E709EC1
+P 1800 2200
+F 0 "#PWR?" H 1800 2050 50  0001 C CNN
+F 1 "+3.3V" H 1815 2373 50  0000 C CNN
+F 2 "" H 1800 2200 50  0001 C CNN
+F 3 "" H 1800 2200 50  0001 C CNN
+	1    1800 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2200 1800 2300
+Wire Wire Line
+	1800 2300 1700 2300
+Wire Wire Line
+	1700 2500 1800 2500
+Wire Wire Line
+	1800 2500 1800 2300
+Connection ~ 1800 2300
+Wire Wire Line
+	1800 2700 1800 2500
+Connection ~ 1800 2700
+Connection ~ 1800 2500
+Wire Notes Line
+	650  3000 650  1900
+Wire Notes Line
+	650  1900 2000 1900
+Wire Notes Line
+	2000 1900 2000 3000
+Wire Notes Line
+	2000 3000 650  3000
+Text Notes 750  2150 0    50   ~ 0
+MODE[3:0] = 1111\nRGMII /w All Modes
+Wire Notes Line
+	2000 700  2000 1800
+Text Label 850  3450 0    50   ~ 0
+ETH_RXCTL
+$Comp
+L Device:R R?
+U 1 1 5E74658F
+P 1550 3450
+F 0 "R?" V 1450 3450 50  0000 C CNN
+F 1 "10k" V 1550 3450 50  0000 C CNN
+F 2 "" V 1480 3450 50  0001 C CNN
+F 3 "~" H 1550 3450 50  0001 C CNN
+	1    1550 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E746736
+P 1800 3350
+F 0 "#PWR?" H 1800 3200 50  0001 C CNN
+F 1 "+3.3V" H 1815 3523 50  0000 C CNN
+F 2 "" H 1800 3350 50  0001 C CNN
+F 3 "" H 1800 3350 50  0001 C CNN
+	1    1800 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3350 1800 3450
+Wire Wire Line
+	1800 3450 1700 3450
+Wire Wire Line
+	850  3450 1400 3450
+Text Notes 800  3300 0    50   ~ 0
+CLK125_EN = 1
+Wire Notes Line
+	650  3100 2000 3100
+Wire Notes Line
+	2000 3100 2000 3600
+Wire Notes Line
+	2000 3600 650  3600
+Wire Notes Line
+	650  3600 650  3100
+Wire Wire Line
+	4200 4250 3500 4250
+Text Label 3500 4250 0    50   ~ 0
+ETH_REFCLK
+Wire Wire Line
+	2250 5750 1550 5750
+Text Label 1550 5750 0    50   ~ 0
+ETH_REFCLK
+Wire Wire Line
+	850  4150 1350 4150
+Text Label 850  4150 0    50   ~ 0
+ETH_REFCLK
+$Comp
+L Device:R R?
+U 1 1 5E783787
+P 1550 4050
+F 0 "R?" V 1450 4050 50  0000 C CNN
+F 1 "10k" V 1550 4050 50  0000 C CNN
+F 2 "" V 1480 4050 50  0001 C CNN
+F 3 "~" H 1550 4050 50  0001 C CNN
+	1    1550 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E78378D
+P 1800 3950
+F 0 "#PWR?" H 1800 3800 50  0001 C CNN
+F 1 "+3.3V" H 1815 4123 50  0000 C CNN
+F 2 "" H 1800 3950 50  0001 C CNN
+F 3 "" H 1800 3950 50  0001 C CNN
+	1    1800 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3950 1800 4050
+Wire Wire Line
+	1800 4050 1700 4050
+Text Notes 800  3950 0    50   ~ 0
+LED_MODE = 1\nSingle-color LED\n
+$Comp
+L Device:R R?
+U 1 1 5E790D5E
+P 1550 4150
+F 0 "R?" V 1450 4150 50  0000 C CNN
+F 1 "10k" V 1550 4150 50  0000 C CNN
+F 2 "" V 1480 4150 50  0001 C CNN
+F 3 "~" H 1550 4150 50  0001 C CNN
+	1    1550 4150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1400 4150 1350 4150
+Wire Wire Line
+	1350 4150 1350 4050
+Wire Wire Line
+	1350 4050 1400 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5E7ABAE2
+P 1800 4250
+F 0 "#PWR?" H 1800 4000 50  0001 C CNN
+F 1 "GND" H 1805 4077 50  0000 C CNN
+F 2 "" H 1800 4250 50  0001 C CNN
+F 3 "" H 1800 4250 50  0001 C CNN
+	1    1800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4250 1800 4150
+Wire Wire Line
+	1800 4150 1700 4150
+Wire Notes Line
+	650  3700 2000 3700
+Wire Notes Line
+	2000 3700 2000 4500
+Wire Notes Line
+	2000 4500 650  4500
+Wire Notes Line
+	650  4500 650  3700
+Text Notes 800  4400 0    50   ~ 0
+LED_MODE = 0\nTri-color Dual LED
+Text Notes 850  650  0    50   ~ 0
+Pin-Strapping Options
+Connection ~ 1350 4150
+Wire Notes Line
+	650  700  650  1800
+Wire Notes Line
+	650  1800 2000 1800
+Wire Notes Line
+	650  700  2000 700 
+Wire Wire Line
+	850  1450 1450 1450
+Wire Wire Line
+	850  1250 1450 1250
+Wire Wire Line
+	850  1050 1450 1050
+$EndSCHEMATC

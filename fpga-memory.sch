@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:logicbone-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLegal 14000 8500
 encoding utf-8
-Sheet 1 4
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -13,4 +14,2617 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L KiCAD-Magic:DDR3-TFBGA96 IC3
+U 1 1 5E0AE0DD
+P 5250 2150
+F 0 "IC3" H 5250 3465 50  0000 C CNN
+F 1 "DDR3-TFBGA96" H 5250 3374 50  0000 C CNN
+F 2 "" H 5300 3350 50  0001 C CNN
+F 3 "" H 5300 3350 50  0001 C CNN
+	1    5250 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L KiCAD-Magic:DDR3-TFBGA96 IC3
+U 2 1 5E0AE133
+P 5250 6200
+F 0 "IC3" H 5250 7515 50  0000 C CNN
+F 1 "DDR3-TFBGA96" H 5250 7424 50  0000 C CNN
+F 2 "" H 5300 7400 50  0001 C CNN
+F 3 "" H 5300 7400 50  0001 C CNN
+	2    5250 6200
+	1    0    0    -1  
+$EndComp
+Text Label 4050 2800 0    50   ~ 0
+DDR3_DQ31
+Wire Wire Line
+	4600 2800 4050 2800
+Wire Wire Line
+	4600 2900 4050 2900
+Wire Wire Line
+	4600 3000 4050 3000
+Wire Wire Line
+	4600 3100 4050 3100
+Wire Wire Line
+	4600 3200 4050 3200
+Wire Wire Line
+	4600 3300 4050 3300
+Wire Wire Line
+	4600 3400 4050 3400
+Wire Wire Line
+	4600 3500 4050 3500
+Wire Wire Line
+	4600 3600 4050 3600
+Wire Wire Line
+	4600 3700 4050 3700
+Wire Wire Line
+	4600 3800 4050 3800
+Wire Wire Line
+	4600 3900 4050 3900
+Wire Wire Line
+	4600 4000 4050 4000
+Wire Wire Line
+	4600 4100 4050 4100
+Wire Wire Line
+	4600 4200 4050 4200
+Wire Wire Line
+	4600 4300 4050 4300
+Text Label 4050 2900 0    50   ~ 0
+DDR3_DQ30
+Entry Wire Line
+	4050 2800 3950 2900
+Entry Wire Line
+	4050 2900 3950 3000
+Entry Wire Line
+	4050 3000 3950 3100
+Entry Wire Line
+	4050 3100 3950 3200
+Entry Wire Line
+	4050 3200 3950 3300
+Entry Wire Line
+	4050 3300 3950 3400
+Entry Wire Line
+	4050 3400 3950 3500
+Entry Wire Line
+	4050 3500 3950 3600
+Entry Wire Line
+	4050 3600 3950 3700
+Entry Wire Line
+	4050 3700 3950 3800
+Entry Wire Line
+	4050 3800 3950 3900
+Entry Wire Line
+	4050 3900 3950 4000
+Entry Wire Line
+	4050 4000 3950 4100
+Entry Wire Line
+	4050 4100 3950 4200
+Entry Wire Line
+	4050 4200 3950 4300
+Entry Wire Line
+	4050 4300 3950 4400
+Text Label 4050 3000 0    50   ~ 0
+DDR3_DQ29
+Text Label 4050 3100 0    50   ~ 0
+DDR3_DQ28
+Text Label 4050 3200 0    50   ~ 0
+DDR3_DQ27
+Text Label 4050 3300 0    50   ~ 0
+DDR3_DQ26
+Text Label 4050 3400 0    50   ~ 0
+DDR3_DQ25
+Text Label 4050 3500 0    50   ~ 0
+DDR3_DQ24
+Text Label 4050 3600 0    50   ~ 0
+DDR3_DQ23
+Text Label 4050 3700 0    50   ~ 0
+DDR3_DQ22
+Text Label 4050 3800 0    50   ~ 0
+DDR3_DQ21
+Text Label 4050 3900 0    50   ~ 0
+DDR3_DQ20
+Text Label 4050 4000 0    50   ~ 0
+DDR3_DQ19
+Text Label 4050 4100 0    50   ~ 0
+DDR3_DQ18
+Text Label 4050 4200 0    50   ~ 0
+DDR3_DQ17
+Text Label 4050 4300 0    50   ~ 0
+DDR3_DQ16
+$Comp
+L KiCAD-Magic:DDR3-TFBGA96 IC2
+U 1 1 5E0C4308
+P 2050 2150
+F 0 "IC2" H 2050 3465 50  0000 C CNN
+F 1 "DDR3-TFBGA96" H 2050 3374 50  0000 C CNN
+F 2 "" H 2100 3350 50  0001 C CNN
+F 3 "" H 2100 3350 50  0001 C CNN
+	1    2050 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L KiCAD-Magic:DDR3-TFBGA96 IC2
+U 2 1 5E0C436A
+P 2050 6200
+F 0 "IC2" H 2050 7515 50  0000 C CNN
+F 1 "DDR3-TFBGA96" H 2050 7424 50  0000 C CNN
+F 2 "" H 2100 7400 50  0001 C CNN
+F 3 "" H 2100 7400 50  0001 C CNN
+	2    2050 6200
+	1    0    0    -1  
+$EndComp
+Text Label 850  2800 0    50   ~ 0
+DDR3_DQ15
+Wire Wire Line
+	1400 2800 850  2800
+Wire Wire Line
+	1400 2900 850  2900
+Wire Wire Line
+	1400 3000 850  3000
+Wire Wire Line
+	1400 3100 850  3100
+Wire Wire Line
+	1400 3200 850  3200
+Wire Wire Line
+	1400 3300 850  3300
+Wire Wire Line
+	1400 3400 850  3400
+Wire Wire Line
+	1400 3500 850  3500
+Wire Wire Line
+	1400 3600 850  3600
+Wire Wire Line
+	1400 3700 850  3700
+Wire Wire Line
+	1400 3800 850  3800
+Wire Wire Line
+	1400 3900 850  3900
+Wire Wire Line
+	1400 4000 850  4000
+Wire Wire Line
+	1400 4100 850  4100
+Wire Wire Line
+	1400 4200 850  4200
+Wire Wire Line
+	1400 4300 850  4300
+Text Label 850  2900 0    50   ~ 0
+DDR3_DQ14
+Entry Wire Line
+	850  2800 750  2900
+Entry Wire Line
+	850  2900 750  3000
+Entry Wire Line
+	850  3000 750  3100
+Entry Wire Line
+	850  3100 750  3200
+Entry Wire Line
+	850  3200 750  3300
+Entry Wire Line
+	850  3300 750  3400
+Entry Wire Line
+	850  3400 750  3500
+Entry Wire Line
+	850  3500 750  3600
+Entry Wire Line
+	850  3600 750  3700
+Entry Wire Line
+	850  3700 750  3800
+Entry Wire Line
+	850  3800 750  3900
+Entry Wire Line
+	850  3900 750  4000
+Entry Wire Line
+	850  4000 750  4100
+Entry Wire Line
+	850  4100 750  4200
+Entry Wire Line
+	850  4200 750  4300
+Entry Wire Line
+	850  4300 750  4400
+Text Label 850  3000 0    50   ~ 0
+DDR3_DQ13
+Text Label 850  3100 0    50   ~ 0
+DDR3_DQ12
+Text Label 850  3200 0    50   ~ 0
+DDR3_DQ11
+Text Label 850  3300 0    50   ~ 0
+DDR3_DQ10
+Text Label 850  3400 0    50   ~ 0
+DDR3_DQ9
+Text Label 850  3500 0    50   ~ 0
+DDR3_DQ8
+Text Label 850  3600 0    50   ~ 0
+DDR3_DQ7
+Text Label 850  3700 0    50   ~ 0
+DDR3_DQ6
+Text Label 850  3800 0    50   ~ 0
+DDR3_DQ5
+Text Label 850  3900 0    50   ~ 0
+DDR3_DQ4
+Text Label 850  4000 0    50   ~ 0
+DDR3_DQ3
+Text Label 850  4100 0    50   ~ 0
+DDR3_DQ2
+Text Label 850  4200 0    50   ~ 0
+DDR3_DQ1
+Text Label 850  4300 0    50   ~ 0
+DDR3_DQ0
+Wire Wire Line
+	1400 1100 850  1100
+Text Label 850  1100 0    50   ~ 0
+DDR3_A15
+Entry Wire Line
+	850  2600 750  2500
+Wire Wire Line
+	1400 1200 850  1200
+Text Label 850  1200 0    50   ~ 0
+DDR3_A14
+Entry Wire Line
+	850  2500 750  2400
+Wire Wire Line
+	1400 1300 850  1300
+Text Label 850  1300 0    50   ~ 0
+DDR3_A13
+Entry Wire Line
+	850  2400 750  2300
+Wire Wire Line
+	1400 1400 850  1400
+Text Label 850  1400 0    50   ~ 0
+DDR3_A12
+Entry Wire Line
+	850  2300 750  2200
+Wire Wire Line
+	1400 1500 850  1500
+Text Label 850  1500 0    50   ~ 0
+DDR3_A11
+Entry Wire Line
+	850  2200 750  2100
+Wire Wire Line
+	1400 1600 850  1600
+Text Label 850  1600 0    50   ~ 0
+DDR3_A10
+Entry Wire Line
+	850  2100 750  2000
+Wire Wire Line
+	1400 1700 850  1700
+Text Label 850  1700 0    50   ~ 0
+DDR3_A9
+Entry Wire Line
+	850  2000 750  1900
+Wire Wire Line
+	1400 1800 850  1800
+Text Label 850  1800 0    50   ~ 0
+DDR3_A8
+Entry Wire Line
+	850  1900 750  1800
+Wire Wire Line
+	1400 1900 850  1900
+Text Label 850  1900 0    50   ~ 0
+DDR3_A7
+Entry Wire Line
+	850  1800 750  1700
+Wire Wire Line
+	1400 2000 850  2000
+Text Label 850  2000 0    50   ~ 0
+DDR3_A6
+Entry Wire Line
+	850  1700 750  1600
+Wire Wire Line
+	1400 2100 850  2100
+Text Label 850  2100 0    50   ~ 0
+DDR3_A5
+Entry Wire Line
+	850  1600 750  1500
+Wire Wire Line
+	1400 2200 850  2200
+Text Label 850  2200 0    50   ~ 0
+DDR3_A4
+Entry Wire Line
+	850  1500 750  1400
+Wire Wire Line
+	1400 2300 850  2300
+Text Label 850  2300 0    50   ~ 0
+DDR3_A3
+Entry Wire Line
+	850  1400 750  1300
+Wire Wire Line
+	1400 2400 850  2400
+Text Label 850  2400 0    50   ~ 0
+DDR3_A2
+Entry Wire Line
+	850  1300 750  1200
+Wire Wire Line
+	1400 2500 850  2500
+Text Label 850  2500 0    50   ~ 0
+DDR3_A1
+Entry Wire Line
+	850  1200 750  1100
+Wire Wire Line
+	1400 2600 850  2600
+Text Label 850  2600 0    50   ~ 0
+DDR3_A0
+Entry Wire Line
+	850  1100 750  1000
+Wire Wire Line
+	4600 1100 4050 1100
+Text Label 4050 1100 0    50   ~ 0
+DDR3_A15
+Entry Wire Line
+	4050 2600 3950 2500
+Wire Wire Line
+	4600 1200 4050 1200
+Text Label 4050 1200 0    50   ~ 0
+DDR3_A14
+Entry Wire Line
+	4050 2500 3950 2400
+Wire Wire Line
+	4600 1300 4050 1300
+Text Label 4050 1300 0    50   ~ 0
+DDR3_A13
+Entry Wire Line
+	4050 2400 3950 2300
+Wire Wire Line
+	4600 1400 4050 1400
+Text Label 4050 1400 0    50   ~ 0
+DDR3_A12
+Entry Wire Line
+	4050 2300 3950 2200
+Wire Wire Line
+	4600 1500 4050 1500
+Text Label 4050 1500 0    50   ~ 0
+DDR3_A11
+Entry Wire Line
+	4050 2200 3950 2100
+Wire Wire Line
+	4600 1600 4050 1600
+Text Label 4050 1600 0    50   ~ 0
+DDR3_A10
+Entry Wire Line
+	4050 2100 3950 2000
+Wire Wire Line
+	4600 1700 4050 1700
+Text Label 4050 1700 0    50   ~ 0
+DDR3_A9
+Entry Wire Line
+	4050 2000 3950 1900
+Wire Wire Line
+	4600 1800 4050 1800
+Text Label 4050 1800 0    50   ~ 0
+DDR3_A8
+Entry Wire Line
+	4050 1900 3950 1800
+Wire Wire Line
+	4600 1900 4050 1900
+Text Label 4050 1900 0    50   ~ 0
+DDR3_A7
+Entry Wire Line
+	4050 1800 3950 1700
+Wire Wire Line
+	4600 2000 4050 2000
+Text Label 4050 2000 0    50   ~ 0
+DDR3_A6
+Entry Wire Line
+	4050 1700 3950 1600
+Wire Wire Line
+	4600 2100 4050 2100
+Text Label 4050 2100 0    50   ~ 0
+DDR3_A5
+Entry Wire Line
+	4050 1600 3950 1500
+Wire Wire Line
+	4600 2200 4050 2200
+Text Label 4050 2200 0    50   ~ 0
+DDR3_A4
+Entry Wire Line
+	4050 1500 3950 1400
+Wire Wire Line
+	4600 2300 4050 2300
+Text Label 4050 2300 0    50   ~ 0
+DDR3_A3
+Entry Wire Line
+	4050 1400 3950 1300
+Wire Wire Line
+	4600 2400 4050 2400
+Text Label 4050 2400 0    50   ~ 0
+DDR3_A2
+Entry Wire Line
+	4050 1300 3950 1200
+Wire Wire Line
+	4600 2500 4050 2500
+Text Label 4050 2500 0    50   ~ 0
+DDR3_A1
+Entry Wire Line
+	4050 1200 3950 1100
+Wire Wire Line
+	4600 2600 4050 2600
+Text Label 4050 2600 0    50   ~ 0
+DDR3_A0
+Entry Wire Line
+	4050 1100 3950 1000
+Wire Wire Line
+	2700 1100 3250 1100
+Text Label 3250 1100 2    50   ~ 0
+DDR3_BA2
+Wire Wire Line
+	2700 1200 3250 1200
+Text Label 3250 1200 2    50   ~ 0
+DDR3_BA1
+Wire Wire Line
+	2700 1300 3250 1300
+Text Label 3250 1300 2    50   ~ 0
+DDR3_BA0
+Wire Wire Line
+	5900 1100 6450 1100
+Text Label 6450 1100 2    50   ~ 0
+DDR3_BA2
+Wire Wire Line
+	5900 1200 6450 1200
+Text Label 6450 1200 2    50   ~ 0
+DDR3_BA1
+Wire Wire Line
+	5900 1300 6450 1300
+Text Label 6450 1300 2    50   ~ 0
+DDR3_BA0
+Wire Wire Line
+	2700 1450 3250 1450
+Text Label 3250 1450 2    50   ~ 0
+~DDR3_RAS
+Wire Wire Line
+	2700 1550 3250 1550
+Text Label 3250 1550 2    50   ~ 0
+~DDR3_CAS
+Wire Wire Line
+	2700 1650 3250 1650
+Text Label 3250 1650 2    50   ~ 0
+~DDR3_CS
+Wire Wire Line
+	2700 1750 3250 1750
+Text Label 3250 1750 2    50   ~ 0
+~DDR3_WE
+Wire Wire Line
+	2700 1850 3250 1850
+Text Label 3250 1850 2    50   ~ 0
+DDR3_CK
+Wire Wire Line
+	2700 1950 3250 1950
+Text Label 3250 1950 2    50   ~ 0
+~DDR3_CK
+Wire Wire Line
+	2700 2050 3250 2050
+Text Label 3250 2050 2    50   ~ 0
+DDR3_CKE
+$Comp
+L Device:R R?
+U 1 1 5E2DB9C3
+P 2950 3800
+F 0 "R?" V 2850 3800 50  0000 C CNN
+F 1 "240" V 2950 3800 50  0000 C CNN
+F 2 "" V 2880 3800 50  0001 C CNN
+F 3 "~" H 2950 3800 50  0001 C CNN
+	1    2950 3800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2800 3800 2700 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5E2E5067
+P 3150 3850
+F 0 "#PWR?" H 3150 3600 50  0001 C CNN
+F 1 "GND" H 3155 3677 50  0000 C CNN
+F 2 "" H 3150 3850 50  0001 C CNN
+F 3 "" H 3150 3850 50  0001 C CNN
+	1    3150 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3850 3150 3800
+Wire Wire Line
+	3150 3800 3100 3800
+Wire Wire Line
+	5900 1450 6450 1450
+Text Label 6450 1450 2    50   ~ 0
+~DDR3_RAS
+Wire Wire Line
+	5900 1550 6450 1550
+Text Label 6450 1550 2    50   ~ 0
+~DDR3_CAS
+Wire Wire Line
+	5900 1650 6450 1650
+Text Label 6450 1650 2    50   ~ 0
+~DDR3_CS
+Wire Wire Line
+	5900 1750 6450 1750
+Text Label 6450 1750 2    50   ~ 0
+~DDR3_WE
+Wire Wire Line
+	5900 1850 6450 1850
+Text Label 6450 1850 2    50   ~ 0
+DDR3_CK
+Wire Wire Line
+	5900 1950 6450 1950
+Text Label 6450 1950 2    50   ~ 0
+~DDR3_CK
+Wire Wire Line
+	5900 2050 6450 2050
+Text Label 6450 2050 2    50   ~ 0
+DDR3_CKE
+Wire Wire Line
+	2700 2300 3250 2300
+Wire Wire Line
+	2700 2400 3250 2400
+Wire Wire Line
+	2700 2550 3250 2550
+Wire Wire Line
+	2700 2650 3250 2650
+Text Label 3250 2550 2    50   ~ 0
+DDR3_DQS0
+Text Label 3250 2650 2    50   ~ 0
+~DDR3_DQS0
+Text Label 3250 2300 2    50   ~ 0
+DDR3_DQS1
+Text Label 3250 2400 2    50   ~ 0
+~DDR3_DQS1
+Wire Wire Line
+	5900 2300 6450 2300
+Wire Wire Line
+	5900 2400 6450 2400
+Wire Wire Line
+	5900 2550 6450 2550
+Wire Wire Line
+	5900 2650 6450 2650
+Text Label 6450 2550 2    50   ~ 0
+DDR3_DQS2
+Text Label 6450 2650 2    50   ~ 0
+~DDR3_DQS2
+Text Label 6450 2300 2    50   ~ 0
+DDR3_DQS3
+Text Label 6450 2400 2    50   ~ 0
+~DDR3_DQS3
+Wire Wire Line
+	2700 2800 3250 2800
+Wire Wire Line
+	2700 2900 3250 2900
+Text Label 3250 2900 2    50   ~ 0
+DDR3_DM0
+Text Label 3250 2800 2    50   ~ 0
+DDR3_DM1
+Wire Wire Line
+	5900 2800 6450 2800
+Wire Wire Line
+	5900 2900 6450 2900
+Text Label 6450 2900 2    50   ~ 0
+DDR3_DM2
+Text Label 6450 2800 2    50   ~ 0
+DDR3_DM3
+$Comp
+L Device:R R?
+U 1 1 5E3A0A43
+P 6150 3800
+F 0 "R?" V 6050 3800 50  0000 C CNN
+F 1 "240" V 6150 3800 50  0000 C CNN
+F 2 "" V 6080 3800 50  0001 C CNN
+F 3 "~" H 6150 3800 50  0001 C CNN
+	1    6150 3800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6000 3800 5900 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5E3A0A4A
+P 6350 3850
+F 0 "#PWR?" H 6350 3600 50  0001 C CNN
+F 1 "GND" H 6355 3677 50  0000 C CNN
+F 2 "" H 6350 3850 50  0001 C CNN
+F 3 "" H 6350 3850 50  0001 C CNN
+	1    6350 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3850 6350 3800
+Wire Wire Line
+	6350 3800 6300 3800
+Wire Wire Line
+	2700 3150 3250 3150
+Text Label 3250 3150 2    50   ~ 0
+DDR3_ODT0
+Wire Wire Line
+	5900 3150 6450 3150
+Text Label 6450 3150 2    50   ~ 0
+DDR3_ODT1
+Wire Wire Line
+	2700 3500 3250 3500
+Text Label 3250 3500 2    50   ~ 0
+~DDR3_RST
+Entry Bus Bus
+	4050 650  3950 750 
+Entry Bus Bus
+	850  650  750  750 
+Text Label 8750 650  2    50   ~ 0
+DDR3_A[0..15]
+Entry Bus Bus
+	750  4550 850  4650
+Entry Bus Bus
+	3950 4550 4050 4650
+Text Label 8900 4650 2    50   ~ 0
+DDR3_DQ[0..31]
+$Comp
+L power:GND #PWR?
+U 1 1 5E53FABF
+P 6000 7350
+F 0 "#PWR?" H 6000 7100 50  0001 C CNN
+F 1 "GND" H 6005 7177 50  0000 C CNN
+F 2 "" H 6000 7350 50  0001 C CNN
+F 3 "" H 6000 7350 50  0001 C CNN
+	1    6000 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 7350 6000 7250
+Wire Wire Line
+	6000 6450 5900 6450
+Wire Wire Line
+	5900 6550 6000 6550
+Connection ~ 6000 6550
+Wire Wire Line
+	6000 6550 6000 6450
+Wire Wire Line
+	5900 6650 6000 6650
+Connection ~ 6000 6650
+Wire Wire Line
+	6000 6650 6000 6550
+Wire Wire Line
+	5900 6750 6000 6750
+Connection ~ 6000 6750
+Wire Wire Line
+	6000 6750 6000 6650
+Wire Wire Line
+	5900 6850 6000 6850
+Connection ~ 6000 6850
+Wire Wire Line
+	6000 6850 6000 6750
+Wire Wire Line
+	5900 6950 6000 6950
+Connection ~ 6000 6950
+Wire Wire Line
+	6000 6950 6000 6850
+Wire Wire Line
+	5900 7050 6000 7050
+Connection ~ 6000 7050
+Wire Wire Line
+	6000 7050 6000 6950
+Wire Wire Line
+	5900 7150 6000 7150
+Connection ~ 6000 7150
+Wire Wire Line
+	6000 7150 6000 7050
+Wire Wire Line
+	5900 7250 6000 7250
+Connection ~ 6000 7250
+Wire Wire Line
+	6000 7250 6000 7150
+$Comp
+L power:GND #PWR?
+U 1 1 5E5B37C5
+P 2800 7350
+F 0 "#PWR?" H 2800 7100 50  0001 C CNN
+F 1 "GND" H 2805 7177 50  0000 C CNN
+F 2 "" H 2800 7350 50  0001 C CNN
+F 3 "" H 2800 7350 50  0001 C CNN
+	1    2800 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 7350 2800 7250
+Wire Wire Line
+	2800 6450 2700 6450
+Wire Wire Line
+	2700 6550 2800 6550
+Connection ~ 2800 6550
+Wire Wire Line
+	2800 6550 2800 6450
+Wire Wire Line
+	2700 6650 2800 6650
+Connection ~ 2800 6650
+Wire Wire Line
+	2800 6650 2800 6550
+Wire Wire Line
+	2700 6750 2800 6750
+Connection ~ 2800 6750
+Wire Wire Line
+	2800 6750 2800 6650
+Wire Wire Line
+	2700 6850 2800 6850
+Connection ~ 2800 6850
+Wire Wire Line
+	2800 6850 2800 6750
+Wire Wire Line
+	2700 6950 2800 6950
+Connection ~ 2800 6950
+Wire Wire Line
+	2800 6950 2800 6850
+Wire Wire Line
+	2700 7050 2800 7050
+Connection ~ 2800 7050
+Wire Wire Line
+	2800 7050 2800 6950
+Wire Wire Line
+	2700 7150 2800 7150
+Connection ~ 2800 7150
+Wire Wire Line
+	2800 7150 2800 7050
+Wire Wire Line
+	2700 7250 2800 7250
+Connection ~ 2800 7250
+Wire Wire Line
+	2800 7250 2800 7150
+$Comp
+L power:GND #PWR?
+U 1 1 5E5C4225
+P 4500 7350
+F 0 "#PWR?" H 4500 7100 50  0001 C CNN
+F 1 "GND" H 4505 7177 50  0000 C CNN
+F 2 "" H 4500 7350 50  0001 C CNN
+F 3 "" H 4500 7350 50  0001 C CNN
+	1    4500 7350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 7350 4500 7250
+Wire Wire Line
+	4500 6450 4600 6450
+Wire Wire Line
+	4600 6550 4500 6550
+Connection ~ 4500 6550
+Wire Wire Line
+	4500 6550 4500 6450
+Wire Wire Line
+	4600 6650 4500 6650
+Connection ~ 4500 6650
+Wire Wire Line
+	4500 6650 4500 6550
+Wire Wire Line
+	4600 6750 4500 6750
+Connection ~ 4500 6750
+Wire Wire Line
+	4500 6750 4500 6650
+Wire Wire Line
+	4600 6850 4500 6850
+Connection ~ 4500 6850
+Wire Wire Line
+	4500 6850 4500 6750
+Wire Wire Line
+	4600 6950 4500 6950
+Connection ~ 4500 6950
+Wire Wire Line
+	4500 6950 4500 6850
+Wire Wire Line
+	4600 7050 4500 7050
+Connection ~ 4500 7050
+Wire Wire Line
+	4500 7050 4500 6950
+Wire Wire Line
+	4600 7150 4500 7150
+Connection ~ 4500 7150
+Wire Wire Line
+	4500 7150 4500 7050
+Wire Wire Line
+	4600 7250 4500 7250
+Connection ~ 4500 7250
+Wire Wire Line
+	4500 7250 4500 7150
+Wire Wire Line
+	4500 6450 4500 6350
+Wire Wire Line
+	4500 6150 4600 6150
+Connection ~ 4500 6450
+Wire Wire Line
+	4600 6250 4500 6250
+Connection ~ 4500 6250
+Wire Wire Line
+	4500 6250 4500 6150
+Wire Wire Line
+	4600 6350 4500 6350
+Connection ~ 4500 6350
+Wire Wire Line
+	4500 6350 4500 6250
+$Comp
+L power:GND #PWR?
+U 1 1 5E62DCCA
+P 1300 7350
+F 0 "#PWR?" H 1300 7100 50  0001 C CNN
+F 1 "GND" H 1305 7177 50  0000 C CNN
+F 2 "" H 1300 7350 50  0001 C CNN
+F 3 "" H 1300 7350 50  0001 C CNN
+	1    1300 7350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 7350 1300 7250
+Wire Wire Line
+	1300 6450 1400 6450
+Wire Wire Line
+	1400 6550 1300 6550
+Connection ~ 1300 6550
+Wire Wire Line
+	1300 6550 1300 6450
+Wire Wire Line
+	1400 6650 1300 6650
+Connection ~ 1300 6650
+Wire Wire Line
+	1300 6650 1300 6550
+Wire Wire Line
+	1400 6750 1300 6750
+Connection ~ 1300 6750
+Wire Wire Line
+	1300 6750 1300 6650
+Wire Wire Line
+	1400 6850 1300 6850
+Connection ~ 1300 6850
+Wire Wire Line
+	1300 6850 1300 6750
+Wire Wire Line
+	1400 6950 1300 6950
+Connection ~ 1300 6950
+Wire Wire Line
+	1300 6950 1300 6850
+Wire Wire Line
+	1400 7050 1300 7050
+Connection ~ 1300 7050
+Wire Wire Line
+	1300 7050 1300 6950
+Wire Wire Line
+	1400 7150 1300 7150
+Connection ~ 1300 7150
+Wire Wire Line
+	1300 7150 1300 7050
+Wire Wire Line
+	1400 7250 1300 7250
+Connection ~ 1300 7250
+Wire Wire Line
+	1300 7250 1300 7150
+Wire Wire Line
+	1300 6450 1300 6350
+Wire Wire Line
+	1300 6150 1400 6150
+Connection ~ 1300 6450
+Wire Wire Line
+	1400 6250 1300 6250
+Connection ~ 1300 6250
+Wire Wire Line
+	1300 6250 1300 6150
+Wire Wire Line
+	1400 6350 1300 6350
+Connection ~ 1300 6350
+Wire Wire Line
+	1300 6350 1300 6250
+Wire Wire Line
+	5900 3500 6450 3500
+Text Label 6450 3500 2    50   ~ 0
+~DDR3_RST
+Wire Wire Line
+	4500 5150 4600 5150
+Wire Wire Line
+	4600 5950 4500 5950
+Wire Wire Line
+	4500 5950 4500 5850
+Wire Wire Line
+	4600 5250 4500 5250
+Connection ~ 4500 5250
+Wire Wire Line
+	4500 5250 4500 5150
+Wire Wire Line
+	4600 5350 4500 5350
+Connection ~ 4500 5350
+Wire Wire Line
+	4500 5350 4500 5250
+Wire Wire Line
+	4600 5450 4500 5450
+Connection ~ 4500 5450
+Wire Wire Line
+	4500 5450 4500 5350
+Wire Wire Line
+	4600 5550 4500 5550
+Connection ~ 4500 5550
+Wire Wire Line
+	4500 5550 4500 5450
+Wire Wire Line
+	4600 5650 4500 5650
+Connection ~ 4500 5650
+Wire Wire Line
+	4500 5650 4500 5550
+Wire Wire Line
+	4600 5750 4500 5750
+Connection ~ 4500 5750
+Wire Wire Line
+	4500 5750 4500 5650
+Wire Wire Line
+	4600 5850 4500 5850
+Connection ~ 4500 5850
+Wire Wire Line
+	4500 5850 4500 5750
+$Comp
+L power:VMEM #PWR?
+U 1 1 5E052150
+P 6950 5050
+F 0 "#PWR?" H 6950 4900 50  0001 C CNN
+F 1 "VMEM" H 6965 5223 50  0000 C CNN
+F 2 "" H 6950 5050 50  0001 C CNN
+F 3 "" H 6950 5050 50  0001 C CNN
+	1    6950 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 5050 6950 5150
+Wire Wire Line
+	6000 5950 5900 5950
+Wire Wire Line
+	5900 5850 6000 5850
+Connection ~ 6000 5850
+Wire Wire Line
+	6000 5850 6000 5950
+Wire Wire Line
+	5900 5750 6000 5750
+Connection ~ 6000 5750
+Wire Wire Line
+	6000 5750 6000 5850
+Wire Wire Line
+	5900 5650 6000 5650
+Connection ~ 6000 5650
+Wire Wire Line
+	6000 5650 6000 5750
+Wire Wire Line
+	5900 5550 6000 5550
+Connection ~ 6000 5550
+Wire Wire Line
+	6000 5550 6000 5650
+Wire Wire Line
+	5900 5450 6000 5450
+Connection ~ 6000 5450
+Wire Wire Line
+	6000 5450 6000 5550
+Wire Wire Line
+	5900 5350 6000 5350
+Connection ~ 6000 5350
+Wire Wire Line
+	6000 5350 6000 5450
+Wire Wire Line
+	5900 5250 6000 5250
+Connection ~ 6000 5250
+Wire Wire Line
+	6000 5250 6000 5350
+Wire Wire Line
+	5900 5150 6000 5150
+Wire Wire Line
+	6000 5150 6000 5250
+$Comp
+L Device:C C?
+U 1 1 5E1434BE
+P 6300 5400
+F 0 "C?" H 6350 5500 50  0000 L CNN
+F 1 "C" H 6350 5300 50  0000 L CNN
+F 2 "" H 6338 5250 50  0001 C CNN
+F 3 "~" H 6300 5400 50  0001 C CNN
+	1    6300 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E143533
+P 6550 5400
+F 0 "C?" H 6600 5500 50  0000 L CNN
+F 1 "C" H 6600 5300 50  0000 L CNN
+F 2 "" H 6588 5250 50  0001 C CNN
+F 3 "~" H 6550 5400 50  0001 C CNN
+	1    6550 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 5250 6550 5150
+$Comp
+L power:GND #PWR?
+U 1 1 5E2968E9
+P 6550 5650
+F 0 "#PWR?" H 6550 5400 50  0001 C CNN
+F 1 "GND" H 6555 5477 50  0000 C CNN
+F 2 "" H 6550 5650 50  0001 C CNN
+F 3 "" H 6550 5650 50  0001 C CNN
+	1    6550 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 5650 6550 5600
+Wire Wire Line
+	6550 5600 6300 5600
+Connection ~ 6550 5600
+Wire Wire Line
+	6550 5600 6550 5550
+$Comp
+L Device:C C?
+U 1 1 5E2CFDF3
+P 4300 6200
+F 0 "C?" H 4350 6300 50  0000 L CNN
+F 1 "C" H 4350 6100 50  0000 L CNN
+F 2 "" H 4338 6050 50  0001 C CNN
+F 3 "~" H 4300 6200 50  0001 C CNN
+	1    4300 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E2CFDF9
+P 4050 6200
+F 0 "C?" H 4100 6300 50  0000 L CNN
+F 1 "C" H 4100 6100 50  0000 L CNN
+F 2 "" H 4088 6050 50  0001 C CNN
+F 3 "~" H 4050 6200 50  0001 C CNN
+	1    4050 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6050 4300 5950
+Wire Wire Line
+	4300 5950 4500 5950
+Wire Wire Line
+	4050 6050 4050 5950
+Wire Wire Line
+	4050 5950 4300 5950
+Connection ~ 4300 5950
+$Comp
+L power:GND #PWR?
+U 1 1 5E2CFE04
+P 4050 6450
+F 0 "#PWR?" H 4050 6200 50  0001 C CNN
+F 1 "GND" H 4055 6277 50  0000 C CNN
+F 2 "" H 4050 6450 50  0001 C CNN
+F 3 "" H 4050 6450 50  0001 C CNN
+	1    4050 6450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6450 4050 6400
+Wire Wire Line
+	4050 6400 4300 6400
+Wire Wire Line
+	4300 6400 4300 6350
+Connection ~ 4050 6400
+Wire Wire Line
+	4050 6400 4050 6350
+$Comp
+L Device:L_Small L?
+U 1 1 5E3662F5
+P 6750 5150
+F 0 "L?" H 6797 5196 50  0000 L CNN
+F 1 "L_Small" H 6797 5105 50  0000 L CNN
+F 2 "" H 6750 5150 50  0001 C CNN
+F 3 "~" H 6750 5150 50  0001 C CNN
+	1    6750 5150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6550 5150
+Connection ~ 4500 5950
+$Comp
+L power:VMEM #PWR?
+U 1 1 5E41A98A
+P 4050 5550
+F 0 "#PWR?" H 4050 5400 50  0001 C CNN
+F 1 "VMEM" H 4065 5723 50  0000 C CNN
+F 2 "" H 4050 5550 50  0001 C CNN
+F 3 "" H 4050 5550 50  0001 C CNN
+	1    4050 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5550 4050 5650
+$Comp
+L Device:L_Small L?
+U 1 1 5E41A991
+P 4050 5750
+F 0 "L?" H 4097 5796 50  0000 L CNN
+F 1 "L_Small" H 4097 5705 50  0000 L CNN
+F 2 "" H 4050 5750 50  0001 C CNN
+F 3 "~" H 4050 5750 50  0001 C CNN
+	1    4050 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5850 4050 5950
+Connection ~ 4050 5950
+Wire Wire Line
+	1300 5150 1400 5150
+Wire Wire Line
+	1400 5950 1300 5950
+Wire Wire Line
+	1300 5950 1300 5850
+Wire Wire Line
+	1400 5250 1300 5250
+Connection ~ 1300 5250
+Wire Wire Line
+	1300 5250 1300 5150
+Wire Wire Line
+	1400 5350 1300 5350
+Connection ~ 1300 5350
+Wire Wire Line
+	1300 5350 1300 5250
+Wire Wire Line
+	1400 5450 1300 5450
+Connection ~ 1300 5450
+Wire Wire Line
+	1300 5450 1300 5350
+Wire Wire Line
+	1400 5550 1300 5550
+Connection ~ 1300 5550
+Wire Wire Line
+	1300 5550 1300 5450
+Wire Wire Line
+	1400 5650 1300 5650
+Connection ~ 1300 5650
+Wire Wire Line
+	1300 5650 1300 5550
+Wire Wire Line
+	1400 5750 1300 5750
+Connection ~ 1300 5750
+Wire Wire Line
+	1300 5750 1300 5650
+Wire Wire Line
+	1400 5850 1300 5850
+Connection ~ 1300 5850
+Wire Wire Line
+	1300 5850 1300 5750
+Wire Wire Line
+	1100 6050 1100 5950
+Wire Wire Line
+	1100 5950 1300 5950
+Wire Wire Line
+	850  6050 850  5950
+Wire Wire Line
+	850  5950 1100 5950
+Connection ~ 1100 5950
+Connection ~ 1300 5950
+$Comp
+L power:VMEM #PWR?
+U 1 1 5E43A0BA
+P 850 5550
+F 0 "#PWR?" H 850 5400 50  0001 C CNN
+F 1 "VMEM" H 865 5723 50  0000 C CNN
+F 2 "" H 850 5550 50  0001 C CNN
+F 3 "" H 850 5550 50  0001 C CNN
+	1    850  5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  5550 850  5650
+$Comp
+L Device:L_Small L?
+U 1 1 5E43A0C1
+P 850 5750
+F 0 "L?" H 897 5796 50  0000 L CNN
+F 1 "L_Small" H 897 5705 50  0000 L CNN
+F 2 "" H 850 5750 50  0001 C CNN
+F 3 "~" H 850 5750 50  0001 C CNN
+	1    850  5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  5850 850  5950
+Connection ~ 850  5950
+Wire Wire Line
+	2800 5950 2700 5950
+Wire Wire Line
+	2700 5850 2800 5850
+Connection ~ 2800 5850
+Wire Wire Line
+	2800 5850 2800 5950
+Wire Wire Line
+	2700 5750 2800 5750
+Connection ~ 2800 5750
+Wire Wire Line
+	2800 5750 2800 5850
+Wire Wire Line
+	2700 5650 2800 5650
+Connection ~ 2800 5650
+Wire Wire Line
+	2800 5650 2800 5750
+Wire Wire Line
+	2700 5550 2800 5550
+Connection ~ 2800 5550
+Wire Wire Line
+	2800 5550 2800 5650
+Wire Wire Line
+	2700 5450 2800 5450
+Connection ~ 2800 5450
+Wire Wire Line
+	2800 5450 2800 5550
+Wire Wire Line
+	2700 5350 2800 5350
+Connection ~ 2800 5350
+Wire Wire Line
+	2800 5350 2800 5450
+Wire Wire Line
+	2700 5250 2800 5250
+Connection ~ 2800 5250
+Wire Wire Line
+	2800 5250 2800 5350
+Wire Wire Line
+	2700 5150 2800 5150
+Wire Wire Line
+	2800 5150 2800 5250
+$Comp
+L Device:C C?
+U 1 1 5E54EA82
+P 1100 6200
+F 0 "C?" H 1150 6300 50  0000 L CNN
+F 1 "C" H 1150 6100 50  0000 L CNN
+F 2 "" H 1138 6050 50  0001 C CNN
+F 3 "~" H 1100 6200 50  0001 C CNN
+	1    1100 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E54EA88
+P 850 6200
+F 0 "C?" H 900 6300 50  0000 L CNN
+F 1 "C" H 900 6100 50  0000 L CNN
+F 2 "" H 888 6050 50  0001 C CNN
+F 3 "~" H 850 6200 50  0001 C CNN
+	1    850  6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E54EA8E
+P 850 6450
+F 0 "#PWR?" H 850 6200 50  0001 C CNN
+F 1 "GND" H 855 6277 50  0000 C CNN
+F 2 "" H 850 6450 50  0001 C CNN
+F 3 "" H 850 6450 50  0001 C CNN
+	1    850  6450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	850  6450 850  6400
+Wire Wire Line
+	850  6400 1100 6400
+Wire Wire Line
+	1100 6400 1100 6350
+Connection ~ 850  6400
+Wire Wire Line
+	850  6400 850  6350
+$Comp
+L Logicbone:ECP5UM-CABGA554 IC?
+U 1 1 5E0BF40B
+P 8550 2700
+AR Path="/5E15C0BA/5E0BF40B" Ref="IC?"  Part="1" 
+AR Path="/5DFC5A6C/5E0BF40B" Ref="IC?"  Part="1" 
+F 0 "IC?" H 8525 4465 50  0000 C CNN
+F 1 "ECP5UM-CABGA554" H 8525 4374 50  0000 C CNN
+F 2 "" H 5050 1850 50  0001 C CNN
+F 3 "" H 5050 1850 50  0001 C CNN
+	1    8550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logicbone:ECP5UM-CABGA554 IC?
+U 2 1 5E0BF412
+P 11750 2600
+AR Path="/5E15C0BA/5E0BF412" Ref="IC?"  Part="2" 
+AR Path="/5DFC5A6C/5E0BF412" Ref="IC?"  Part="2" 
+F 0 "IC?" H 11725 4365 50  0000 C CNN
+F 1 "ECP5UM-CABGA554" H 11725 4274 50  0000 C CNN
+F 2 "" H 8250 1750 50  0001 C CNN
+F 3 "" H 8250 1750 50  0001 C CNN
+	2    11750 2600
+	1    0    0    -1  
+$EndComp
+Text Label 10500 4000 0    50   ~ 0
+DDR3_DQ31
+Text Label 10500 4100 0    50   ~ 0
+DDR3_DQ30
+Text Label 10500 3900 0    50   ~ 0
+DDR3_DQ29
+Text Label 10500 3800 0    50   ~ 0
+DDR3_DQ28
+Text Label 10500 3650 0    50   ~ 0
+DDR3_DQ27
+Text Label 10500 3550 0    50   ~ 0
+DDR3_DQ26
+Text Label 10500 3450 0    50   ~ 0
+DDR3_DQ25
+Text Label 10500 3350 0    50   ~ 0
+DDR3_DQ24
+Text Label 10500 3200 0    50   ~ 0
+DDR3_DQ23
+Text Label 10500 3100 0    50   ~ 0
+DDR3_DQ22
+Text Label 10500 2750 0    50   ~ 0
+DDR3_DQ21
+Text Label 10500 2650 0    50   ~ 0
+DDR3_DQ20
+Text Label 10500 2300 0    50   ~ 0
+DDR3_DQ19
+Text Label 10500 2200 0    50   ~ 0
+DDR3_DQ18
+Text Label 10500 2100 0    50   ~ 0
+DDR3_DQ17
+Text Label 10500 2000 0    50   ~ 0
+DDR3_DQ16
+Text Label 9800 2750 2    50   ~ 0
+DDR3_DQ15
+Text Label 9800 2650 2    50   ~ 0
+DDR3_DQ14
+Text Label 9800 2300 2    50   ~ 0
+DDR3_DQ13
+Text Label 9800 2200 2    50   ~ 0
+DDR3_DQ12
+Text Label 9800 2100 2    50   ~ 0
+DDR3_DQ11
+Text Label 9800 2000 2    50   ~ 0
+DDR3_DQ10
+Text Label 9800 1650 2    50   ~ 0
+DDR3_DQ9
+Text Label 9800 1550 2    50   ~ 0
+DDR3_DQ8
+Text Label 7300 2300 0    50   ~ 0
+DDR3_DQ7
+Text Label 7300 2200 0    50   ~ 0
+DDR3_DQ6
+Text Label 7300 2100 0    50   ~ 0
+DDR3_DQ5
+Text Label 7300 2000 0    50   ~ 0
+DDR3_DQ4
+Text Label 7300 1850 0    50   ~ 0
+DDR3_DQ3
+Text Label 7300 1750 0    50   ~ 0
+DDR3_DQ2
+Text Label 7300 1650 0    50   ~ 0
+DDR3_DQ1
+Text Label 7300 1550 0    50   ~ 0
+DDR3_DQ0
+Text Label 13000 3650 2    50   ~ 0
+DDR3_A15
+Text Label 13000 3550 2    50   ~ 0
+DDR3_A14
+Text Label 13000 3450 2    50   ~ 0
+DDR3_A13
+Text Label 13000 3350 2    50   ~ 0
+DDR3_A12
+Text Label 13000 3200 2    50   ~ 0
+DDR3_A11
+Text Label 13000 3100 2    50   ~ 0
+DDR3_A10
+Text Label 13000 3000 2    50   ~ 0
+DDR3_A9
+Text Label 13000 2900 2    50   ~ 0
+DDR3_A8
+Text Label 13000 2750 2    50   ~ 0
+DDR3_A7
+Text Label 13000 2650 2    50   ~ 0
+DDR3_A6
+Text Label 13000 2550 2    50   ~ 0
+DDR3_A5
+Text Label 13000 2450 2    50   ~ 0
+DDR3_A4
+Text Label 13000 2300 2    50   ~ 0
+DDR3_A3
+Text Label 13000 2200 2    50   ~ 0
+DDR3_A2
+Text Label 13000 2100 2    50   ~ 0
+DDR3_A1
+Text Label 13000 2000 2    50   ~ 0
+DDR3_A0
+Wire Wire Line
+	11050 1750 10500 1750
+Text Label 10500 1750 0    50   ~ 0
+DDR3_BA2
+Wire Wire Line
+	11050 1650 10500 1650
+Text Label 10500 1650 0    50   ~ 0
+DDR3_BA1
+Wire Wire Line
+	11050 1550 10500 1550
+Text Label 10500 1550 0    50   ~ 0
+DDR3_BA0
+Wire Wire Line
+	7850 2650 7300 2650
+Text Label 7300 2650 0    50   ~ 0
+~DDR3_RAS
+Wire Wire Line
+	7850 2750 7300 2750
+Text Label 7300 2750 0    50   ~ 0
+~DDR3_CAS
+Wire Wire Line
+	7850 3100 7300 3100
+Text Label 7300 3100 0    50   ~ 0
+~DDR3_CS
+Wire Wire Line
+	7850 3200 7300 3200
+Text Label 7300 3200 0    50   ~ 0
+~DDR3_WE
+Text Label 9900 2900 2    50   ~ 0
+DDR3_CK
+Text Label 9900 3000 2    50   ~ 0
+~DDR3_CK
+Text Label 9900 3100 2    50   ~ 0
+DDR3_CKE
+Wire Wire Line
+	12450 1550 13000 1550
+Wire Wire Line
+	12450 1650 13000 1650
+Wire Wire Line
+	11050 2450 10500 2450
+Wire Wire Line
+	11050 2550 10500 2550
+Text Label 10500 2450 0    50   ~ 0
+DDR3_DQS2
+Text Label 10500 2550 0    50   ~ 0
+~DDR3_DQS2
+Text Label 13000 1550 2    50   ~ 0
+DDR3_DQS3
+Text Label 13000 1650 2    50   ~ 0
+~DDR3_DQS3
+Wire Wire Line
+	12450 1850 13000 1850
+Wire Wire Line
+	12450 1750 13000 1750
+Text Label 13000 1750 2    50   ~ 0
+DDR3_DM2
+Text Label 13000 1850 2    50   ~ 0
+DDR3_DM3
+Wire Wire Line
+	11050 1850 10500 1850
+Text Label 10500 1850 0    50   ~ 0
+DDR3_ODT1
+Text Label 9900 3200 2    50   ~ 0
+~DDR3_RST
+Wire Wire Line
+	9250 2450 9800 2450
+Wire Wire Line
+	9250 2550 9800 2550
+Wire Wire Line
+	7850 2450 7300 2450
+Wire Wire Line
+	7850 2550 7300 2550
+Text Label 7300 2450 0    50   ~ 0
+DDR3_DQS0
+Text Label 7300 2550 0    50   ~ 0
+~DDR3_DQS0
+Text Label 9800 2450 2    50   ~ 0
+DDR3_DQS1
+Text Label 9800 2550 2    50   ~ 0
+~DDR3_DQS1
+Wire Wire Line
+	7850 3000 7300 3000
+Wire Wire Line
+	7850 2900 7300 2900
+Text Label 7300 2900 0    50   ~ 0
+DDR3_DM0
+Text Label 7300 3000 0    50   ~ 0
+DDR3_DM1
+Wire Wire Line
+	9250 1850 9800 1850
+Text Label 9800 1850 2    50   ~ 0
+DDR3_ODT0
+$Comp
+L power:VMEM #PWR?
+U 1 1 5E775549
+P 10950 1050
+F 0 "#PWR?" H 10950 900 50  0001 C CNN
+F 1 "VMEM" H 10965 1223 50  0000 C CNN
+F 2 "" H 10950 1050 50  0001 C CNN
+F 3 "" H 10950 1050 50  0001 C CNN
+	1    10950 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 1050 10950 1100
+Connection ~ 10950 1300
+Wire Wire Line
+	10950 1300 10950 1400
+Connection ~ 10950 1200
+Wire Wire Line
+	10950 1200 10950 1300
+Connection ~ 10950 1100
+Wire Wire Line
+	10950 1100 10950 1200
+Wire Wire Line
+	10950 1100 11050 1100
+Wire Wire Line
+	10950 1200 11050 1200
+Wire Wire Line
+	10950 1300 11050 1300
+Wire Wire Line
+	10950 1400 11050 1400
+$Comp
+L power:VMEM #PWR?
+U 1 1 5E908ABE
+P 7750 1150
+F 0 "#PWR?" H 7750 1000 50  0001 C CNN
+F 1 "VMEM" H 7765 1323 50  0000 C CNN
+F 2 "" H 7750 1150 50  0001 C CNN
+F 3 "" H 7750 1150 50  0001 C CNN
+	1    7750 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1150 7750 1200
+Connection ~ 7750 1300
+Wire Wire Line
+	7750 1300 7750 1400
+Connection ~ 7750 1200
+Wire Wire Line
+	7750 1200 7750 1300
+Wire Wire Line
+	7750 1200 7850 1200
+Wire Wire Line
+	7750 1300 7850 1300
+Wire Wire Line
+	7750 1400 7850 1400
+Wire Wire Line
+	9250 1750 9800 1750
+Text Label 9800 1750 2    50   ~ 0
+DDR3_VREF
+Wire Wire Line
+	11050 3000 10500 3000
+Text Label 10500 3000 0    50   ~ 0
+DDR3_VREF
+Entry Wire Line
+	6950 1650 7050 1550
+Entry Wire Line
+	6950 1750 7050 1650
+Entry Wire Line
+	6950 1850 7050 1750
+Entry Wire Line
+	6950 1950 7050 1850
+Wire Wire Line
+	7050 1550 7850 1550
+Wire Wire Line
+	7050 1650 7850 1650
+Wire Wire Line
+	7050 1750 7850 1750
+Wire Wire Line
+	7050 1850 7850 1850
+Entry Wire Line
+	6950 2100 7050 2000
+Entry Wire Line
+	6950 2200 7050 2100
+Entry Wire Line
+	6950 2300 7050 2200
+Entry Wire Line
+	6950 2400 7050 2300
+Entry Bus Bus
+	6850 4650 6950 4550
+Wire Wire Line
+	7050 2000 7850 2000
+Wire Wire Line
+	7050 2100 7850 2100
+Wire Wire Line
+	7050 2200 7850 2200
+Wire Wire Line
+	7050 2300 7850 2300
+Entry Wire Line
+	10050 1550 10150 1650
+Entry Wire Line
+	10050 1650 10150 1750
+Entry Wire Line
+	10050 2000 10150 2100
+Entry Wire Line
+	10050 2100 10150 2200
+Entry Wire Line
+	10050 2200 10150 2300
+Entry Wire Line
+	10050 2300 10150 2400
+Entry Wire Line
+	10050 2650 10150 2750
+Entry Wire Line
+	10050 2750 10150 2850
+Entry Bus Bus
+	10150 4550 10050 4650
+Wire Wire Line
+	9250 1550 10050 1550
+Wire Wire Line
+	9250 1650 10050 1650
+Wire Wire Line
+	9250 2000 10050 2000
+Wire Wire Line
+	9250 2100 10050 2100
+Wire Wire Line
+	9250 2200 10050 2200
+Wire Wire Line
+	9250 2300 10050 2300
+Wire Wire Line
+	9250 2650 10050 2650
+Wire Wire Line
+	9250 2750 10050 2750
+Entry Wire Line
+	10250 2100 10150 2200
+Entry Wire Line
+	10250 2200 10150 2300
+Entry Wire Line
+	10250 2300 10150 2400
+Entry Wire Line
+	10250 2000 10150 2100
+Entry Wire Line
+	10250 2650 10150 2750
+Entry Wire Line
+	10250 2750 10150 2850
+Entry Wire Line
+	10250 3100 10150 3200
+Entry Wire Line
+	10250 3200 10150 3300
+Entry Wire Line
+	10250 3800 10150 3900
+Entry Wire Line
+	10250 3900 10150 4000
+Entry Wire Line
+	10250 4000 10150 4100
+Entry Wire Line
+	10250 4100 10150 4200
+Entry Wire Line
+	10250 3350 10150 3450
+Entry Wire Line
+	10250 3450 10150 3550
+Entry Wire Line
+	10250 3550 10150 3650
+Entry Wire Line
+	10250 3650 10150 3750
+Wire Wire Line
+	10250 2000 11050 2000
+Wire Wire Line
+	10250 2100 11050 2100
+Wire Wire Line
+	10250 2200 11050 2200
+Wire Wire Line
+	10250 2300 11050 2300
+Wire Wire Line
+	10250 2650 11050 2650
+Wire Wire Line
+	10250 2750 11050 2750
+Wire Wire Line
+	10250 3100 11050 3100
+Wire Wire Line
+	10250 3200 11050 3200
+Wire Wire Line
+	10250 3350 11050 3350
+Wire Wire Line
+	10250 3450 11050 3450
+Wire Wire Line
+	10250 3550 11050 3550
+Wire Wire Line
+	10250 3650 11050 3650
+Wire Wire Line
+	10250 3800 11050 3800
+Wire Wire Line
+	10250 3900 11050 3900
+Wire Wire Line
+	10250 4000 11050 4000
+Wire Wire Line
+	10250 4100 11050 4100
+Entry Wire Line
+	13350 1900 13250 2000
+Entry Wire Line
+	13350 2000 13250 2100
+Entry Wire Line
+	13350 2100 13250 2200
+Entry Wire Line
+	13350 2200 13250 2300
+Entry Wire Line
+	13350 2350 13250 2450
+Entry Wire Line
+	13350 2450 13250 2550
+Entry Wire Line
+	13350 2550 13250 2650
+Entry Wire Line
+	13350 2650 13250 2750
+Entry Wire Line
+	13350 2800 13250 2900
+Entry Wire Line
+	13350 2900 13250 3000
+Entry Wire Line
+	13350 3000 13250 3100
+Entry Wire Line
+	13350 3100 13250 3200
+Entry Wire Line
+	13350 3250 13250 3350
+Entry Wire Line
+	13350 3350 13250 3450
+Entry Wire Line
+	13350 3450 13250 3550
+Entry Wire Line
+	13350 3550 13250 3650
+Wire Wire Line
+	12450 2000 13250 2000
+Wire Wire Line
+	12450 2100 13250 2100
+Wire Wire Line
+	12450 2200 13250 2200
+Wire Wire Line
+	12450 2300 13250 2300
+Wire Wire Line
+	12450 2450 13250 2450
+Wire Wire Line
+	12450 2550 13250 2550
+Wire Wire Line
+	12450 2650 13250 2650
+Wire Wire Line
+	12450 2750 13250 2750
+Wire Wire Line
+	12450 2900 13250 2900
+Wire Wire Line
+	12450 3000 13250 3000
+Wire Wire Line
+	12450 3100 13250 3100
+Wire Wire Line
+	12450 3200 13250 3200
+Wire Wire Line
+	12450 3350 13250 3350
+Wire Wire Line
+	12450 3450 13250 3450
+Wire Wire Line
+	12450 3550 13250 3550
+Wire Wire Line
+	12450 3650 13250 3650
+Entry Bus Bus
+	13250 650  13350 750 
+$Comp
+L Logicbone:TPS51200 IC?
+U 1 1 5F99204F
+P 8400 6000
+F 0 "IC?" H 8400 6615 50  0000 C CNN
+F 1 "TPS51200" H 8400 6524 50  0000 C CNN
+F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm" H 8400 5550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps51200.pdf" H 8400 6850 50  0001 C CNN
+	1    8400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F9922CA
+P 7650 6300
+F 0 "C?" H 7742 6346 50  0000 L CNN
+F 1 "0.1uF" H 7742 6255 50  0000 L CNN
+F 2 "" H 7650 6300 50  0001 C CNN
+F 3 "~" H 7650 6300 50  0001 C CNN
+	1    7650 6300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 6300 7800 6300
+Wire Wire Line
+	7800 6300 7800 6450
+Wire Wire Line
+	7800 6450 7650 6450
+Wire Wire Line
+	7650 6450 7650 6400
+Wire Wire Line
+	7650 6200 7650 6150
+Wire Wire Line
+	7650 6150 7850 6150
+$Comp
+L power:GND #PWR?
+U 1 1 5FA3FFFA
+P 7800 6500
+F 0 "#PWR?" H 7800 6250 50  0001 C CNN
+F 1 "GND" H 7805 6327 50  0000 C CNN
+F 2 "" H 7800 6500 50  0001 C CNN
+F 3 "" H 7800 6500 50  0001 C CNN
+	1    7800 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 6500 7800 6450
+Connection ~ 7800 6450
+$Comp
+L power:GND #PWR?
+U 1 1 5FA6C62B
+P 9000 6500
+F 0 "#PWR?" H 9000 6250 50  0001 C CNN
+F 1 "GND" H 9005 6327 50  0000 C CNN
+F 2 "" H 9000 6500 50  0001 C CNN
+F 3 "" H 9000 6500 50  0001 C CNN
+	1    9000 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 6500 9000 6300
+Wire Wire Line
+	9000 6300 8950 6300
+Wire Wire Line
+	8950 6200 9000 6200
+Wire Wire Line
+	9000 6200 9000 6300
+Connection ~ 9000 6300
+$Comp
+L power:VMEM #PWR?
+U 1 1 5FAC67A0
+P 9050 5550
+F 0 "#PWR?" H 9050 5400 50  0001 C CNN
+F 1 "VMEM" H 9065 5723 50  0000 C CNN
+F 2 "" H 9050 5550 50  0001 C CNN
+F 3 "" H 9050 5550 50  0001 C CNN
+	1    9050 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5550 9050 5650
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FAF43C5
+P 7450 5550
+F 0 "#PWR?" H 7450 5400 50  0001 C CNN
+F 1 "+3V3" H 7465 5723 50  0000 C CNN
+F 2 "" H 7450 5550 50  0001 C CNN
+F 3 "" H 7450 5550 50  0001 C CNN
+	1    7450 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5650 8950 5650
+$Comp
+L Device:R R?
+U 1 1 5FB7FE27
+P 9300 5650
+F 0 "R?" V 9200 5650 50  0000 C CNN
+F 1 "10k" V 9300 5650 50  0000 C CNN
+F 2 "" V 9230 5650 50  0001 C CNN
+F 3 "~" H 9300 5650 50  0001 C CNN
+	1    9300 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FBAE388
+P 9700 5650
+F 0 "R?" V 9600 5650 50  0000 C CNN
+F 1 "10k" V 9700 5650 50  0000 C CNN
+F 2 "" V 9630 5650 50  0001 C CNN
+F 3 "~" H 9700 5650 50  0001 C CNN
+	1    9700 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 5650 9500 5650
+Wire Wire Line
+	9500 5650 9500 5800
+Wire Wire Line
+	9500 5800 8950 5800
+Connection ~ 9500 5650
+Wire Wire Line
+	9500 5650 9450 5650
+Wire Wire Line
+	9150 5650 9050 5650
+Connection ~ 9050 5650
+$Comp
+L power:GND #PWR?
+U 1 1 5FC69696
+P 9900 5850
+F 0 "#PWR?" H 9900 5600 50  0001 C CNN
+F 1 "GND" H 9905 5677 50  0000 C CNN
+F 2 "" H 9900 5850 50  0001 C CNN
+F 3 "" H 9900 5850 50  0001 C CNN
+	1    9900 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 5850 9900 5800
+Wire Wire Line
+	9900 5650 9850 5650
+$Comp
+L Device:C_Small C?
+U 1 1 5FC99645
+P 9700 5800
+F 0 "C?" V 9650 5700 50  0000 C CNN
+F 1 "1nF" V 9750 5700 50  0000 C CNN
+F 2 "" H 9700 5800 50  0001 C CNN
+F 3 "~" H 9700 5800 50  0001 C CNN
+	1    9700 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9800 5800 9900 5800
+Wire Wire Line
+	9900 5800 9900 5650
+Connection ~ 9900 5800
+Wire Wire Line
+	9600 5800 9500 5800
+Connection ~ 9500 5800
+Wire Wire Line
+	8950 5950 9100 5950
+Text Label 9500 5950 2    50   ~ 0
+DDR3_VTT
+Wire Wire Line
+	8950 6050 9100 6050
+Wire Wire Line
+	9100 6050 9100 5950
+Connection ~ 9100 5950
+Wire Wire Line
+	9100 5950 9500 5950
+$Comp
+L Device:R R?
+U 1 1 5FE4F1F5
+P 7650 5800
+F 0 "R?" V 7550 5800 50  0000 C CNN
+F 1 "10k" V 7650 5800 50  0000 C CNN
+F 2 "" V 7580 5800 50  0001 C CNN
+F 3 "~" H 7650 5800 50  0001 C CNN
+	1    7650 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FE4F2E6
+P 7650 6000
+F 0 "R?" V 7550 6000 50  0000 C CNN
+F 1 "10k" V 7650 6000 50  0000 C CNN
+F 2 "" V 7580 6000 50  0001 C CNN
+F 3 "~" H 7650 6000 50  0001 C CNN
+	1    7650 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 6000 7850 6000
+Wire Wire Line
+	7850 5800 7800 5800
+Wire Wire Line
+	7500 5800 7450 5800
+Wire Wire Line
+	7500 6000 7450 6000
+Wire Wire Line
+	7450 6000 7450 5800
+Text Label 3650 6150 2    50   ~ 0
+DDR3_VREF
+Wire Wire Line
+	2800 6250 2800 6150
+Wire Wire Line
+	2700 6150 2800 6150
+Wire Wire Line
+	2700 6250 2800 6250
+Wire Wire Line
+	5900 6250 6000 6250
+Wire Wire Line
+	6000 6250 6000 6150
+Wire Wire Line
+	6000 6150 5900 6150
+Text Label 6900 6150 0    50   ~ 0
+DDR3_VREF
+Wire Wire Line
+	6000 6150 6150 6150
+Connection ~ 6000 6150
+Wire Wire Line
+	6300 5150 6550 5150
+Wire Wire Line
+	6650 5150 6550 5150
+Wire Wire Line
+	6950 5150 6850 5150
+Connection ~ 6000 5150
+$Comp
+L power:VMEM #PWR?
+U 1 1 60599299
+P 3750 5050
+F 0 "#PWR?" H 3750 4900 50  0001 C CNN
+F 1 "VMEM" H 3765 5223 50  0000 C CNN
+F 2 "" H 3750 5050 50  0001 C CNN
+F 3 "" H 3750 5050 50  0001 C CNN
+	1    3750 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5050 3750 5150
+$Comp
+L Device:C C?
+U 1 1 605992A0
+P 3100 5400
+F 0 "C?" H 3150 5500 50  0000 L CNN
+F 1 "C" H 3150 5300 50  0000 L CNN
+F 2 "" H 3138 5250 50  0001 C CNN
+F 3 "~" H 3100 5400 50  0001 C CNN
+	1    3100 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 605992A6
+P 3350 5400
+F 0 "C?" H 3400 5500 50  0000 L CNN
+F 1 "C" H 3400 5300 50  0000 L CNN
+F 2 "" H 3388 5250 50  0001 C CNN
+F 3 "~" H 3350 5400 50  0001 C CNN
+	1    3350 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5250 3350 5150
+$Comp
+L power:GND #PWR?
+U 1 1 605992AD
+P 3350 5650
+F 0 "#PWR?" H 3350 5400 50  0001 C CNN
+F 1 "GND" H 3355 5477 50  0000 C CNN
+F 2 "" H 3350 5650 50  0001 C CNN
+F 3 "" H 3350 5650 50  0001 C CNN
+	1    3350 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5650 3350 5600
+Wire Wire Line
+	3350 5600 3100 5600
+Connection ~ 3350 5600
+Wire Wire Line
+	3350 5600 3350 5550
+$Comp
+L Device:L_Small L?
+U 1 1 605992B7
+P 3550 5150
+F 0 "L?" H 3597 5196 50  0000 L CNN
+F 1 "L_Small" H 3597 5105 50  0000 L CNN
+F 2 "" H 3550 5150 50  0001 C CNN
+F 3 "~" H 3550 5150 50  0001 C CNN
+	1    3550 5150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3350 5150
+Wire Wire Line
+	3100 5250 3100 5150
+Wire Wire Line
+	3100 5150 3350 5150
+Wire Wire Line
+	3100 5550 3100 5600
+Wire Wire Line
+	3450 5150 3350 5150
+Wire Wire Line
+	3750 5150 3650 5150
+Connection ~ 3100 5150
+Connection ~ 2800 5150
+$Comp
+L Device:C_Small C?
+U 1 1 606082E5
+P 2950 5950
+F 0 "C?" H 3042 5996 50  0000 L CNN
+F 1 "0.1uF" H 3042 5905 50  0000 L CNN
+F 2 "" H 2950 5950 50  0001 C CNN
+F 3 "~" H 2950 5950 50  0001 C CNN
+	1    2950 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 606083A1
+P 2950 6350
+F 0 "C?" H 3042 6396 50  0000 L CNN
+F 1 "0.1uF" H 3042 6305 50  0000 L CNN
+F 2 "" H 2950 6350 50  0001 C CNN
+F 3 "~" H 2950 6350 50  0001 C CNN
+	1    2950 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6150 2950 6150
+Connection ~ 2800 6150
+Wire Wire Line
+	2950 6250 2950 6150
+Connection ~ 2950 6150
+Wire Wire Line
+	2950 6150 3650 6150
+Wire Wire Line
+	2950 6150 2950 6050
+Wire Wire Line
+	2950 5850 2950 5150
+Wire Wire Line
+	2950 5150 2800 5150
+Wire Wire Line
+	2950 5150 3100 5150
+Connection ~ 2950 5150
+$Comp
+L power:GND #PWR?
+U 1 1 6075A002
+P 2950 6550
+F 0 "#PWR?" H 2950 6300 50  0001 C CNN
+F 1 "GND" H 2955 6377 50  0000 C CNN
+F 2 "" H 2950 6550 50  0001 C CNN
+F 3 "" H 2950 6550 50  0001 C CNN
+	1    2950 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6550 2950 6450
+Wire Wire Line
+	6300 5600 6300 5550
+Wire Wire Line
+	6300 5250 6300 5150
+Wire Wire Line
+	6000 5150 6150 5150
+Connection ~ 6300 5150
+$Comp
+L Device:C_Small C?
+U 1 1 60876FEE
+P 6150 5950
+F 0 "C?" H 6242 5996 50  0000 L CNN
+F 1 "0.1uF" H 6242 5905 50  0000 L CNN
+F 2 "" H 6150 5950 50  0001 C CNN
+F 3 "~" H 6150 5950 50  0001 C CNN
+	1    6150 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 6150 6150 6050
+Wire Wire Line
+	6150 5850 6150 5150
+Connection ~ 6150 5150
+Wire Wire Line
+	6150 5150 6300 5150
+Connection ~ 6150 6150
+$Comp
+L Device:C_Small C?
+U 1 1 60924272
+P 6150 6350
+F 0 "C?" H 6242 6396 50  0000 L CNN
+F 1 "0.1uF" H 6242 6305 50  0000 L CNN
+F 2 "" H 6150 6350 50  0001 C CNN
+F 3 "~" H 6150 6350 50  0001 C CNN
+	1    6150 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6092434B
+P 6150 6550
+F 0 "#PWR?" H 6150 6300 50  0001 C CNN
+F 1 "GND" H 6155 6377 50  0000 C CNN
+F 2 "" H 6150 6550 50  0001 C CNN
+F 3 "" H 6150 6550 50  0001 C CNN
+	1    6150 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 6550 6150 6450
+Wire Wire Line
+	6150 6250 6150 6150
+Wire Wire Line
+	7450 5550 7450 5650
+Connection ~ 7450 5800
+Wire Wire Line
+	7450 5650 7850 5650
+Connection ~ 7450 5650
+Wire Wire Line
+	7450 5650 7450 5800
+Connection ~ 7650 6150
+$Comp
+L Device:R_Network08 RN?
+U 1 1 60CC434B
+P 12250 5050
+F 0 "RN?" V 11633 5050 50  0000 C CNN
+F 1 "47" V 11724 5050 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 12725 5050 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12250 5050 50  0001 C CNN
+	1    12250 5050
+	0    -1   1    0   
+$EndComp
+Text Label 13000 6400 2    50   ~ 0
+DDR3_A15
+Text Label 13000 6300 2    50   ~ 0
+DDR3_A14
+Text Label 13000 6200 2    50   ~ 0
+DDR3_A13
+Text Label 13000 6100 2    50   ~ 0
+DDR3_A12
+Text Label 13000 6000 2    50   ~ 0
+DDR3_A11
+Text Label 13000 5900 2    50   ~ 0
+DDR3_A10
+Text Label 13000 5800 2    50   ~ 0
+DDR3_A9
+Text Label 13000 5700 2    50   ~ 0
+DDR3_A8
+Text Label 13000 5350 2    50   ~ 0
+DDR3_A7
+Text Label 13000 5250 2    50   ~ 0
+DDR3_A6
+Text Label 13000 5150 2    50   ~ 0
+DDR3_A5
+Text Label 13000 5050 2    50   ~ 0
+DDR3_A4
+Text Label 13000 4950 2    50   ~ 0
+DDR3_A3
+Text Label 13000 4850 2    50   ~ 0
+DDR3_A2
+Text Label 13000 4750 2    50   ~ 0
+DDR3_A1
+Text Label 13000 4650 2    50   ~ 0
+DDR3_A0
+Wire Wire Line
+	12450 4650 13250 4650
+Wire Wire Line
+	12450 4750 13250 4750
+Wire Wire Line
+	12450 4850 13250 4850
+Wire Wire Line
+	12450 4950 13250 4950
+Wire Wire Line
+	12450 5050 13250 5050
+Wire Wire Line
+	12450 5150 13250 5150
+Wire Wire Line
+	12450 5250 13250 5250
+Wire Wire Line
+	12450 5350 13250 5350
+Wire Wire Line
+	12450 5700 13250 5700
+Wire Wire Line
+	12450 5800 13250 5800
+Wire Wire Line
+	12450 5900 13250 5900
+Wire Wire Line
+	12450 6000 13250 6000
+Wire Wire Line
+	12450 6100 13250 6100
+Wire Wire Line
+	12450 6200 13250 6200
+Wire Wire Line
+	12450 6300 13250 6300
+Wire Wire Line
+	12450 6400 13250 6400
+Entry Wire Line
+	13250 5350 13350 5250
+Entry Wire Line
+	13250 5250 13350 5150
+Entry Wire Line
+	13250 5150 13350 5050
+Entry Wire Line
+	13250 5050 13350 4950
+Entry Wire Line
+	13250 4950 13350 4850
+Entry Wire Line
+	13250 4850 13350 4750
+Entry Wire Line
+	13250 4750 13350 4650
+Entry Wire Line
+	13250 4650 13350 4550
+Entry Wire Line
+	13250 6400 13350 6300
+Entry Wire Line
+	13250 6300 13350 6200
+Entry Wire Line
+	13250 6200 13350 6100
+Entry Wire Line
+	13250 6100 13350 6000
+Entry Wire Line
+	13250 6000 13350 5900
+Entry Wire Line
+	13250 5900 13350 5800
+Entry Wire Line
+	13250 5800 13350 5700
+Entry Wire Line
+	13250 5700 13350 5600
+$Comp
+L Device:R_Network08 RN?
+U 1 1 60E99F8B
+P 12250 6100
+F 0 "RN?" V 11633 6100 50  0000 C CNN
+F 1 "47" V 11724 6100 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 12725 6100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12250 6100 50  0001 C CNN
+	1    12250 6100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	12050 5700 11950 5700
+Wire Wire Line
+	11950 5700 11950 5350
+Wire Wire Line
+	11950 4650 12050 4650
+Wire Wire Line
+	11950 4650 11450 4650
+Connection ~ 11950 4650
+Text Label 11450 4650 0    50   ~ 0
+DDR3_VTT
+$Comp
+L Device:R_Network08 RN?
+U 1 1 60F89113
+P 11650 6100
+F 0 "RN?" V 11033 6100 50  0000 C CNN
+F 1 "47" V 11124 6100 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 12125 6100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 11650 6100 50  0001 C CNN
+	1    11650 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11850 5700 11950 5700
+Connection ~ 11950 5700
+Wire Wire Line
+	11450 5900 10900 5900
+Text Label 10900 5900 0    50   ~ 0
+DDR3_BA2
+Wire Wire Line
+	11450 5800 10900 5800
+Text Label 10900 5800 0    50   ~ 0
+DDR3_BA1
+Wire Wire Line
+	11450 5700 10900 5700
+Text Label 10900 5700 0    50   ~ 0
+DDR3_BA0
+Wire Wire Line
+	11450 6000 10900 6000
+Text Label 10900 6000 0    50   ~ 0
+~DDR3_RAS
+Wire Wire Line
+	11450 6100 10900 6100
+Text Label 10900 6100 0    50   ~ 0
+~DDR3_CAS
+Wire Wire Line
+	11450 6200 10900 6200
+Text Label 10900 6200 0    50   ~ 0
+~DDR3_CS
+Wire Wire Line
+	11450 6300 10900 6300
+Text Label 10900 6300 0    50   ~ 0
+~DDR3_WE
+Wire Wire Line
+	11450 6400 10900 6400
+Text Label 10900 6400 0    50   ~ 0
+DDR3_CKE
+Text Notes 9300 7350 0    50   ~ 0
+TODO:\n - DDR_VTT still needs bypass caps\n - ODT can be combined for both chips
+Wire Wire Line
+	9250 3100 9900 3100
+Wire Wire Line
+	9250 3200 9900 3200
+Wire Wire Line
+	9250 2900 9300 2900
+Wire Wire Line
+	9300 3300 9300 2900
+Connection ~ 9300 2900
+Wire Wire Line
+	9300 2900 9900 2900
+$Comp
+L Device:C_Small C?
+U 1 1 614F1D15
+P 9350 3700
+F 0 "C?" H 9442 3746 50  0000 L CNN
+F 1 "0.1uF" H 9442 3655 50  0000 L CNN
+F 2 "" H 9350 3700 50  0001 C CNN
+F 3 "~" H 9350 3700 50  0001 C CNN
+	1    9350 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61571B7E
+P 9350 3850
+F 0 "#PWR?" H 9350 3600 50  0001 C CNN
+F 1 "GND" H 9355 3677 50  0000 C CNN
+F 2 "" H 9350 3850 50  0001 C CNN
+F 3 "" H 9350 3850 50  0001 C CNN
+	1    9350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 3850 9350 3800
+$Comp
+L Device:R_Small R?
+U 1 1 615B2176
+P 9400 3400
+F 0 "R?" H 9459 3446 50  0000 L CNN
+F 1 "50" H 9459 3355 50  0000 L CNN
+F 2 "" H 9400 3400 50  0001 C CNN
+F 3 "~" H 9400 3400 50  0001 C CNN
+	1    9400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 615B225E
+P 9300 3400
+F 0 "R?" H 9241 3446 50  0000 R CNN
+F 1 "50" H 9241 3355 50  0000 R CNN
+F 2 "" H 9300 3400 50  0001 C CNN
+F 3 "~" H 9300 3400 50  0001 C CNN
+	1    9300 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 3000 9400 3000
+Wire Wire Line
+	9400 3300 9400 3000
+Connection ~ 9400 3000
+Wire Wire Line
+	9400 3000 9900 3000
+Wire Wire Line
+	9300 3500 9300 3550
+Wire Wire Line
+	9300 3550 9350 3550
+Wire Wire Line
+	9400 3550 9400 3500
+Wire Wire Line
+	9350 3600 9350 3550
+Connection ~ 9350 3550
+Wire Wire Line
+	9350 3550 9400 3550
+Wire Wire Line
+	6150 6150 6850 6150
+$Comp
+L Device:C_Small C?
+U 1 1 6193F85D
+P 7450 7100
+F 0 "C?" H 7542 7146 50  0000 L CNN
+F 1 "10nF" H 7542 7055 50  0000 L CNN
+F 2 "" H 7450 7100 50  0001 C CNN
+F 3 "~" H 7450 7100 50  0001 C CNN
+	1    7450 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6193F864
+P 7250 7100
+F 0 "C?" H 7342 7146 50  0000 L CNN
+F 1 "0.1uF" H 7342 7055 50  0000 L CNN
+F 2 "" H 7250 7100 50  0001 C CNN
+F 3 "~" H 7250 7100 50  0001 C CNN
+	1    7250 7100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619802F6
+P 7350 7300
+F 0 "#PWR?" H 7350 7050 50  0001 C CNN
+F 1 "GND" H 7355 7127 50  0000 C CNN
+F 2 "" H 7350 7300 50  0001 C CNN
+F 3 "" H 7350 7300 50  0001 C CNN
+	1    7350 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 7200 7450 7250
+Wire Wire Line
+	7450 7250 7350 7250
+Wire Wire Line
+	7250 7250 7250 7200
+Wire Wire Line
+	7350 7300 7350 7250
+Connection ~ 7350 7250
+Wire Wire Line
+	7350 7250 7250 7250
+Wire Wire Line
+	7250 7000 7250 6950
+Wire Wire Line
+	7450 7000 7450 6950
+Wire Wire Line
+	6850 6950 7250 6950
+$Comp
+L Device:C_Small C?
+U 1 1 61C14D42
+P 8300 7100
+F 0 "C?" H 8392 7146 50  0000 L CNN
+F 1 "10nF" H 8392 7055 50  0000 L CNN
+F 2 "" H 8300 7100 50  0001 C CNN
+F 3 "~" H 8300 7100 50  0001 C CNN
+	1    8300 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61C14D48
+P 8100 7100
+F 0 "C?" H 8192 7146 50  0000 L CNN
+F 1 "0.1uF" H 8192 7055 50  0000 L CNN
+F 2 "" H 8100 7100 50  0001 C CNN
+F 3 "~" H 8100 7100 50  0001 C CNN
+	1    8100 7100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61C14D4E
+P 8200 7300
+F 0 "#PWR?" H 8200 7050 50  0001 C CNN
+F 1 "GND" H 8205 7127 50  0000 C CNN
+F 2 "" H 8200 7300 50  0001 C CNN
+F 3 "" H 8200 7300 50  0001 C CNN
+	1    8200 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 7200 8300 7250
+Wire Wire Line
+	8300 7250 8200 7250
+Wire Wire Line
+	8100 7250 8100 7200
+Wire Wire Line
+	8200 7300 8200 7250
+Connection ~ 8200 7250
+Wire Wire Line
+	8200 7250 8100 7250
+Wire Wire Line
+	8100 7000 8100 6950
+Wire Wire Line
+	8300 7000 8300 6950
+Wire Wire Line
+	8300 6950 8100 6950
+Connection ~ 8100 6950
+Wire Wire Line
+	6850 6950 6850 6150
+Connection ~ 6850 6150
+Wire Wire Line
+	6850 6150 7650 6150
+Wire Notes Line
+	8650 6800 8650 7600
+Wire Notes Line
+	8650 7600 6900 7600
+Wire Notes Line
+	6900 7600 6900 6800
+Wire Notes Line
+	6900 6800 8650 6800
+Connection ~ 7250 6950
+Connection ~ 7450 6950
+Wire Wire Line
+	7450 6950 8100 6950
+Wire Wire Line
+	7250 6950 7450 6950
+Text Notes 7200 6900 0    50   ~ 0
+Place near ECP5 VREF pins
+$Comp
+L Device:R R?
+U 1 1 61EC6E4E
+P 11650 5350
+F 0 "R?" V 11550 5350 50  0000 C CNN
+F 1 "50" V 11650 5350 50  0000 C CNN
+F 2 "" V 11580 5350 50  0001 C CNN
+F 3 "~" H 11650 5350 50  0001 C CNN
+	1    11650 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11800 5350 11950 5350
+Connection ~ 11950 5350
+Wire Wire Line
+	11950 5350 11950 5150
+Wire Wire Line
+	11500 5350 10900 5350
+Text Label 10900 5350 0    50   ~ 0
+DDR3_ODT0
+$Comp
+L Device:R R?
+U 1 1 61F54C5A
+P 11650 5150
+F 0 "R?" V 11550 5150 50  0000 C CNN
+F 1 "50" V 11650 5150 50  0000 C CNN
+F 2 "" V 11580 5150 50  0001 C CNN
+F 3 "~" H 11650 5150 50  0001 C CNN
+	1    11650 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11800 5150 11950 5150
+Connection ~ 11950 5150
+Wire Wire Line
+	11950 5150 11950 4650
+Wire Wire Line
+	11500 5150 10900 5150
+Text Label 10900 5150 0    50   ~ 0
+DDR3_ODT1
+Text Notes 7800 5300 0    50   ~ 0
+Note: 3V3 is always-on, and will\npower up before VMEM
+Wire Bus Line
+	850  650  13250 650 
+Wire Bus Line
+	850  4650 10050 4650
+Wire Bus Line
+	6950 1650 6950 4550
+Wire Bus Line
+	10150 1650 10150 4550
+Wire Bus Line
+	3950 2900 3950 4550
+Wire Bus Line
+	750  2900 750  4550
+Wire Bus Line
+	750  750  750  2500
+Wire Bus Line
+	3950 750  3950 2500
+Wire Bus Line
+	13350 750  13350 6300
 $EndSCHEMATC

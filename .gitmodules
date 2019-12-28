@@ -1,0 +1,3 @@
+[submodule "kicad-magic"]
+	path = kicad-magic
+	url = https://github.com/oskirby/kicad-magic

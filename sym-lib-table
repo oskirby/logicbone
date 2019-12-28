@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name logicbone)(type Legacy)(uri ${KIPRJMOD}/logicbone.lib)(options "")(descr "Logicbone Schematic Symbols"))
+  (lib (name Logicbone)(type Legacy)(uri ${KIPRJMOD}/logicbone.lib)(options "")(descr "Logicbone Schematic Symbols"))
+  (lib (name KiCAD-Magic)(type Legacy)(uri ${KIPRJMOD}/kicad-magic/kicad-magic.lib)(options "")(descr "KiCAD Magic Symbols"))
 )

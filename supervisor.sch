@@ -1,0 +1,804 @@
+EESchema Schematic File Version 4
+LIBS:logicbone-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	8450 3950 8450 4050
+Wire Wire Line
+	8450 4050 8550 4050
+Wire Wire Line
+	8550 4200 8450 4200
+Wire Wire Line
+	8450 4200 8450 4050
+Connection ~ 8450 4050
+Connection ~ 8450 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5E15EB71
+P 8450 5550
+F 0 "#PWR?" H 8450 5300 50  0001 C CNN
+F 1 "GND" H 8455 5377 50  0000 C CNN
+F 2 "" H 8450 5550 50  0001 C CNN
+F 3 "" H 8450 5550 50  0001 C CNN
+	1    8450 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 5550 8450 5450
+Wire Wire Line
+	8450 5450 8550 5450
+Wire Wire Line
+	8550 5050 8450 5050
+Wire Wire Line
+	8450 5050 8450 5150
+Connection ~ 8450 5450
+Wire Wire Line
+	8550 5350 8450 5350
+Connection ~ 8450 5350
+Wire Wire Line
+	8450 5350 8450 5450
+Wire Wire Line
+	8450 5250 8550 5250
+Connection ~ 8450 5250
+Wire Wire Line
+	8450 5250 8450 5350
+Wire Wire Line
+	8550 5150 8450 5150
+Connection ~ 8450 5150
+Wire Wire Line
+	8450 5150 8450 5250
+$Comp
+L Connector:USB_C_Receptacle J?
+U 1 1 5E15EFAC
+P 1400 5750
+F 0 "J?" H 1505 7017 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 1505 6926 50  0000 C CNN
+F 2 "" H 1550 5750 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1550 5750 50  0001 C CNN
+	1    1400 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E15F19A
+P 1400 7450
+F 0 "#PWR?" H 1400 7200 50  0001 C CNN
+F 1 "GND" H 1405 7277 50  0000 C CNN
+F 2 "" H 1400 7450 50  0001 C CNN
+F 3 "" H 1400 7450 50  0001 C CNN
+	1    1400 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 7450 1400 7400
+Wire Wire Line
+	1400 7400 1100 7400
+Wire Wire Line
+	1100 7400 1100 7350
+Connection ~ 1400 7400
+Wire Wire Line
+	1400 7400 1400 7350
+Wire Wire Line
+	2000 5250 2100 5250
+Wire Wire Line
+	2100 5250 2100 5350
+Wire Wire Line
+	2100 5350 2000 5350
+Wire Wire Line
+	2000 5450 2100 5450
+Wire Wire Line
+	2000 5550 2100 5550
+Wire Wire Line
+	2100 5550 2100 5450
+$Comp
+L power:VBUS #PWR?
+U 1 1 5E22C559
+P 2100 4450
+F 0 "#PWR?" H 2100 4300 50  0001 C CNN
+F 1 "VBUS" H 2115 4623 50  0000 C CNN
+F 2 "" H 2100 4450 50  0001 C CNN
+F 3 "" H 2100 4450 50  0001 C CNN
+	1    2100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4750 2000 4750
+$Comp
+L Logicbone:ACT8846 IC?
+U 1 1 5E2D758C
+P 5800 2250
+AR Path="/5DFC5A69/5E2D758C" Ref="IC?"  Part="1" 
+AR Path="/5E15C0BA/5E2D758C" Ref="IC?"  Part="1" 
+F 0 "IC?" H 5800 3115 50  0000 C CNN
+F 1 "ACT8846QM460" H 5800 3024 50  0000 C CNN
+F 2 "" H 3750 1200 50  0001 C CNN
+F 3 "" H 3750 1200 50  0001 C CNN
+	1    5800 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1300 8400 1350
+Connection ~ 8400 1350
+Wire Wire Line
+	8400 1350 8400 1450
+Text Notes 4350 850  0    50   ~ 0
+FPGA PMIC Control
+Text Notes 7900 850  0    50   ~ 0
+FPGA Programming
+$Comp
+L power:GND #PWR?
+U 1 1 5E332EC5
+P 6550 2900
+F 0 "#PWR?" H 6550 2650 50  0001 C CNN
+F 1 "GND" H 6555 2727 50  0000 C CNN
+F 2 "" H 6550 2900 50  0001 C CNN
+F 3 "" H 6550 2900 50  0001 C CNN
+	1    6550 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2900 6550 2850
+$Comp
+L Device:C_Small C?
+U 1 1 5E3371D7
+P 6550 2700
+F 0 "C?" H 6642 2746 50  0000 L CNN
+F 1 "C_Small" H 6642 2655 50  0000 L CNN
+F 2 "" H 6550 2700 50  0001 C CNN
+F 3 "~" H 6550 2700 50  0001 C CNN
+	1    6550 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2800 6550 2850
+Connection ~ 6550 2850
+Wire Wire Line
+	6450 2850 6550 2850
+Wire Wire Line
+	6550 2600 6550 2550
+Wire Wire Line
+	6550 2550 6450 2550
+Wire Wire Line
+	2000 4950 2600 4950
+Wire Wire Line
+	2000 5050 2600 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5E39F91E
+P 3550 5100
+F 0 "#PWR?" H 3550 4850 50  0001 C CNN
+F 1 "GND" H 3555 4927 50  0000 C CNN
+F 2 "" H 3550 5100 50  0001 C CNN
+F 3 "" H 3550 5100 50  0001 C CNN
+	1    3550 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5050 3500 5050
+Wire Wire Line
+	3550 5100 3550 5050
+Text Label 4450 5350 0    50   ~ 0
+USB_DM
+Text Label 4450 5450 0    50   ~ 0
+USB_DP
+Wire Wire Line
+	3500 4650 3950 4650
+Wire Wire Line
+	3500 4750 3950 4750
+Text Label 3950 4650 2    50   ~ 0
+I2C_SCL
+Text Label 3950 4750 2    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	6450 1850 7050 1850
+Wire Wire Line
+	6450 1950 7050 1950
+Text Label 7050 1850 2    50   ~ 0
+PMIC_SCL
+Text Label 7050 1950 2    50   ~ 0
+PMIC_SDA
+$Comp
+L Logicbone:FAN53611 IC?
+U 1 1 5E13BCC7
+P 2550 1250
+F 0 "IC?" H 2550 900 50  0000 C CNN
+F 1 "FAN53611" H 2550 1000 50  0000 C CNN
+F 2 "" H 2100 950 50  0001 C CNN
+F 3 "" H 2100 950 50  0001 C CNN
+	1    2550 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5E13BE5B
+P 1900 1250
+F 0 "L?" V 1850 1250 50  0000 C CNN
+F 1 "L" V 1999 1250 50  0000 C CNN
+F 2 "" H 1900 1250 50  0001 C CNN
+F 3 "~" H 1900 1250 50  0001 C CNN
+	1    1900 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 1250 1700 1250
+Wire Wire Line
+	1700 1250 1700 1350
+Wire Wire Line
+	1700 1200 1700 1250
+Connection ~ 1700 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5E151775
+P 3000 1400
+F 0 "#PWR?" H 3000 1150 50  0001 C CNN
+F 1 "GND" H 3005 1227 50  0000 C CNN
+F 2 "" H 3000 1400 50  0001 C CNN
+F 3 "" H 3000 1400 50  0001 C CNN
+	1    3000 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1400 3000 1350
+Wire Wire Line
+	3000 1350 2950 1350
+Wire Wire Line
+	2950 1250 3000 1250
+Wire Wire Line
+	3000 1150 2950 1150
+Wire Wire Line
+	1700 1350 2150 1350
+Wire Wire Line
+	2050 1250 2150 1250
+Wire Wire Line
+	3000 1250 3000 1350
+Connection ~ 3000 1350
+Wire Wire Line
+	3000 950  3000 1000
+Wire Wire Line
+	3000 1000 2100 1000
+Wire Wire Line
+	2100 1000 2100 1150
+Wire Wire Line
+	2100 1150 2150 1150
+Connection ~ 3000 1000
+Wire Wire Line
+	3000 1000 3000 1150
+Wire Notes Line
+	4100 650  650  650 
+Text Label 3950 4850 2    50   ~ 0
+~USB_INT
+Wire Wire Line
+	3500 4850 3950 4850
+$Comp
+L Logicbone:FUSB302 IC?
+U 1 1 5E00B318
+P 3050 4750
+F 0 "IC?" H 3050 5315 50  0000 C CNN
+F 1 "FUSB302" H 3050 5224 50  0000 C CNN
+F 2 "" H 2000 4250 50  0001 C CNN
+F 3 "" H 2000 4250 50  0001 C CNN
+	1    3050 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E028CF0
+P 1700 1200
+F 0 "#PWR?" H 1700 1050 50  0001 C CNN
+F 1 "+3.3V" H 1715 1373 50  0000 C CNN
+F 2 "" H 1700 1200 50  0001 C CNN
+F 3 "" H 1700 1200 50  0001 C CNN
+	1    1700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 5E03074C
+P 3000 950
+F 0 "#PWR?" H 3000 800 50  0001 C CNN
+F 1 "VBUS" H 3015 1123 50  0000 C CNN
+F 2 "" H 3000 950 50  0001 C CNN
+F 3 "" H 3000 950 50  0001 C CNN
+	1    3000 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E031EA4
+P 3550 4400
+F 0 "#PWR?" H 3550 4250 50  0001 C CNN
+F 1 "+3.3V" H 3565 4573 50  0000 C CNN
+F 2 "" H 3550 4400 50  0001 C CNN
+F 3 "" H 3550 4400 50  0001 C CNN
+	1    3550 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4400 3550 4450
+Wire Wire Line
+	3550 4450 3500 4450
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E03540E
+P 2550 4400
+F 0 "#PWR?" H 2550 4250 50  0001 C CNN
+F 1 "+3.3V" H 2565 4573 50  0000 C CNN
+F 2 "" H 2550 4400 50  0001 C CNN
+F 3 "" H 2550 4400 50  0001 C CNN
+	1    2550 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4550 2100 4550
+Wire Wire Line
+	2100 4550 2100 4750
+Connection ~ 2100 4550
+Wire Wire Line
+	2550 4400 2550 4450
+Wire Wire Line
+	2550 4450 2600 4450
+Wire Wire Line
+	2100 4450 2100 4550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E03F429
+P 8450 3950
+F 0 "#PWR?" H 8450 3800 50  0001 C CNN
+F 1 "+3.3V" H 8465 4123 50  0000 C CNN
+F 2 "" H 8450 3950 50  0001 C CNN
+F 3 "" H 8450 3950 50  0001 C CNN
+	1    8450 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E040C2C
+P 8400 1300
+F 0 "#PWR?" H 8400 1150 50  0001 C CNN
+F 1 "+3.3V" H 8415 1473 50  0000 C CNN
+F 2 "" H 8400 1300 50  0001 C CNN
+F 3 "" H 8400 1300 50  0001 C CNN
+	1    8400 1300
+	1    0    0    -1  
+$EndComp
+Text Label 7150 5150 2    50   ~ 0
+~FPGA_CSEL
+Text Label 7150 5250 2    50   ~ 0
+FPGA_SCLK
+Text Label 7150 5350 2    50   ~ 0
+FPGA_MISO
+Text Label 7150 5450 2    50   ~ 0
+FPGA_MOSI
+Text Label 7150 4950 2    50   ~ 0
+PMIC_SCL
+Text Label 7150 5050 2    50   ~ 0
+PMIC_SDA
+Text Label 7150 4550 2    50   ~ 0
+I2C_SCL
+Text Label 7150 4650 2    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	6450 2050 7050 2050
+Text Label 7050 2050 2    50   ~ 0
+~PMIC_INT
+Wire Wire Line
+	9950 2350 10650 2350
+Text Label 10650 2150 2    50   ~ 0
+~FPGA_INIT
+Text Label 10650 2250 2    50   ~ 0
+~FPGA_PROGRAM
+Text Label 10650 2350 2    50   ~ 0
+FPGA_DONE
+Text Label 7150 4450 2    50   ~ 0
+~FPGA_INIT
+Text Label 7150 4750 2    50   ~ 0
+~FPGA_PROGRAM
+Wire Wire Line
+	7150 4750 6500 4750
+Wire Wire Line
+	7150 4450 6500 4450
+Wire Wire Line
+	7150 4850 6500 4850
+Wire Wire Line
+	7150 5150 6500 5150
+Wire Wire Line
+	7150 5250 6500 5250
+Wire Wire Line
+	7150 5350 6500 5350
+Wire Wire Line
+	7150 5450 6500 5450
+Text Label 7150 4850 2    50   ~ 0
+FPGA_DONE
+Wire Wire Line
+	9950 5250 10550 5250
+Text Label 4450 4050 0    50   ~ 0
+~USB_INT
+Text Label 10550 5250 2    50   ~ 0
+~PMIC_INT
+Text Label 4450 2050 0    50   ~ 0
+PMIC_PWRHOLD
+Wire Wire Line
+	4450 2050 5150 2050
+Wire Wire Line
+	5150 1650 4450 1650
+Text Label 4450 1650 0    50   ~ 0
+PMIC_BUTTON
+Wire Wire Line
+	5150 1900 4450 1900
+Text Label 4450 1900 0    50   ~ 0
+PMIC_ENABLE
+Wire Wire Line
+	5150 2200 4450 2200
+Text Label 4450 2200 0    50   ~ 0
+PMIC_VSELR2
+Wire Notes Line
+	4100 1700 650  1700
+Wire Notes Line
+	650  650  650  1700
+Wire Notes Line
+	4100 650  4100 1700
+$Comp
+L Logicbone:ECP5UM-CABGA554 IC?
+U 3 1 5E0B1FA0
+P 9250 2850
+F 0 "IC?" H 9225 4615 50  0000 C CNN
+F 1 "ECP5UM-CABGA554" H 9225 4524 50  0000 C CNN
+F 2 "" H 5750 2000 50  0001 C CNN
+F 3 "" H 5750 2000 50  0001 C CNN
+	3    9250 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 2150 10650 2150
+Wire Wire Line
+	9950 2250 10650 2250
+$Comp
+L Memory_Flash:AT25SF081-XMHF-X U?
+U 1 1 5F793ADE
+P 2350 2650
+F 0 "U?" H 2991 2696 50  0000 L CNN
+F 1 "AT25SF081-XMHF-X" H 2991 2605 50  0000 L CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 2350 2050 50  0001 C CNN
+F 3 "https://www.adestotech.com/wp-content/uploads/DS-AT25SF081_045.pdf" H 2350 2650 50  0001 C CNN
+	1    2350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F793B82
+P 2350 2100
+F 0 "#PWR?" H 2350 1950 50  0001 C CNN
+F 1 "+3.3V" H 2365 2273 50  0000 C CNN
+F 2 "" H 2350 2100 50  0001 C CNN
+F 3 "" H 2350 2100 50  0001 C CNN
+	1    2350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2100 2350 2150
+Wire Notes Line
+	4100 1800 650  1800
+Wire Notes Line
+	650  1800 650  3450
+Wire Notes Line
+	650  3450 4100 3450
+Wire Notes Line
+	4100 3450 4100 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5F7A0B2F
+P 2350 3200
+F 0 "#PWR?" H 2350 2950 50  0001 C CNN
+F 1 "GND" H 2355 3027 50  0000 C CNN
+F 2 "" H 2350 3200 50  0001 C CNN
+F 3 "" H 2350 3200 50  0001 C CNN
+	1    2350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3200 2350 3150
+Wire Wire Line
+	1750 2450 1150 2450
+Text Label 1150 2450 0    50   ~ 0
+FLASH_D0
+Wire Wire Line
+	1750 2550 1150 2550
+Wire Wire Line
+	1750 2650 1150 2650
+Wire Wire Line
+	1750 2750 1150 2750
+Wire Wire Line
+	1750 2850 1150 2850
+Text Label 1150 2650 0    50   ~ 0
+~FLASH_CSEL
+Text Label 1150 2550 0    50   ~ 0
+FLASH_SCLK
+Text Label 1150 2750 0    50   ~ 0
+FLASH_D2
+Text Label 1150 2850 0    50   ~ 0
+FLASH_D3
+Wire Wire Line
+	2950 2450 3650 2450
+Text Label 3650 2450 2    50   ~ 0
+FLASH_D1
+Wire Wire Line
+	9950 2550 10650 2550
+Text Label 10650 2550 2    50   ~ 0
+FPGA_SCLK
+$Comp
+L power:GND #PWR?
+U 1 1 5F7D5840
+P 10450 2950
+F 0 "#PWR?" H 10450 2700 50  0001 C CNN
+F 1 "GND" H 10455 2777 50  0000 C CNN
+F 2 "" H 10450 2950 50  0001 C CNN
+F 3 "" H 10450 2950 50  0001 C CNN
+	1    10450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7D5898
+P 10200 2900
+F 0 "R?" V 10100 2900 50  0000 C CNN
+F 1 "470" V 10200 2900 50  0000 C CNN
+F 2 "" V 10130 2900 50  0001 C CNN
+F 3 "~" H 10200 2900 50  0001 C CNN
+	1    10200 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7E4732
+P 10200 2700
+F 0 "R?" V 10100 2700 50  0000 C CNN
+F 1 "4.7k" V 10200 2700 50  0000 C CNN
+F 2 "" V 10130 2700 50  0001 C CNN
+F 3 "~" H 10200 2700 50  0001 C CNN
+	1    10200 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F7E8E31
+P 10850 2650
+F 0 "#PWR?" H 10850 2500 50  0001 C CNN
+F 1 "+3.3V" H 10865 2823 50  0000 C CNN
+F 2 "" H 10850 2650 50  0001 C CNN
+F 3 "" H 10850 2650 50  0001 C CNN
+	1    10850 2650
+	1    0    0    -1  
+$EndComp
+Text Label 7600 2250 0    50   ~ 0
+FPGA_MISO
+Text Label 7600 2350 0    50   ~ 0
+FPGA_MOSI
+Text Label 7600 2500 0    50   ~ 0
+~FPGA_CSEL
+Text Label 7600 2600 0    50   ~ 0
+~FPGA_HOLDN
+$Comp
+L Device:R R?
+U 1 1 5F806A62
+P 8400 2050
+F 0 "R?" H 8470 2096 50  0000 L CNN
+F 1 "R" H 8470 2005 50  0000 L CNN
+F 2 "" V 8330 2050 50  0001 C CNN
+F 3 "~" H 8400 2050 50  0001 C CNN
+	1    8400 2050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 2700 10050 2700
+Wire Wire Line
+	10050 2900 10000 2900
+Wire Wire Line
+	9950 2800 10000 2800
+Wire Wire Line
+	10000 2800 10000 2900
+Connection ~ 10000 2900
+Wire Wire Line
+	10000 2900 9950 2900
+Wire Wire Line
+	10450 2950 10450 2900
+Wire Wire Line
+	10450 2900 10350 2900
+Wire Wire Line
+	10350 2700 10850 2700
+Text Notes 8550 3100 0    50   ~ 0
+Strapped for SPI Slave Programming
+Wire Wire Line
+	8400 1450 8550 1450
+Wire Wire Line
+	8400 1350 8550 1350
+$Comp
+L Logicbone:STM32FLxx-QFN48 IC?
+U 1 1 5F87AF05
+P 9250 4750
+F 0 "IC?" H 9250 5737 60  0000 C CNN
+F 1 "STM32FLxx-QFN48" H 9250 5631 60  0000 C CNN
+F 2 "" H 9250 4750 60  0001 C CNN
+F 3 "" H 9250 4750 60  0001 C CNN
+	1    9250 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logicbone:STM32FLxx-QFN48 IC?
+U 2 1 5F87AFAF
+P 5800 4750
+F 0 "IC?" H 5800 5737 60  0000 C CNN
+F 1 "STM32FLxx-QFN48" H 5800 5631 60  0000 C CNN
+F 2 "" H 5800 4750 60  0001 C CNN
+F 3 "" H 5800 4750 60  0001 C CNN
+	2    5800 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4550 8450 4550
+Wire Wire Line
+	8550 4450 8450 4450
+Connection ~ 8450 4450
+Wire Wire Line
+	8450 4450 8450 4550
+Wire Wire Line
+	8550 4350 8450 4350
+Connection ~ 8450 4350
+Wire Wire Line
+	8450 4350 8450 4450
+Wire Wire Line
+	8450 4200 8450 4350
+Text Label 4450 4250 0    50   ~ 0
+~FLASH_CSEL
+Wire Wire Line
+	4450 4250 5100 4250
+Wire Wire Line
+	5100 4350 4450 4350
+Text Label 4450 4350 0    50   ~ 0
+FLASH_SCLK
+Wire Wire Line
+	5100 4650 4450 4650
+Text Label 4450 4650 0    50   ~ 0
+FLASH_D3
+Wire Wire Line
+	5100 4750 4450 4750
+Text Label 4450 4750 0    50   ~ 0
+FLASH_D2
+Wire Wire Line
+	6500 4050 7100 4050
+Text Label 7100 4050 2    50   ~ 0
+FLASH_D1
+Wire Wire Line
+	7100 4150 6500 4150
+Text Label 7100 4150 2    50   ~ 0
+FLASH_D0
+Wire Wire Line
+	6500 4950 7150 4950
+Wire Wire Line
+	6500 5050 7150 5050
+Wire Wire Line
+	6500 4550 7150 4550
+Wire Wire Line
+	6500 4650 7150 4650
+Wire Wire Line
+	4450 4050 5100 4050
+Wire Wire Line
+	5100 4850 4450 4850
+Wire Wire Line
+	5100 4950 4450 4950
+Wire Wire Line
+	5100 5050 4450 5050
+Text Label 4450 4950 0    50   ~ 0
+FPGA_UART_TXD
+Text Label 4450 5050 0    50   ~ 0
+FPGA_UART_RXD
+Text Label 4450 4850 0    50   ~ 0
+FPGA_UART_CLK
+Text Label 7600 1750 0    50   ~ 0
+FPGA_UART_TXD
+Text Label 7600 1850 0    50   ~ 0
+FPGA_UART_RXD
+Text Label 7600 1650 0    50   ~ 0
+FPGA_UART_CLK
+Wire Notes Line
+	7200 650  4200 650 
+Wire Notes Line
+	7300 650  11050 650 
+Wire Wire Line
+	8400 2200 8400 2600
+Wire Wire Line
+	8400 2600 8550 2600
+Wire Wire Line
+	8400 1900 8400 1450
+Connection ~ 8400 1450
+Wire Wire Line
+	7600 1650 8550 1650
+Wire Wire Line
+	7600 1750 8550 1750
+Wire Wire Line
+	7600 1850 8550 1850
+Wire Wire Line
+	7600 2500 8550 2500
+Wire Wire Line
+	7600 2350 8550 2350
+Wire Wire Line
+	7600 2250 8550 2250
+Wire Wire Line
+	7600 2600 8400 2600
+Connection ~ 8400 2600
+Wire Wire Line
+	9950 1350 10650 1350
+Wire Wire Line
+	9950 1450 10650 1450
+Wire Wire Line
+	9950 1550 10650 1550
+Wire Wire Line
+	9950 1650 10650 1650
+Text Label 10650 1350 2    50   ~ 0
+FPGA_TDO
+Text Label 10650 1450 2    50   ~ 0
+FPGA_TCK
+Text Label 10650 1550 2    50   ~ 0
+FPGA_TDI
+Text Label 10650 1650 2    50   ~ 0
+FPGA_TMS
+Wire Notes Line
+	4200 3450 7200 3450
+Wire Notes Line
+	4200 650  4200 3450
+Wire Notes Line
+	7200 650  7200 3450
+Wire Notes Line
+	7300 3450 11050 3450
+Wire Notes Line
+	11050 650  11050 3450
+Wire Notes Line
+	7300 650  7300 3450
+Wire Wire Line
+	10850 2650 10850 2700
+Wire Wire Line
+	2100 5350 5100 5350
+Connection ~ 2100 5350
+Wire Wire Line
+	2100 5450 5100 5450
+Connection ~ 2100 5450
+Text Label 3300 6750 2    50   ~ 0
+FPGA_TDO
+Text Label 3300 6450 2    50   ~ 0
+FPGA_TCK
+Text Label 3300 6350 2    50   ~ 0
+FPGA_TDI
+Text Label 3300 6650 2    50   ~ 0
+FPGA_TMS
+Text Label 3300 7050 2    50   ~ 0
+~FPGA_TRST
+Wire Wire Line
+	2000 6350 3300 6350
+Wire Wire Line
+	2000 6450 3300 6450
+Wire Wire Line
+	2000 6650 3300 6650
+Wire Wire Line
+	2000 6750 3300 6750
+Wire Wire Line
+	2000 7050 3300 7050
+Text Notes 1950 7250 0    50   ~ 0
+TODO: JTAG Needs to be switched by\nSTM32 only if debug mode detected
+Text Notes 2300 5550 0    50   ~ 0
+TODO: Needs ESD Protection
+Text Notes 800  850  0    50   ~ 0
+3.3V/600mA Main Regulator
+Text Notes 800  2000 0    50   ~ 0
+QSPI Flash for FPGA Bitstream
+$EndSCHEMATC

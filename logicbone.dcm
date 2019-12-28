@@ -1,3 +1,69 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ADC120
+D 8-Channel ADC
+$ENDCMP
+#
+$CMP Micro_SD_MEM2075
+D Micro SD Card Socket
+K connector SD microsd
+F http://katalog.we-online.de/em/datasheet/693072010801.pdf
+$ENDCMP
+#
+$CMP TPS51200
+D Sink and Source DDR Termination Regulator, VSON-10
+K DDR LDO
+F http://www.ti.com/lit/ds/symlink/tps51200.pdf
+$ENDCMP
+#
+$CMP VADC
+D Power flag, ADC Analog Power Supply
+K power-flag
+$ENDCMP
+#
+$CMP VCCAUX
+D Power flag, VCCAUX
+K power-flag
+$ENDCMP
+#
+$CMP VCCAUXTRX
+D Power flag, SERDES Auxilliary Power Supply
+K power-flag
+$ENDCMP
+#
+$CMP VCCIOA
+D Power flag, VCCIO Group A
+K power-flag
+$ENDCMP
+#
+$CMP VCCIOB
+D Power flag, VCCIO Group B
+K power-flag
+$ENDCMP
+#
+$CMP VCCTRX
+D Power flag, SERDES RX/TX Buffer Supply Voltages
+K power-flag
+$ENDCMP
+#
+$CMP VCCTRXA
+D Power flag, SERDES Analog Supply
+K power-flag
+$ENDCMP
+#
+$CMP VCORE
+D Power flag, VCORE
+K power-flag
+$ENDCMP
+#
+$CMP VMAIN
+D Power flag, Main Power Supply
+K power-flag
+$ENDCMP
+#
+$CMP VMMC
+D Power flag, MMC/SD Power Supply
+K power-flag
+$ENDCMP
+#
 #End Doc Library
