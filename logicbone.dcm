@@ -1,7 +1,61 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 74AHC1G02
+D Single NOR Gate, Low-Voltage CMOS
+K Single Gate NOR LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74AHCT1G02
+D Single NOR Gate, Low-Voltage CMOS
+K Single Gate NOR LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74AUC1G02
+D Single NOR Gate, Low-Voltage CMOS
+K Single Gate NOR LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74AUC1G07
+D Single Buffer Gate w/ Open Drain, Low-Voltage CMOS
+K Single Gate Buff LVC CMOS Open Drain
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74AUP1G02
+D Single NOR Gate, Low-Voltage CMOS
+K Single Gate NOR LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74AUP1G07
+D Single Buffer Gate w/ Open Drain, Low-Voltage CMOS
+K Single Gate Buff LVC CMOS Open Drain
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74LVC1G02
+D Single NOR Gate, Low-Voltage CMOS
+K Single Gate NOR LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74LVC1G07
+D Single Buffer Gate w/ Open Drain, Low-Voltage CMOS
+K Single Gate Buff LVC CMOS Open Drain
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
 $CMP ADC120
 D 8-Channel ADC
+$ENDCMP
+#
+$CMP Crystal_GND24
+D Four pin crystal, GND on pins 2 and 4
+K quartz ceramic resonator oscillator
+F ~
 $ENDCMP
 #
 $CMP Micro_SD_MEM2075
@@ -56,6 +110,16 @@ D Power flag, VCORE
 K power-flag
 $ENDCMP
 #
+$CMP VDDR
+D Power flag, DDR3 Memory Power Supply
+K power-flag
+$ENDCMP
+#
+$CMP VDDR_REF
+D Power flag, DDR3 Reference Voltage
+K power-flag
+$ENDCMP
+#
 $CMP VMAIN
 D Power flag, Main Power Supply
 K power-flag
@@ -63,6 +127,11 @@ $ENDCMP
 #
 $CMP VMMC
 D Power flag, MMC/SD Power Supply
+K power-flag
+$ENDCMP
+#
+$CMP VTT
+D Power flag, Memory Termination Power Supply
 K power-flag
 $ENDCMP
 #
