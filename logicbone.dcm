@@ -58,6 +58,12 @@ K quartz ceramic resonator oscillator
 F ~
 $ENDCMP
 #
+$CMP GCT_USB4110_USBC
+D USB 2.0-only Type-C Plug connector
+K usb universal serial bus type-C USB2.0
+F https://gct.co/files/drawings/usb4110.pdf
+$ENDCMP
+#
 $CMP Micro_SD_MEM2075
 D Micro SD Card Socket
 K connector SD microsd

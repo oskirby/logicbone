@@ -1,4 +1,4 @@
-update=Sat 14 Dec 2019 03:12:58 PM PST
+update=Sun 05 Jan 2020 07:41:21 PM PST
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=logicbone
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

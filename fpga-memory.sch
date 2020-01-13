@@ -463,11 +463,11 @@ Text Label 3250 1750 2    50   ~ 0
 Wire Wire Line
 	2700 1850 3250 1850
 Text Label 3250 1850 2    50   ~ 0
-DDR3_CK
+DDR3_CK+
 Wire Wire Line
 	2700 1950 3250 1950
 Text Label 3250 1950 2    50   ~ 0
-~DDR3_CK
+DDR3_CK-
 Wire Wire Line
 	2700 2050 3250 2050
 Text Label 3250 2050 2    50   ~ 0
@@ -519,11 +519,11 @@ Text Label 6450 1750 2    50   ~ 0
 Wire Wire Line
 	5900 1850 6450 1850
 Text Label 6450 1850 2    50   ~ 0
-DDR3_CK
+DDR3_CK+
 Wire Wire Line
 	5900 1950 6450 1950
 Text Label 6450 1950 2    50   ~ 0
-~DDR3_CK
+DDR3_CK-
 Wire Wire Line
 	5900 2050 6450 2050
 Text Label 6450 2050 2    50   ~ 0
@@ -537,13 +537,13 @@ Wire Wire Line
 Wire Wire Line
 	2700 2650 3250 2650
 Text Label 3250 2550 2    50   ~ 0
-DDR3_DQS0
+DDR3_DQS0+
 Text Label 3250 2650 2    50   ~ 0
-~DDR3_DQS0
+DDR3_DQS0-
 Text Label 3250 2300 2    50   ~ 0
-DDR3_DQS1
+DDR3_DQS1+
 Text Label 3250 2400 2    50   ~ 0
-~DDR3_DQS1
+DDR3_DQS1-
 Wire Wire Line
 	5900 2300 6450 2300
 Wire Wire Line
@@ -553,13 +553,13 @@ Wire Wire Line
 Wire Wire Line
 	5900 2650 6450 2650
 Text Label 6450 2550 2    50   ~ 0
-DDR3_DQS2
+DDR3_DQS2+
 Text Label 6450 2650 2    50   ~ 0
-~DDR3_DQS2
+DDR3_DQS2-
 Text Label 6450 2300 2    50   ~ 0
-DDR3_DQS3
+DDR3_DQS3+
 Text Label 6450 2400 2    50   ~ 0
-~DDR3_DQS3
+DDR3_DQS3-
 Wire Wire Line
 	2700 2800 3250 2800
 Wire Wire Line
@@ -783,9 +783,9 @@ Wire Wire Line
 Text Label 7300 3200 0    50   ~ 0
 ~DDR3_WE
 Text Label 9900 2900 2    50   ~ 0
-DDR3_CK
+DDR3_CK+
 Text Label 9900 3000 2    50   ~ 0
-~DDR3_CK
+DDR3_CK-
 Text Label 9900 3100 2    50   ~ 0
 DDR3_CKE
 Wire Wire Line
@@ -797,13 +797,13 @@ Wire Wire Line
 Wire Wire Line
 	11050 2550 10500 2550
 Text Label 10500 2450 0    50   ~ 0
-DDR3_DQS2
+DDR3_DQS2+
 Text Label 10500 2550 0    50   ~ 0
-~DDR3_DQS2
+DDR3_DQS2-
 Text Label 13000 1550 2    50   ~ 0
-DDR3_DQS3
+DDR3_DQS3+
 Text Label 13000 1650 2    50   ~ 0
-~DDR3_DQS3
+DDR3_DQS3-
 Wire Wire Line
 	12450 1850 13000 1850
 Wire Wire Line
@@ -827,13 +827,13 @@ Wire Wire Line
 Wire Wire Line
 	7850 2550 7300 2550
 Text Label 7300 2450 0    50   ~ 0
-DDR3_DQS0
+DDR3_DQS0+
 Text Label 7300 2550 0    50   ~ 0
-~DDR3_DQS0
+DDR3_DQS0-
 Text Label 9800 2450 2    50   ~ 0
-DDR3_DQS1
+DDR3_DQS1+
 Text Label 9800 2550 2    50   ~ 0
-~DDR3_DQS1
+DDR3_DQS1-
 Wire Wire Line
 	7850 3000 7300 3000
 Wire Wire Line

@@ -352,7 +352,7 @@ Text Label 12400 3200 2    50   ~ 0
 Wire Wire Line
 	11800 3200 12400 3200
 Text Notes 9300 7350 0    50   ~ 0
-TODO for M.2 Connector:\n - SUSCLK should come from supervisor sheet?\n - M.2 GPIO operates at 1.8V despite 3.3V power
+TODO for M.2 Connector:\n - SUSCLK should come from supervisor sheet?\n - M.2 GPIO operates at 1.8V despite 3.3V power\n - Clock generator needs power decoupling
 Wire Wire Line
 	11800 3800 12400 3800
 Wire Wire Line

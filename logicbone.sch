@@ -106,4 +106,48 @@ Wire Wire Line
 	3750 4500 4000 4500
 Text Notes 7000 7100 0    50   ~ 0
 Component Numbering Scheme:\n C100-149: Miscellaneous Capacitors\n C150-C199: Bulk Power Capacitance\n C200-C299: FPGA IO Decoupling\n C300-C399: Ethernet PHY Decoupling\n C400-C499: DDR3 Memory Decoupling\n C500-C599: FPGA Core Decoupling
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E126E27
+P 8900 4800
+F 0 "H1" H 9000 4846 50  0000 L CNN
+F 1 "MountingHole" H 9000 4755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8900 4800 50  0001 C CNN
+F 3 "~" H 8900 4800 50  0001 C CNN
+	1    8900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E126EB5
+P 8900 5050
+F 0 "H2" H 9000 5096 50  0000 L CNN
+F 1 "MountingHole" H 9000 5005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8900 5050 50  0001 C CNN
+F 3 "~" H 8900 5050 50  0001 C CNN
+	1    8900 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E126EE9
+P 8900 5300
+F 0 "H3" H 9000 5346 50  0000 L CNN
+F 1 "MountingHole" H 9000 5255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8900 5300 50  0001 C CNN
+F 3 "~" H 8900 5300 50  0001 C CNN
+	1    8900 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5E126F27
+P 8900 5550
+F 0 "H4" H 9000 5596 50  0000 L CNN
+F 1 "MountingHole" H 9000 5505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8900 5550 50  0001 C CNN
+F 3 "~" H 8900 5550 50  0001 C CNN
+	1    8900 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

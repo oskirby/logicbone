@@ -57,23 +57,21 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0158
 U 1 1 5E15F19A
-P 1400 3500
-F 0 "#PWR0158" H 1400 3250 50  0001 C CNN
-F 1 "GND" H 1405 3327 50  0000 C CNN
-F 2 "" H 1400 3500 50  0001 C CNN
-F 3 "" H 1400 3500 50  0001 C CNN
-	1    1400 3500
+P 1400 3400
+F 0 "#PWR0158" H 1400 3150 50  0001 C CNN
+F 1 "GND" H 1405 3227 50  0000 C CNN
+F 2 "" H 1400 3400 50  0001 C CNN
+F 3 "" H 1400 3400 50  0001 C CNN
+	1    1400 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 3500 1400 3450
+	1400 3400 1400 3350
 Wire Wire Line
-	1400 3450 1100 3450
+	1400 3350 1300 3350
+Connection ~ 1400 3350
 Wire Wire Line
-	1100 3450 1100 3400
-Connection ~ 1400 3450
-Wire Wire Line
-	1400 3450 1400 3400
+	1400 3350 1400 3300
 Wire Wire Line
 	2000 2400 2100 2400
 Wire Wire Line
@@ -211,7 +209,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 1700 2100 1700
 Wire Wire Line
-	2100 1700 2100 1900
+	2100 1700 2100 1800
 Connection ~ 2100 1700
 Wire Wire Line
 	2100 1600 2100 1700
@@ -1472,17 +1470,6 @@ Wire Wire Line
 	10150 1200 10150 1250
 Wire Wire Line
 	10150 1700 10150 1650
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J2
-U 1 1 5EF3616B
-P 1400 2500
-F 0 "J2" H 1505 3367 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 1505 3276 50  0000 C CNN
-F 2 "" H 1550 2500 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1550 2500 50  0001 C CNN
-	1    1400 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4900 6800 3750 6800
 Wire Wire Line
@@ -1553,4 +1540,26 @@ Wire Notes Line
 	550  5100 5200 5100
 Wire Notes Line
 	550  7900 5200 7900
+$Comp
+L Logicbone:GCT_USB4110_USBC J2
+U 1 1 5E16349E
+P 1400 2400
+F 0 "J2" H 1505 3267 50  0000 C CNN
+F 1 "GCT_USB4110_USBC" H 1505 3176 50  0000 C CNN
+F 2 "Logicbone:USB4110" H 1550 2400 50  0001 C CNN
+F 3 "https://gct.co/files/drawings/usb4110.pdf" H 1550 2400 50  0001 C CNN
+	1    1400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1800 2100 1800
+Connection ~ 2100 1800
+Wire Wire Line
+	2100 1800 2100 1900
+Wire Wire Line
+	1300 3300 1300 3350
+Wire Wire Line
+	1400 3350 1500 3350
+Wire Wire Line
+	1500 3350 1500 3300
 $EndSCHEMATC
