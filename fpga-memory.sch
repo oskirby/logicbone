@@ -486,19 +486,19 @@ Wire Wire Line
 	5900 3000 6450 3000
 Text Label 6450 3000 2    50   ~ 0
 ~DDR3_RST
-Text Label 10550 3350 0    50   ~ 0
+Text Label 10550 2250 0    50   ~ 0
 DDR3_DQ15
 Text Label 10550 2150 0    50   ~ 0
 DDR3_DQ14
-Text Label 10550 2250 0    50   ~ 0
+Text Label 10550 3350 0    50   ~ 0
 DDR3_DQ13
 Text Label 10550 2000 0    50   ~ 0
 DDR3_DQ12
-Text Label 10550 2450 0    50   ~ 0
+Text Label 10550 3250 0    50   ~ 0
 DDR3_DQ11
 Text Label 10550 1700 0    50   ~ 0
 DDR3_DQ10
-Text Label 10550 3150 0    50   ~ 0
+Text Label 10550 2450 0    50   ~ 0
 DDR3_DQ9
 Text Label 10550 1800 0    50   ~ 0
 DDR3_DQ8
@@ -524,47 +524,47 @@ Text Label 9050 4850 0    50   ~ 0
 DDR3_A14
 Text Label 9050 4750 0    50   ~ 0
 DDR3_A13
-Text Label 12950 2800 2    50   ~ 0
-DDR3_A12
-Text Label 12950 2250 2    50   ~ 0
-DDR3_A11
-Text Label 12950 2700 2    50   ~ 0
-DDR3_A10
-Text Label 12950 3150 2    50   ~ 0
-DDR3_A9
-Text Label 12950 2000 2    50   ~ 0
-DDR3_A8
 Text Label 12950 2600 2    50   ~ 0
-DDR3_A7
+DDR3_A12
+Text Label 12950 2700 2    50   ~ 0
+DDR3_A11
+Text Label 10550 3050 0    50   ~ 0
+DDR3_A10
 Text Label 12950 1900 2    50   ~ 0
-DDR3_A6
-Text Label 12950 3050 2    50   ~ 0
-DDR3_A5
-Text Label 12950 2450 2    50   ~ 0
-DDR3_A4
-Text Label 12950 3350 2    50   ~ 0
-DDR3_A3
-Text Label 12950 3250 2    50   ~ 0
-DDR3_A2
+DDR3_A9
 Text Label 12950 2150 2    50   ~ 0
+DDR3_A8
+Text Label 12950 1800 2    50   ~ 0
+DDR3_A7
+Text Label 12950 2800 2    50   ~ 0
+DDR3_A6
+Text Label 12950 2000 2    50   ~ 0
+DDR3_A5
+Text Label 12950 3050 2    50   ~ 0
+DDR3_A4
+Text Label 12950 2350 2    50   ~ 0
+DDR3_A3
+Text Label 12950 1700 2    50   ~ 0
+DDR3_A2
+Text Label 12950 3250 2    50   ~ 0
 DDR3_A1
-Text Label 9850 3150 2    50   ~ 0
+Text Label 12950 2450 2    50   ~ 0
 DDR3_A0
-Text Label 9850 2250 2    50   ~ 0
+Text Label 9850 2900 2    50   ~ 0
 DDR3_BA2
 Text Label 9850 2150 2    50   ~ 0
 DDR3_BA1
-Text Label 9850 2000 2    50   ~ 0
+Text Label 12950 2250 2    50   ~ 0
 DDR3_BA0
-Text Label 9850 3050 2    50   ~ 0
-~DDR3_RAS
 Text Label 9850 2800 2    50   ~ 0
+~DDR3_RAS
+Text Label 9850 2700 2    50   ~ 0
 ~DDR3_CAS
 Wire Wire Line
-	7900 3050 7350 3050
-Text Label 7350 3050 0    50   ~ 0
+	11100 3150 10550 3150
+Text Label 10550 3150 0    50   ~ 0
 ~DDR3_CS
-Text Label 9850 2700 2    50   ~ 0
+Text Label 9850 2250 2    50   ~ 0
 ~DDR3_WE
 Text Label 9850 1700 2    50   ~ 0
 DDR3_CK+
@@ -593,8 +593,8 @@ DDR3_DQS1-
 Wire Wire Line
 	11100 2800 10550 2800
 Wire Wire Line
-	7900 2150 7350 2150
-Text Label 7350 2150 0    50   ~ 0
+	7900 3250 7350 3250
+Text Label 7350 3250 0    50   ~ 0
 DDR3_DM0
 Text Label 10550 2800 0    50   ~ 0
 DDR3_DM1
@@ -660,13 +660,13 @@ Entry Wire Line
 Entry Wire Line
 	13250 3050 13350 2950
 Entry Wire Line
-	13250 3250 13350 3150
+	13250 1700 13350 1600
 Entry Wire Line
 	10250 2250 10150 2350
 Entry Wire Line
 	10250 2450 10150 2550
 Entry Wire Line
-	10250 3150 10150 3250
+	10250 3250 10150 3350
 Entry Wire Line
 	10250 3350 10150 3450
 Entry Wire Line
@@ -678,13 +678,13 @@ Entry Wire Line
 Entry Wire Line
 	13350 2050 13250 2150
 Entry Wire Line
-	13350 2150 13250 2250
+	13350 2700 13250 2800
 Entry Wire Line
 	13350 2350 13250 2450
 Entry Wire Line
 	13350 3050 13250 3150
 Entry Wire Line
-	13350 3250 13250 3350
+	13350 2250 13250 2350
 Wire Wire Line
 	9600 4750 8800 4750
 Wire Wire Line
@@ -1652,19 +1652,17 @@ Wire Wire Line
 Wire Wire Line
 	9200 1800 9850 1800
 Wire Wire Line
-	9200 2000 9850 2000
-Wire Wire Line
 	9200 2150 9850 2150
 Wire Wire Line
 	9200 2250 9850 2250
 Wire Wire Line
 	9200 2450 9850 2450
 Wire Wire Line
+	9200 2900 9850 2900
+Wire Wire Line
 	9200 2700 9850 2700
 Wire Wire Line
 	9200 2800 9850 2800
-Wire Wire Line
-	9200 3050 9850 3050
 Wire Wire Line
 	13250 2000 12400 2000
 Wire Wire Line
@@ -1672,23 +1670,21 @@ Wire Wire Line
 Wire Wire Line
 	13250 2150 12400 2150
 Wire Wire Line
-	13250 2250 12400 2250
-Wire Wire Line
 	13250 2450 12400 2450
 Wire Wire Line
 	13250 2600 12400 2600
 Wire Wire Line
-	13250 2700 12400 2700
+	13250 2900 12400 2900
 Wire Wire Line
-	13250 2800 12400 2800
+	13250 2700 12400 2700
 Wire Wire Line
 	13250 3050 12400 3050
 Wire Wire Line
 	13250 3150 12400 3150
 Wire Wire Line
-	13250 3250 12400 3250
+	13250 1700 12400 1700
 Wire Wire Line
-	13250 3350 12400 3350
+	13250 2350 12400 2350
 Entry Wire Line
 	750  3800 850  3700
 Wire Wire Line
@@ -1706,7 +1702,7 @@ Wire Wire Line
 Wire Wire Line
 	11100 3350 10250 3350
 Wire Wire Line
-	11100 3150 10250 3150
+	11100 3250 10250 3250
 Wire Wire Line
 	7050 2900 7900 2900
 Wire Wire Line
@@ -1726,15 +1722,9 @@ Wire Wire Line
 Wire Wire Line
 	7050 2000 7900 2000
 Entry Wire Line
-	9900 650  10000 750 
-Entry Wire Line
-	13250 2800 13350 2700
-Entry Wire Line
 	13250 2700 13350 2600
-Wire Wire Line
-	9200 3150 10000 3150
-Wire Wire Line
-	10000 750  10000 3150
+Entry Wire Line
+	13250 2900 13350 2800
 Entry Bus Bus
 	10050 4050 10150 3950
 Connection ~ 7250 5950
@@ -1835,6 +1825,30 @@ F 3 "" H 16150 2500 50  0001 C CNN
 	6    11750 2100
 	-1   0    0    -1  
 $EndComp
+Text Label 12950 3150 2    50   ~ 0
+DDR3_A15
+Wire Wire Line
+	11100 3050 10550 3050
+Wire Wire Line
+	12400 1800 13250 1800
+Entry Wire Line
+	13350 1700 13250 1800
+Text Label 12950 2900 2    50   ~ 0
+DDR3_A14
+Entry Wire Line
+	13350 3250 13250 3350
+Text Label 12950 3350 2    50   ~ 0
+DDR3_A13
+Wire Wire Line
+	12400 3350 13250 3350
+Wire Wire Line
+	12400 3250 13250 3250
+Entry Wire Line
+	13350 3150 13250 3250
+Wire Wire Line
+	12950 2250 12400 2250
+Wire Wire Line
+	12400 2800 13250 2800
 Wire Bus Line
 	850  4050 10050 4050
 Wire Bus Line
@@ -1842,15 +1856,15 @@ Wire Bus Line
 Wire Bus Line
 	6950 1800 6950 3950
 Wire Bus Line
-	3950 3100 3950 3950
+	10150 1800 10150 3950
 Wire Bus Line
 	750  3100 750  3950
 Wire Bus Line
-	10150 1800 10150 3950
-Wire Bus Line
-	750  750  750  2500
+	3950 3100 3950 3950
 Wire Bus Line
 	3950 750  3950 2500
+Wire Bus Line
+	750  750  750  2500
 Wire Bus Line
 	13350 750  13350 6350
 $EndSCHEMATC
