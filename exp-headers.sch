@@ -261,11 +261,27 @@ P8_LVDS15n
 Text Label 11250 3400 2    50   ~ 0
 P8_LVDS16n
 Wire Wire Line
-	11000 6350 11650 6350
+	11000 5900 11650 5900
 Wire Wire Line
 	11000 6150 11650 6150
 Wire Wire Line
-	11000 5900 11650 5900
+	9700 6150 9050 6150
+Wire Wire Line
+	9700 6350 9050 6350
+Wire Wire Line
+	9700 5900 9050 5900
+Wire Wire Line
+	9700 5000 9050 5000
+Wire Wire Line
+	9700 5700 9050 5700
+Wire Wire Line
+	11000 4800 11650 4800
+Wire Wire Line
+	9700 5250 9050 5250
+Wire Wire Line
+	9700 4800 9050 4800
+Wire Wire Line
+	11000 6350 11650 6350
 Wire Wire Line
 	11000 5700 11650 5700
 Wire Wire Line
@@ -275,61 +291,61 @@ Wire Wire Line
 Wire Wire Line
 	11000 5000 11650 5000
 Wire Wire Line
-	11000 4800 11650 4800
-Wire Wire Line
-	9700 6350 9050 6350
-Wire Wire Line
-	9700 6150 9050 6150
-Wire Wire Line
-	9700 5900 9050 5900
-Wire Wire Line
-	9700 5700 9050 5700
-Wire Wire Line
 	9700 5450 9050 5450
-Wire Wire Line
-	9700 5250 9050 5250
-Wire Wire Line
-	9700 5000 9050 5000
-Wire Wire Line
-	9700 4800 9050 4800
-Text Label 9050 4800 0    50   ~ 0
-P8_LVDS1p
-Text Label 9050 5000 0    50   ~ 0
-P8_LVDS2p
-Text Label 9050 5250 0    50   ~ 0
-P8_LVDS3p
-Text Label 9050 5450 0    50   ~ 0
-P8_LVDS4p
-Text Label 9050 5700 0    50   ~ 0
-P8_LVDS5p
-Text Label 9050 5900 0    50   ~ 0
-P8_LVDS6p
-Text Label 9050 6150 0    50   ~ 0
-P8_LVDS7p
-Text Label 11650 5000 2    50   ~ 0
-P8_LVDS10p
-Text Label 9050 6350 0    50   ~ 0
-P8_LVDS8p
 Text Label 11650 4800 2    50   ~ 0
-P8_LVDS9p
+P8_LVDS1p
+Text Label 11650 5000 2    50   ~ 0
+P8_LVDS2p
 Text Label 11650 5250 2    50   ~ 0
-P8_LVDS11p
+P8_LVDS3p
 Text Label 11650 5450 2    50   ~ 0
-P8_LVDS12p
+P8_LVDS4p
 Text Label 11650 5700 2    50   ~ 0
+P8_LVDS5p
+Text Label 11650 6350 2    50   ~ 0
+P8_LVDS6p
+Text Label 9050 4800 0    50   ~ 0
+P8_LVDS7p
+Text Label 9050 5700 0    50   ~ 0
+P8_LVDS10p
+Text Label 9050 5250 0    50   ~ 0
+P8_LVDS8p
+Text Label 9050 5450 0    50   ~ 0
+P8_LVDS9p
+Text Label 9050 5000 0    50   ~ 0
+P8_LVDS11p
+Text Label 9050 5900 0    50   ~ 0
+P8_LVDS12p
+Text Label 9050 6350 0    50   ~ 0
 P8_LVDS13p
-Text Label 11650 5900 2    50   ~ 0
+Text Label 9050 6150 0    50   ~ 0
 P8_LVDS14p
 Text Label 11650 6150 2    50   ~ 0
 P8_LVDS15p
-Text Label 11650 6350 2    50   ~ 0
+Text Label 11650 5900 2    50   ~ 0
 P8_LVDS16p
 Wire Wire Line
-	11000 6450 11650 6450
+	11000 6000 11650 6000
 Wire Wire Line
 	11000 6250 11650 6250
 Wire Wire Line
-	11000 6000 11650 6000
+	9700 6250 9050 6250
+Wire Wire Line
+	9700 6450 9050 6450
+Wire Wire Line
+	9700 6000 9050 6000
+Wire Wire Line
+	9700 5100 9050 5100
+Wire Wire Line
+	9700 5800 9050 5800
+Wire Wire Line
+	11000 4900 11650 4900
+Wire Wire Line
+	9700 5350 9050 5350
+Wire Wire Line
+	9700 4900 9050 4900
+Wire Wire Line
+	11000 6450 11650 6450
 Wire Wire Line
 	11000 5800 11650 5800
 Wire Wire Line
@@ -339,54 +355,38 @@ Wire Wire Line
 Wire Wire Line
 	11000 5100 11650 5100
 Wire Wire Line
-	11000 4900 11650 4900
-Wire Wire Line
-	9700 6450 9050 6450
-Wire Wire Line
-	9700 6250 9050 6250
-Wire Wire Line
-	9700 6000 9050 6000
-Wire Wire Line
-	9700 5800 9050 5800
-Wire Wire Line
 	9700 5550 9050 5550
-Wire Wire Line
-	9700 5350 9050 5350
-Wire Wire Line
-	9700 5100 9050 5100
-Wire Wire Line
-	9700 4900 9050 4900
-Text Label 9050 4900 0    50   ~ 0
-P8_LVDS1n
-Text Label 9050 5100 0    50   ~ 0
-P8_LVDS2n
-Text Label 9050 5350 0    50   ~ 0
-P8_LVDS3n
-Text Label 9050 5550 0    50   ~ 0
-P8_LVDS4n
-Text Label 9050 5800 0    50   ~ 0
-P8_LVDS5n
-Text Label 9050 6000 0    50   ~ 0
-P8_LVDS6n
-Text Label 9050 6250 0    50   ~ 0
-P8_LVDS7n
-Text Label 11650 5100 2    50   ~ 0
-P8_LVDS10n
-Text Label 9050 6450 0    50   ~ 0
-P8_LVDS8n
 Text Label 11650 4900 2    50   ~ 0
-P8_LVDS9n
+P8_LVDS1n
+Text Label 11650 5100 2    50   ~ 0
+P8_LVDS2n
 Text Label 11650 5350 2    50   ~ 0
-P8_LVDS11n
+P8_LVDS3n
 Text Label 11650 5550 2    50   ~ 0
-P8_LVDS12n
+P8_LVDS4n
 Text Label 11650 5800 2    50   ~ 0
+P8_LVDS5n
+Text Label 11650 6450 2    50   ~ 0
+P8_LVDS6n
+Text Label 9050 4900 0    50   ~ 0
+P8_LVDS7n
+Text Label 9050 5800 0    50   ~ 0
+P8_LVDS10n
+Text Label 9050 5350 0    50   ~ 0
+P8_LVDS8n
+Text Label 9050 5550 0    50   ~ 0
+P8_LVDS9n
+Text Label 9050 5100 0    50   ~ 0
+P8_LVDS11n
+Text Label 9050 6000 0    50   ~ 0
+P8_LVDS12n
+Text Label 9050 6450 0    50   ~ 0
 P8_LVDS13n
-Text Label 11650 6000 2    50   ~ 0
+Text Label 9050 6250 0    50   ~ 0
 P8_LVDS14n
 Text Label 11650 6250 2    50   ~ 0
 P8_LVDS15n
-Text Label 11650 6450 2    50   ~ 0
+Text Label 11650 6000 2    50   ~ 0
 P8_LVDS16n
 $Comp
 L power:VBUS #PWR0192

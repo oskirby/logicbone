@@ -488,11 +488,11 @@ Text Label 6450 3000 2    50   ~ 0
 ~DDR3_RST
 Text Label 10550 2250 0    50   ~ 0
 DDR3_DQ15
-Text Label 10550 2150 0    50   ~ 0
+Text Label 10550 2000 0    50   ~ 0
 DDR3_DQ14
 Text Label 10550 3350 0    50   ~ 0
 DDR3_DQ13
-Text Label 10550 2000 0    50   ~ 0
+Text Label 10550 2150 0    50   ~ 0
 DDR3_DQ12
 Text Label 10550 3250 0    50   ~ 0
 DDR3_DQ11
@@ -504,7 +504,7 @@ Text Label 10550 1800 0    50   ~ 0
 DDR3_DQ8
 Text Label 7350 2800 0    50   ~ 0
 DDR3_DQ7
-Text Label 7350 1800 0    50   ~ 0
+Text Label 7350 2000 0    50   ~ 0
 DDR3_DQ6
 Text Label 7350 2350 0    50   ~ 0
 DDR3_DQ5
@@ -512,18 +512,12 @@ Text Label 7350 1900 0    50   ~ 0
 DDR3_DQ4
 Text Label 7350 2450 0    50   ~ 0
 DDR3_DQ3
-Text Label 7350 2000 0    50   ~ 0
+Text Label 7350 1800 0    50   ~ 0
 DDR3_DQ2
 Text Label 7350 2900 0    50   ~ 0
 DDR3_DQ1
 Text Label 7350 1700 0    50   ~ 0
 DDR3_DQ0
-Text Label 9050 4950 0    50   ~ 0
-DDR3_A15
-Text Label 9050 4850 0    50   ~ 0
-DDR3_A14
-Text Label 9050 4750 0    50   ~ 0
-DDR3_A13
 Text Label 12950 2600 2    50   ~ 0
 DDR3_A12
 Text Label 12950 2700 2    50   ~ 0
@@ -532,17 +526,17 @@ Text Label 10550 3050 0    50   ~ 0
 DDR3_A10
 Text Label 12950 1900 2    50   ~ 0
 DDR3_A9
-Text Label 12950 2150 2    50   ~ 0
+Text Label 12950 2350 2    50   ~ 0
 DDR3_A8
 Text Label 12950 1800 2    50   ~ 0
 DDR3_A7
-Text Label 12950 2800 2    50   ~ 0
+Text Label 12950 2150 2    50   ~ 0
 DDR3_A6
 Text Label 12950 2000 2    50   ~ 0
 DDR3_A5
 Text Label 12950 3050 2    50   ~ 0
 DDR3_A4
-Text Label 12950 2350 2    50   ~ 0
+Text Label 10550 3150 0    50   ~ 0
 DDR3_A3
 Text Label 12950 1700 2    50   ~ 0
 DDR3_A2
@@ -550,27 +544,27 @@ Text Label 12950 3250 2    50   ~ 0
 DDR3_A1
 Text Label 12950 2450 2    50   ~ 0
 DDR3_A0
-Text Label 9850 2900 2    50   ~ 0
+Text Label 9850 2700 2    50   ~ 0
 DDR3_BA2
-Text Label 9850 2150 2    50   ~ 0
+Text Label 10550 2800 0    50   ~ 0
 DDR3_BA1
 Text Label 12950 2250 2    50   ~ 0
 DDR3_BA0
 Text Label 9850 2800 2    50   ~ 0
 ~DDR3_RAS
-Text Label 9850 2700 2    50   ~ 0
+Text Label 9850 2600 2    50   ~ 0
 ~DDR3_CAS
 Wire Wire Line
 	11100 3150 10550 3150
-Text Label 10550 3150 0    50   ~ 0
-~DDR3_CS
 Text Label 9850 2250 2    50   ~ 0
+~DDR3_CS
+Text Label 10550 2350 0    50   ~ 0
 ~DDR3_WE
 Text Label 9850 1700 2    50   ~ 0
 DDR3_CK+
 Text Label 9850 1800 2    50   ~ 0
 DDR3_CK-
-Text Label 9850 2600 2    50   ~ 0
+Text Label 7350 3050 0    50   ~ 0
 DDR3_CKE
 Text Label 9850 1900 2    50   ~ 0
 ~DDR3_RST
@@ -596,9 +590,9 @@ Wire Wire Line
 	7900 3250 7350 3250
 Text Label 7350 3250 0    50   ~ 0
 DDR3_DM0
-Text Label 10550 2800 0    50   ~ 0
+Text Label 7350 2250 0    50   ~ 0
 DDR3_DM1
-Text Label 9850 2450 2    50   ~ 0
+Text Label 9850 2150 2    50   ~ 0
 DDR3_ODT0
 Connection ~ 12500 1300
 Wire Wire Line
@@ -678,64 +672,62 @@ Entry Wire Line
 Entry Wire Line
 	13350 2050 13250 2150
 Entry Wire Line
-	13350 2700 13250 2800
-Entry Wire Line
 	13350 2350 13250 2450
 Entry Wire Line
 	13350 3050 13250 3150
 Entry Wire Line
 	13350 2250 13250 2350
-Wire Wire Line
-	9600 4750 8800 4750
-Wire Wire Line
-	9600 4850 8800 4850
-Wire Wire Line
-	9600 4950 8800 4950
 Entry Bus Bus
 	13250 650  13350 750 
 $Comp
 L Device:R_Network08 RN2
 U 1 1 60CC434B
-P 12250 4650
-F 0 "RN2" V 11633 4650 50  0000 C CNN
-F 1 "47" V 11724 4650 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 12725 4650 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12250 4650 50  0001 C CNN
-	1    12250 4650
+P 12250 4250
+F 0 "RN2" V 11633 4250 50  0000 C CNN
+F 1 "47" V 11724 4250 50  0000 C CNN
+F 2 "KiCAD_Magic:EXBD-1206" V 12725 4250 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12250 4250 50  0001 C CNN
+	1    12250 4250
 	0    -1   1    0   
 $EndComp
-Text Label 13000 5800 2    50   ~ 0
+Text Label 13000 6350 2    50   ~ 0
 DDR3_A15
-Text Label 13000 5700 2    50   ~ 0
-DDR3_A14
-Text Label 13000 5600 2    50   ~ 0
-DDR3_A13
-Text Label 13000 5500 2    50   ~ 0
-DDR3_A12
-Text Label 13000 5400 2    50   ~ 0
-DDR3_A11
-Text Label 13000 5300 2    50   ~ 0
-DDR3_A10
-Text Label 13000 5200 2    50   ~ 0
-DDR3_A9
-Text Label 13000 5100 2    50   ~ 0
-DDR3_A8
-Text Label 13000 4950 2    50   ~ 0
-DDR3_A7
-Text Label 13000 4850 2    50   ~ 0
-DDR3_A6
-Text Label 13000 4750 2    50   ~ 0
-DDR3_A5
-Text Label 13000 4650 2    50   ~ 0
-DDR3_A4
-Text Label 13000 4550 2    50   ~ 0
-DDR3_A3
-Text Label 13000 4450 2    50   ~ 0
-DDR3_A2
 Text Label 13000 4350 2    50   ~ 0
-DDR3_A1
+DDR3_A14
+Text Label 13000 4150 2    50   ~ 0
+DDR3_A13
+Text Label 13000 5850 2    50   ~ 0
+DDR3_A12
+Text Label 13000 3950 2    50   ~ 0
+DDR3_A11
+Text Label 13000 5950 2    50   ~ 0
+DDR3_A10
+Text Label 13000 4050 2    50   ~ 0
+DDR3_A9
 Text Label 13000 4250 2    50   ~ 0
+DDR3_A8
+Text Label 13000 5400 2    50   ~ 0
+DDR3_A7
+Text Label 13000 4550 2    50   ~ 0
+DDR3_A6
+Text Label 13000 4700 2    50   ~ 0
+DDR3_A5
+Text Label 13000 4450 2    50   ~ 0
+DDR3_A4
+Text Label 13000 5300 2    50   ~ 0
+DDR3_A3
+Text Label 13000 6450 2    50   ~ 0
+DDR3_A2
+Text Label 13000 3850 2    50   ~ 0
+DDR3_A1
+Text Label 13000 4800 2    50   ~ 0
 DDR3_A0
+Wire Wire Line
+	12450 3850 13250 3850
+Wire Wire Line
+	12450 4050 13250 4050
+Wire Wire Line
+	12450 4150 13250 4150
 Wire Wire Line
 	12450 4250 13250 4250
 Wire Wire Line
@@ -743,39 +735,11 @@ Wire Wire Line
 Wire Wire Line
 	12450 4450 13250 4450
 Wire Wire Line
-	12450 4550 13250 4550
+	12450 4700 13250 4700
 Wire Wire Line
-	12450 4650 13250 4650
-Wire Wire Line
-	12450 4750 13250 4750
-Wire Wire Line
-	12450 4850 13250 4850
-Wire Wire Line
-	12450 4950 13250 4950
-Wire Wire Line
-	12450 5100 13250 5100
-Wire Wire Line
-	12450 5200 13250 5200
+	12450 4800 13250 4800
 Wire Wire Line
 	12450 5300 13250 5300
-Wire Wire Line
-	12450 5400 13250 5400
-Wire Wire Line
-	12450 5500 13250 5500
-Wire Wire Line
-	12450 5600 13250 5600
-Wire Wire Line
-	12450 5700 13250 5700
-Wire Wire Line
-	12450 5800 13250 5800
-Entry Wire Line
-	13250 4950 13350 4850
-Entry Wire Line
-	13250 4850 13350 4750
-Entry Wire Line
-	13250 4750 13350 4650
-Entry Wire Line
-	13250 4650 13350 4550
 Entry Wire Line
 	13250 4550 13350 4450
 Entry Wire Line
@@ -785,107 +749,97 @@ Entry Wire Line
 Entry Wire Line
 	13250 4250 13350 4150
 Entry Wire Line
-	13250 5800 13350 5700
+	13250 4150 13350 4050
 Entry Wire Line
-	13250 5700 13350 5600
+	13250 4050 13350 3950
 Entry Wire Line
-	13250 5600 13350 5500
+	13250 3850 13350 3750
 Entry Wire Line
-	13250 5500 13350 5400
-Entry Wire Line
-	13250 5400 13350 5300
+	13250 6450 13350 6350
 Entry Wire Line
 	13250 5300 13350 5200
 Entry Wire Line
-	13250 5200 13350 5100
+	13250 5400 13350 5300
 Entry Wire Line
-	13250 5100 13350 5000
+	13250 6350 13350 6250
+Entry Wire Line
+	13250 3950 13350 3850
+Entry Wire Line
+	13250 5950 13350 5850
+Entry Wire Line
+	13250 4800 13350 4700
+Entry Wire Line
+	13250 4700 13350 4600
 $Comp
 L Device:R_Network08 RN3
 U 1 1 60E99F8B
-P 12250 5500
-F 0 "RN3" V 12750 5500 50  0000 C CNN
-F 1 "47" V 12650 5500 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 12725 5500 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12250 5500 50  0001 C CNN
-	1    12250 5500
+P 12250 5100
+F 0 "RN3" V 12750 5100 50  0000 C CNN
+F 1 "47" V 12650 5100 50  0000 C CNN
+F 2 "KiCAD_Magic:EXBD-1206" V 12725 5100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12250 5100 50  0001 C CNN
+	1    12250 5100
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	12050 5100 11950 5100
+	12050 4700 11950 4700
 $Comp
 L Device:R_Network08 RN1
 U 1 1 60F89113
-P 11650 4650
-F 0 "RN1" V 12150 4650 50  0000 C CNN
-F 1 "47" V 12050 4650 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 12125 4650 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 11650 4650 50  0001 C CNN
-	1    11650 4650
-	0    1    1    0   
+P 12250 6150
+F 0 "RN1" V 12750 6150 50  0000 C CNN
+F 1 "47" V 12650 6150 50  0000 C CNN
+F 2 "KiCAD_Magic:EXBD-1206" V 12725 6150 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12250 6150 50  0001 C CNN
+	1    12250 6150
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	11850 4250 11950 4250
-Wire Wire Line
-	11450 4450 10900 4450
-Text Label 10900 4450 0    50   ~ 0
+	12050 5750 11950 5750
+Text Label 13000 4900 2    50   ~ 0
 DDR3_BA2
-Wire Wire Line
-	11450 4350 10900 4350
-Text Label 10900 4350 0    50   ~ 0
+Text Label 13000 5750 2    50   ~ 0
 DDR3_BA1
-Wire Wire Line
-	11450 4250 10900 4250
-Text Label 10900 4250 0    50   ~ 0
+Text Label 13000 5200 2    50   ~ 0
 DDR3_BA0
 Wire Wire Line
-	11450 4550 10900 4550
-Text Label 10900 4550 0    50   ~ 0
+	12450 6050 13000 6050
+Text Label 13000 6150 2    50   ~ 0
 ~DDR3_RAS
 Wire Wire Line
-	11450 4650 10900 4650
-Text Label 10900 4650 0    50   ~ 0
+	12450 6150 13000 6150
+Text Label 13000 5000 2    50   ~ 0
 ~DDR3_CAS
-Wire Wire Line
-	11450 4750 10900 4750
-Text Label 10900 4750 0    50   ~ 0
+Text Label 13000 5100 2    50   ~ 0
 ~DDR3_CS
-Wire Wire Line
-	11450 4850 10900 4850
-Text Label 10900 4850 0    50   ~ 0
+Text Label 13000 6250 2    50   ~ 0
 ~DDR3_WE
-Wire Wire Line
-	11450 4950 10900 4950
-Text Label 10900 4950 0    50   ~ 0
+Text Label 13000 6050 2    50   ~ 0
 DDR3_CKE
-Wire Wire Line
-	9200 2600 9850 2600
 Wire Wire Line
 	9200 1900 9850 1900
 $Comp
 L Device:C_Small C469
 U 1 1 614F1D15
-P 11950 6000
-F 0 "C469" H 12042 6046 50  0000 L CNN
-F 1 "0.1uF" H 12042 5955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 11950 6000 50  0001 C CNN
-F 3 "~" H 11950 6000 50  0001 C CNN
-	1    11950 6000
-	-1   0    0    -1  
+P 10250 5200
+F 0 "C469" H 10342 5246 50  0000 L CNN
+F 1 "0.1uF" H 10342 5155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10250 5200 50  0001 C CNN
+F 3 "~" H 10250 5200 50  0001 C CNN
+	1    10250 5200
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0148
 U 1 1 61571B7E
-P 11950 6150
-F 0 "#PWR0148" H 11950 5900 50  0001 C CNN
-F 1 "GND" H 11955 5977 50  0000 C CNN
-F 2 "" H 11950 6150 50  0001 C CNN
-F 3 "" H 11950 6150 50  0001 C CNN
-	1    11950 6150
-	1    0    0    -1  
+P 10250 5350
+F 0 "#PWR0148" H 10250 5100 50  0001 C CNN
+F 1 "GND" H 10255 5177 50  0000 C CNN
+F 2 "" H 10250 5350 50  0001 C CNN
+F 3 "" H 10250 5350 50  0001 C CNN
+	1    10250 5350
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	11950 6150 11950 6100
 $Comp
 L Device:C_Small C466
 U 1 1 6193F85D
@@ -991,26 +945,26 @@ Wire Wire Line
 	1950 6850 2600 6850
 Wire Wire Line
 	1750 6850 1950 6850
-Text Label 10800 5500 0    50   ~ 0
+Text Label 9700 4800 0    50   ~ 0
 DDR3_ODT0
 Wire Wire Line
-	12050 4250 11950 4250
+	12050 3850 11950 3850
 Wire Wire Line
 	3300 6850 2800 6850
 $Comp
 L Logicbone:VTT #PWR0261
 U 1 1 606963FA
-P 11950 4200
-F 0 "#PWR0261" H 11950 4050 50  0001 C CNN
-F 1 "VTT" H 11967 4373 50  0000 C CNN
-F 2 "" H 11950 4200 50  0001 C CNN
-F 3 "" H 11950 4200 50  0001 C CNN
-	1    11950 4200
+P 11950 3800
+F 0 "#PWR0261" H 11950 3650 50  0001 C CNN
+F 1 "VTT" H 11967 3973 50  0000 C CNN
+F 2 "" H 11950 3800 50  0001 C CNN
+F 3 "" H 11950 3800 50  0001 C CNN
+	1    11950 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11950 4200 11950 4250
-Connection ~ 11950 4250
+	11950 3800 11950 3850
+Connection ~ 11950 3850
 $Comp
 L Logicbone:VDDR #PWR0262
 U 1 1 6089AAC3
@@ -1654,13 +1608,9 @@ Wire Wire Line
 Wire Wire Line
 	9200 2150 9850 2150
 Wire Wire Line
-	9200 2250 9850 2250
-Wire Wire Line
-	9200 2450 9850 2450
-Wire Wire Line
-	9200 2900 9850 2900
-Wire Wire Line
 	9200 2700 9850 2700
+Wire Wire Line
+	9200 2600 9850 2600
 Wire Wire Line
 	9200 2800 9850 2800
 Wire Wire Line
@@ -1730,49 +1680,37 @@ Entry Bus Bus
 Connection ~ 7250 5950
 Connection ~ 7250 6250
 Wire Wire Line
-	11950 4250 11950 5100
+	11950 3850 11950 4700
 $Comp
 L Device:R_Pack04 RN?
 U 1 1 5FB50D7C
-P 11650 5700
+P 10550 4900
 AR Path="/5E15C0BA/5FB50D7C" Ref="RN?"  Part="1" 
 AR Path="/5DFC5A6C/5FB50D7C" Ref="RN12"  Part="1" 
-F 0 "RN12" H 11370 5746 50  0000 R CNN
-F 1 "4.7k" H 11370 5655 50  0000 R CNN
-F 2 "" V 11925 5700 50  0001 C CNN
-F 3 "~" H 11650 5700 50  0001 C CNN
-	1    11650 5700
+F 0 "RN12" H 10270 4946 50  0000 R CNN
+F 1 "47" H 10270 4855 50  0000 R CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0402" V 10825 4900 50  0001 C CNN
+F 3 "~" H 10550 4900 50  0001 C CNN
+	1    10550 4900
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11850 5600 11950 5600
+	10350 4900 10250 4900
 Wire Wire Line
-	11950 5600 11950 5500
+	10750 4700 10850 4700
+Connection ~ 11950 4700
 Wire Wire Line
-	11850 5500 11950 5500
-Connection ~ 11950 5500
-Wire Wire Line
-	11950 5100 11950 5500
-Connection ~ 11950 5100
-Wire Wire Line
-	11850 5700 11950 5700
-Wire Wire Line
-	11950 5700 11950 5800
-Wire Wire Line
-	11850 5800 11950 5800
-Connection ~ 11950 5800
-Wire Wire Line
-	11950 5800 11950 5900
-Text Label 10800 5600 0    50   ~ 0
+	10350 5000 10250 5000
+Text Label 11400 4900 2    50   ~ 0
 DDR3_CK+
-Text Label 10800 5700 0    50   ~ 0
+Text Label 11400 5000 2    50   ~ 0
 DDR3_CK-
 Wire Wire Line
-	11450 5600 10800 5600
+	10750 4900 11400 4900
 Wire Wire Line
-	11450 5700 10800 5700
+	10750 5000 11400 5000
 Wire Wire Line
-	10800 5500 11450 5500
+	10950 5750 11600 5750
 $Comp
 L Logicbone:VTT #PWR0253
 U 1 1 5FE55627
@@ -1786,16 +1724,6 @@ F 3 "" H 8450 6200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8450 6200 8450 6250
-Wire Notes Line
-	8600 4550 10050 4550
-Wire Notes Line
-	10050 4550 10050 5250
-Wire Notes Line
-	10050 5250 8600 5250
-Wire Notes Line
-	8600 5250 8600 4550
-Text Notes 8900 5150 0    50   ~ 0
-TODO: Place Me!
 Wire Wire Line
 	12500 1150 12500 1200
 Connection ~ 12500 1200
@@ -1848,11 +1776,94 @@ Entry Wire Line
 Wire Wire Line
 	12950 2250 12400 2250
 Wire Wire Line
-	12400 2800 13250 2800
-Wire Bus Line
-	850  4050 10050 4050
+	11950 4700 11950 5750
+Wire Wire Line
+	10250 5000 10250 4900
+Wire Wire Line
+	12450 4550 13250 4550
+Wire Wire Line
+	13000 5000 12450 5000
+Wire Wire Line
+	12450 5950 13250 5950
+Wire Wire Line
+	12450 6350 13250 6350
+Wire Wire Line
+	12450 6450 13250 6450
+Wire Wire Line
+	13000 6250 12450 6250
+Wire Wire Line
+	13000 5100 12450 5100
+Wire Wire Line
+	13000 4900 12450 4900
+Wire Wire Line
+	13000 5200 12450 5200
+Wire Wire Line
+	12450 5400 13250 5400
+Wire Wire Line
+	10250 5100 10250 5000
+Connection ~ 10250 5000
+Wire Wire Line
+	10750 4800 10850 4800
+Wire Wire Line
+	10850 4800 10850 4700
+Wire Wire Line
+	10250 5350 10250 5300
+Text Label 10950 5750 0    50   ~ 0
+DDR3_ODT1
+Wire Wire Line
+	9700 4800 10350 4800
+Entry Wire Line
+	13250 5850 13350 5750
+Wire Wire Line
+	12450 5850 13250 5850
+Wire Wire Line
+	13000 5750 12450 5750
+Wire Wire Line
+	12450 3950 13250 3950
+Wire Wire Line
+	10550 2350 11100 2350
+Wire Wire Line
+	7350 2250 7900 2250
+Wire Wire Line
+	7350 3050 7900 3050
+Text Label 12950 2800 2    50   ~ 0
+DDR3_ODT1
+Wire Wire Line
+	9850 2250 9200 2250
+$Comp
+L Logicbone:VTT #PWR0254
+U 1 1 5E53D4E0
+P 10850 4650
+F 0 "#PWR0254" H 10850 4500 50  0001 C CNN
+F 1 "VTT" H 10867 4823 50  0000 C CNN
+F 2 "" H 10850 4650 50  0001 C CNN
+F 3 "" H 10850 4650 50  0001 C CNN
+	1    10850 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 4650 10850 4700
+Connection ~ 10850 4700
+$Comp
+L Device:R R9
+U 1 1 5E579A3A
+P 11750 5750
+F 0 "R9" V 11650 5750 50  0000 C CNN
+F 1 "47" V 11750 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 11680 5750 50  0001 C CNN
+F 3 "~" H 11750 5750 50  0001 C CNN
+	1    11750 5750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	11900 5750 11950 5750
+Connection ~ 11950 5750
+Wire Wire Line
+	12950 2800 12400 2800
 Wire Bus Line
 	850  650  13250 650 
+Wire Bus Line
+	850  4050 10050 4050
 Wire Bus Line
 	6950 1800 6950 3950
 Wire Bus Line
