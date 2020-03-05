@@ -1860,6 +1860,14 @@ Wire Wire Line
 Connection ~ 11950 5750
 Wire Wire Line
 	12950 2800 12400 2800
+Text HLabel 9450 3250 2    50   Input ~ 0
+REFCLK+
+Text HLabel 9450 3350 2    50   Input ~ 0
+REFCLK-
+Wire Wire Line
+	9450 3250 9200 3250
+Wire Wire Line
+	9450 3350 9200 3350
 Wire Bus Line
 	850  650  13250 650 
 Wire Bus Line

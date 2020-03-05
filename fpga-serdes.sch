@@ -174,21 +174,21 @@ Wire Wire Line
 	1800 5800 1950 5800
 Connection ~ 1800 5800
 Text Label 4000 2500 0    50   ~ 0
-PCIE_TX0p
+PCIE_TX0+
 Text Label 4000 2700 0    50   ~ 0
-PCIE_TX0n
+PCIE_TX0-
 Text Label 4000 3000 0    50   ~ 0
-PCIE_RX0p
+PCIE_RX0+
 Text Label 4000 3200 0    50   ~ 0
-PCIE_RX0n
+PCIE_RX0-
 Text Label 4000 3500 0    50   ~ 0
-PCIE_TX1p
+PCIE_TX1+
 Text Label 4000 3700 0    50   ~ 0
-PCIE_TX1n
+PCIE_TX1-
 Text Label 4000 4000 0    50   ~ 0
-PCIE_RX1p
+PCIE_RX1+
 Text Label 4000 4200 0    50   ~ 0
-PCIE_RX1n
+PCIE_RX1-
 Wire Wire Line
 	7400 950  7400 1050
 Wire Wire Line
@@ -221,52 +221,52 @@ Wire Wire Line
 Wire Wire Line
 	7400 4500 8050 4500
 Wire Wire Line
-	10350 2550 9750 2550
-Text Label 9750 2550 0    50   ~ 0
+	11650 2550 12250 2550
+Text Label 9750 3900 0    50   ~ 0
 M2_SDIO_CLK
 Wire Wire Line
 	10350 2650 9750 2650
-Text Label 9750 2650 0    50   ~ 0
+Text Label 12250 3650 2    50   ~ 0
 M2_SDIO_CMD
 Wire Wire Line
-	10350 2750 9750 2750
-Text Label 9750 2750 0    50   ~ 0
+	10350 2550 9750 2550
+Text Label 12250 3300 2    50   ~ 0
 M2_SDIO_DATA0
 Wire Wire Line
 	10350 2850 9750 2850
-Text Label 9750 2850 0    50   ~ 0
+Text Label 12250 3200 2    50   ~ 0
 M2_SDIO_DATA1
 Wire Wire Line
-	10350 3000 9750 3000
-Text Label 9750 3000 0    50   ~ 0
+	11650 3000 12250 3000
+Text Label 12250 3100 2    50   ~ 0
 M2_SDIO_DATA2
 Wire Wire Line
 	10350 3650 9750 3650
-Text Label 9750 3650 0    50   ~ 0
+Text Label 9750 4000 0    50   ~ 0
 M2_PCM_IN
 Wire Wire Line
 	10350 3450 9750 3450
-Text Label 9750 3450 0    50   ~ 0
+Text Label 12250 4100 2    50   ~ 0
 M2_PCM_CLK
 Wire Wire Line
-	10350 3200 9750 3200
-Text Label 9750 3200 0    50   ~ 0
+	11650 3200 12250 3200
+Text Label 12250 2550 2    50   ~ 0
 ~M2_SDIO_WAKE
 Wire Wire Line
-	10350 3300 9750 3300
-Text Label 9750 3300 0    50   ~ 0
+	11650 3300 12250 3300
+Text Label 9750 2550 0    50   ~ 0
 ~M2_SDIO_RESET
 Wire Wire Line
-	10350 3100 9750 3100
-Text Label 9750 3100 0    50   ~ 0
+	11650 3100 12250 3100
+Text Label 12250 3000 2    50   ~ 0
 M2_SDIO_DATA3
 Wire Wire Line
 	10350 3550 9750 3550
-Text Label 9750 3550 0    50   ~ 0
+Text Label 9750 3450 0    50   ~ 0
 M2_PCM_SYNC
 Wire Wire Line
 	10350 3750 9750 3750
-Text Label 9750 3750 0    50   ~ 0
+Text Label 12250 2400 2    50   ~ 0
 M2_PCM_OUT
 Text Label 5600 1200 0    50   ~ 0
 M2_USB_DM
@@ -280,9 +280,9 @@ Wire Wire Line
 	11650 3900 12250 3900
 Text Label 12250 3900 2    50   ~ 0
 M2_USB_DP
-Text Label 9750 3900 0    50   ~ 0
+Text Label 9750 3750 0    50   ~ 0
 M2_RTS
-Text Label 9750 4000 0    50   ~ 0
+Text Label 12250 3550 2    50   ~ 0
 M2_CTS
 Text Label 9750 4100 0    50   ~ 0
 M2_RXD
@@ -296,31 +296,29 @@ Wire Wire Line
 	10350 4000 9750 4000
 Wire Wire Line
 	10350 3900 9750 3900
-Text Label 12250 2750 2    50   ~ 0
-M2_COEX3
 Text Label 12250 2650 2    50   ~ 0
+M2_COEX3
+Text Label 12250 2850 2    50   ~ 0
 M2_COEX2
-Text Label 12250 2550 2    50   ~ 0
+Text Label 12250 4200 2    50   ~ 0
 M2_COEX1
 Wire Wire Line
-	11650 2550 12250 2550
+	10350 2750 9750 2750
 Wire Wire Line
-	11650 2650 12250 2650
+	10350 3000 9750 3000
 Wire Wire Line
-	11650 2750 12250 2750
-Text Label 12250 2850 2    50   ~ 0
-~M2_RESET
+	10350 3200 9750 3200
 Wire Wire Line
-	11650 2850 12250 2850
+	10350 3100 9750 3100
 Text Notes 9300 7350 0    50   ~ 0
 TODO for M.2 Connector:\n - SUSCLK should come from supervisor sheet?\n - M.2 GPIO operates at 1.8V despite 3.3V power\n - Clock generator needs power decoupling
 Wire Wire Line
-	11650 3000 12250 3000
+	11650 4100 12250 4100
 Wire Wire Line
-	11650 3100 12250 3100
-Text Label 12250 3000 2    50   ~ 0
+	11650 4200 12250 4200
+Text Label 9750 2750 0    50   ~ 0
 ~M2_WDIS1
-Text Label 12250 3100 2    50   ~ 0
+Text Label 9750 3000 0    50   ~ 0
 ~M2_WDIS2
 $Comp
 L Logicbone:VCCIOB #PWR0173
@@ -422,18 +420,12 @@ Wire Wire Line
 	6250 2750 6250 3050
 Wire Wire Line
 	7350 1850 7300 1850
-Text Label 7900 3200 2    50   ~ 0
+Text Label 7950 3200 2    50   ~ 0
 M2_COEX3
-Text Label 7900 3100 2    50   ~ 0
+Text Label 7950 3100 2    50   ~ 0
 M2_COEX2
-Text Label 7900 3000 2    50   ~ 0
+Text Label 7950 3000 2    50   ~ 0
 M2_COEX1
-Wire Wire Line
-	7300 3000 7900 3000
-Wire Wire Line
-	7300 3100 7900 3100
-Wire Wire Line
-	7300 3200 7900 3200
 Text Label 5600 1400 0    50   ~ 0
 M2_SDIO_CLK
 Text Label 5600 1500 0    50   ~ 0
@@ -450,38 +442,22 @@ Text Label 5600 2100 0    50   ~ 0
 ~M2_SDIO_RESET
 Text Label 5600 1900 0    50   ~ 0
 M2_SDIO_DATA3
-Wire Wire Line
-	7300 1550 7900 1550
-Text Label 7900 1550 2    50   ~ 0
+Text Label 7950 1550 2    50   ~ 0
 M2_PCM_IN
-Wire Wire Line
-	7300 1350 7900 1350
-Text Label 7900 1350 2    50   ~ 0
+Text Label 7950 1350 2    50   ~ 0
 M2_PCM_CLK
-Wire Wire Line
-	7300 1450 7900 1450
-Text Label 7900 1450 2    50   ~ 0
+Text Label 7950 1450 2    50   ~ 0
 M2_PCM_SYNC
-Wire Wire Line
-	7300 1650 7900 1650
-Text Label 7900 1650 2    50   ~ 0
+Text Label 7950 1650 2    50   ~ 0
 M2_PCM_OUT
-Text Label 7900 2600 2    50   ~ 0
+Text Label 7950 2600 2    50   ~ 0
 M2_RTS
-Text Label 7900 2500 2    50   ~ 0
+Text Label 7950 2500 2    50   ~ 0
 M2_CTS
-Text Label 7900 2050 2    50   ~ 0
+Text Label 7950 2050 2    50   ~ 0
 M2_RXD
-Text Label 7900 2400 2    50   ~ 0
+Text Label 7950 2400 2    50   ~ 0
 M2_TXD
-Wire Wire Line
-	7300 2400 7900 2400
-Wire Wire Line
-	7300 2500 7900 2500
-Wire Wire Line
-	7300 2600 7900 2600
-Wire Wire Line
-	7300 2050 7900 2050
 Wire Wire Line
 	7350 2100 7350 1850
 $Comp
@@ -504,37 +480,27 @@ Wire Wire Line
 Connection ~ 6250 1300
 Wire Wire Line
 	6250 1300 6250 1000
-Wire Wire Line
-	7300 2900 7900 2900
-Text Label 7900 2900 2    50   ~ 0
+Text Label 7950 2900 2    50   ~ 0
 M2_VEND0
-Wire Wire Line
-	7300 2700 7900 2700
-Text Label 7900 2700 2    50   ~ 0
+Text Label 7950 2700 2    50   ~ 0
 M2_VEND2
-Wire Wire Line
-	7300 2800 7900 2800
-Text Label 7900 2800 2    50   ~ 0
+Text Label 7950 2800 2    50   ~ 0
 M2_VEND1
 Wire Wire Line
 	11650 3650 12250 3650
-Text Label 12250 3650 2    50   ~ 0
+Text Label 12250 3450 2    50   ~ 0
 M2_VEND0
 Wire Wire Line
 	11650 3450 12250 3450
-Text Label 12250 3450 2    50   ~ 0
+Text Label 12250 2750 2    50   ~ 0
 M2_VEND2
 Wire Wire Line
 	11650 3550 12250 3550
-Text Label 12250 3550 2    50   ~ 0
+Text Label 9750 3650 0    50   ~ 0
 M2_VEND1
-Wire Wire Line
-	7300 3600 7900 3600
-Wire Wire Line
-	7300 3500 7900 3500
-Text Label 7900 3600 2    50   ~ 0
+Text Label 7950 3600 2    50   ~ 0
 ~M2_WDIS1
-Text Label 7900 3500 2    50   ~ 0
+Text Label 7950 3500 2    50   ~ 0
 ~M2_WDIS2
 Wire Wire Line
 	5600 2100 6300 2100
@@ -559,17 +525,17 @@ Wire Wire Line
 Wire Wire Line
 	6300 3250 5450 3250
 Text Label 5450 3150 0    50   ~ 0
-PCIE_REFCLK0p
+PCIE_REFCLK0+
 Text Label 5450 3250 0    50   ~ 0
-PCIE_REFCLK0n
+PCIE_REFCLK0-
 Wire Wire Line
 	6300 3150 5450 3150
 Wire Wire Line
 	6300 4450 5450 4450
 Text Label 5450 4350 0    50   ~ 0
-PCIE_REFCLK1p
+PCIE_REFCLK1+
 Text Label 5450 4450 0    50   ~ 0
-PCIE_REFCLK1n
+PCIE_REFCLK1-
 Wire Wire Line
 	6300 4350 5450 4350
 $Comp
@@ -655,57 +621,37 @@ Wire Wire Line
 Wire Wire Line
 	6050 5500 6050 5400
 Text Label 4000 4500 0    50   ~ 0
-SERDES_REFCLKp
+SERDES_REFCLK+
 Text Label 4000 4700 0    50   ~ 0
-SERDES_REFCLKn
-Text Label 5050 6250 0    50   ~ 0
-PCIE_REFCLK0p
-Text Label 5050 6350 0    50   ~ 0
-PCIE_REFCLK0n
-Text Label 5050 6650 0    50   ~ 0
-PCIE_REFCLK1p
+SERDES_REFCLK-
 Text Label 5050 6750 0    50   ~ 0
-PCIE_REFCLK1n
+PCIE_REFCLK0+
+Text Label 5050 6650 0    50   ~ 0
+PCIE_REFCLK0-
+Text Label 5050 6350 0    50   ~ 0
+PCIE_REFCLK1+
+Text Label 5050 6250 0    50   ~ 0
+PCIE_REFCLK1-
 Text Label 5450 3450 0    50   ~ 0
 ~PCIE_CLKREQ0
 Wire Wire Line
 	6300 3450 5450 3450
-Text Label 5050 6150 0    50   ~ 0
-~PCIE_CLKREQ0
 Text Label 5050 6550 0    50   ~ 0
+~PCIE_CLKREQ0
+Text Label 5050 6150 0    50   ~ 0
 ~PCIE_CLKREQ1
-Text Label 7900 4200 2    50   ~ 0
+Text Label 7950 4200 2    50   ~ 0
 ~PCIE_CLKREQ1
-Wire Wire Line
-	7900 4200 7300 4200
-Text Label 5050 7050 0    50   ~ 0
-FPGA_REFCLKp
-Text Label 5050 7150 0    50   ~ 0
-FPGA_REFCLKn
-Wire Wire Line
-	11650 4100 12500 4100
-Wire Wire Line
-	11650 4200 12500 4200
-Text Label 12500 4100 2    50   ~ 0
-FPGA_REFCLKp
-Text Label 12500 4200 2    50   ~ 0
-FPGA_REFCLKn
 Wire Wire Line
 	6300 3550 5450 3550
 Text Label 5450 3550 0    50   ~ 0
 ~PCIE_WAKE0
-Text Label 7900 4300 2    50   ~ 0
+Text Label 7950 4300 2    50   ~ 0
 ~PCIE_WAKE1
-Wire Wire Line
-	7300 4300 7900 4300
-Text Label 12250 3300 2    50   ~ 0
+Text Label 9750 2650 0    50   ~ 0
 ~PCIE_WAKE1
-Wire Wire Line
-	11650 3300 12250 3300
-Text Label 12250 3200 2    50   ~ 0
+Text Label 9750 2850 0    50   ~ 0
 ~PCIE_WAKE0
-Wire Wire Line
-	11650 3200 12250 3200
 $Comp
 L Device:R_Pack04 RN?
 U 1 1 5E6065B0
@@ -714,7 +660,7 @@ AR Path="/5E15C0BA/5E6065B0" Ref="RN?"  Part="1"
 AR Path="/5DFC63AE/5E6065B0" Ref="RN4"  Part="1" 
 F 0 "RN4" H 1820 1346 50  0000 R CNN
 F 1 "4.7k" H 1820 1255 50  0000 R CNN
-F 2 "" V 2375 1300 50  0001 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 2375 1300 50  0001 C CNN
 F 3 "~" H 2100 1300 50  0001 C CNN
 	1    2100 1300
 	0    -1   -1   0   
@@ -810,21 +756,17 @@ Wire Wire Line
 Wire Wire Line
 	3450 4500 3650 4500
 Wire Wire Line
-	5050 6150 6150 6150
-Wire Wire Line
-	6150 6250 5050 6250
-Wire Wire Line
-	5050 6350 6150 6350
-Wire Wire Line
 	5050 6550 6150 6550
 Wire Wire Line
 	6150 6650 5050 6650
 Wire Wire Line
 	5050 6750 6150 6750
 Wire Wire Line
-	5050 7050 6150 7050
+	5050 6150 6150 6150
 Wire Wire Line
-	6150 7150 5050 7150
+	6150 6250 5050 6250
+Wire Wire Line
+	5050 6350 6150 6350
 Wire Wire Line
 	3300 4500 3450 4500
 Connection ~ 3450 4500
@@ -1032,9 +974,9 @@ Wire Wire Line
 	1950 3400 1950 3900
 Connection ~ 1950 3900
 Wire Wire Line
-	3850 4500 5050 4500
+	3850 4500 4850 4500
 Wire Wire Line
-	3850 4700 4950 4700
+	3850 4700 4750 4700
 $Comp
 L Device:C_Small C?
 U 1 1 5F50C43D
@@ -1113,14 +1055,6 @@ Wire Wire Line
 	3300 3200 5000 3200
 Text Notes 2900 4900 0    50   ~ 0
 Not sure how to terminate this thing
-Wire Wire Line
-	6150 5950 4950 5950
-Wire Wire Line
-	4950 4700 4950 5950
-Wire Wire Line
-	5050 5850 6150 5850
-Wire Wire Line
-	5050 4500 5050 5850
 Wire Wire Line
 	7450 7300 7550 7300
 Wire Wire Line
@@ -1307,11 +1241,9 @@ Wire Wire Line
 	5700 7500 6150 7500
 Text Notes 6450 7800 0    50   ~ 0
 I2C Address 0x68
-Wire Wire Line
-	7300 3900 7900 3900
-Text Label 7900 3900 2    50   ~ 0
+Text Label 7950 3900 2    50   ~ 0
 ~M2_ALERT
-Text Label 12250 3750 2    50   ~ 0
+Text Label 9750 3550 0    50   ~ 0
 ~M2_ALERT
 Wire Wire Line
 	12250 3750 11650 3750
@@ -1513,14 +1445,208 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H?
 U 1 1 5E4EE887
-P 10600 5600
+P 11500 5600
 AR Path="/5E4EE887" Ref="H?"  Part="1" 
 AR Path="/5DFC63AE/5E4EE887" Ref="H5"  Part="1" 
-F 0 "H5" H 10700 5646 50  0000 L CNN
-F 1 "MountingHole" H 10700 5555 50  0000 L CNN
-F 2 "KiCAD_Magic:Keystone-4881" H 10600 5600 50  0001 C CNN
-F 3 "~" H 10600 5600 50  0001 C CNN
-	1    10600 5600
+F 0 "H5" H 11600 5646 50  0000 L CNN
+F 1 "MountingHole" H 11600 5555 50  0000 L CNN
+F 2 "KiCAD_Magic:Keystone-4881" H 11500 5600 50  0001 C CNN
+F 3 "~" H 11500 5600 50  0001 C CNN
+	1    11500 5600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4750 4700 4750 7050
+Text HLabel 5650 5850 0    50   Input ~ 0
+FPGA_REFCLK+
+Text HLabel 5650 5950 0    50   Input ~ 0
+FPGA_REFCLK-
+Wire Wire Line
+	5650 5950 6150 5950
+Wire Wire Line
+	6150 5850 5650 5850
+Wire Wire Line
+	4850 7150 6150 7150
+Wire Wire Line
+	4850 4500 4850 7150
+Wire Wire Line
+	6150 7050 4750 7050
+Text Label 7950 4100 2    50   ~ 0
+~PCIE_RESET1
+Text Label 7950 3400 2    50   ~ 0
+~PCIE_RESET0
+Text Label 9750 3100 0    50   ~ 0
+~PCIE_RESET0
+Text Label 9750 3200 0    50   ~ 0
+~PCIE_RESET1
+Wire Wire Line
+	12250 2400 11650 2400
+Wire Wire Line
+	12250 2750 11650 2750
+Wire Wire Line
+	12250 2650 11650 2650
+Wire Wire Line
+	12250 2850 11650 2850
+Text Label 7950 1950 2    50   ~ 0
+~M2_UART_WAKE
+Wire Wire Line
+	7300 1950 7950 1950
+Wire Wire Line
+	7300 2050 7950 2050
+Wire Wire Line
+	7300 1350 7950 1350
+Wire Wire Line
+	7300 1450 7950 1450
+Wire Wire Line
+	7300 1550 7950 1550
+Wire Wire Line
+	7300 1650 7950 1650
+Wire Wire Line
+	7300 2400 7950 2400
+Wire Wire Line
+	7300 2500 7950 2500
+Wire Wire Line
+	7300 2600 7950 2600
+Wire Wire Line
+	7300 2700 7950 2700
+Wire Wire Line
+	7300 2800 7950 2800
+Wire Wire Line
+	7300 2900 7950 2900
+Wire Wire Line
+	7300 3000 7950 3000
+Wire Wire Line
+	7300 3100 7950 3100
+Wire Wire Line
+	7300 3200 7950 3200
+Wire Wire Line
+	7300 3400 7950 3400
+Wire Wire Line
+	7300 3500 7950 3500
+Wire Wire Line
+	7300 3600 7950 3600
+Wire Wire Line
+	7300 3900 7950 3900
+Wire Wire Line
+	7300 4100 7950 4100
+Wire Wire Line
+	7300 4200 7950 4200
+Wire Wire Line
+	7300 4300 7950 4300
+Text Label 12250 3750 2    50   ~ 0
+~M2_UART_WAKE
+Wire Wire Line
+	10350 3300 9750 3300
+Text Label 9750 3300 0    50   ~ 0
+M2_SUSCLK
+Wire Wire Line
+	7300 3300 7950 3300
+Text Label 7950 3300 2    50   ~ 0
+M2_SUSCLK
+$Comp
+L Device:LED_ALT D?
+U 1 1 5F7038E1
+P 10250 5750
+AR Path="/5E15C0BA/5F7038E1" Ref="D?"  Part="1" 
+AR Path="/5DFD59AE/5F7038E1" Ref="D?"  Part="1" 
+AR Path="/5DFC63AE/5F7038E1" Ref="D8"  Part="1" 
+F 0 "D8" V 10288 5632 50  0000 R CNN
+F 1 "LED_ALT" V 10197 5632 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 10250 5750 50  0001 C CNN
+F 3 "~" H 10250 5750 50  0001 C CNN
+	1    10250 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5F7038E8
+P 9750 5750
+AR Path="/5E15C0BA/5F7038E8" Ref="D?"  Part="1" 
+AR Path="/5DFD59AE/5F7038E8" Ref="D?"  Part="1" 
+AR Path="/5DFC63AE/5F7038E8" Ref="D7"  Part="1" 
+F 0 "D7" V 9788 5632 50  0000 R CNN
+F 1 "LED_ALT" V 9697 5632 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 9750 5750 50  0001 C CNN
+F 3 "~" H 9750 5750 50  0001 C CNN
+	1    9750 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7038F1
+P 10250 5950
+AR Path="/5E15C0BA/5F7038F1" Ref="#PWR?"  Part="1" 
+AR Path="/5DFD59AE/5F7038F1" Ref="#PWR?"  Part="1" 
+AR Path="/5DFC63AE/5F7038F1" Ref="#PWR0259"  Part="1" 
+F 0 "#PWR0259" H 10250 5700 50  0001 C CNN
+F 1 "GND" H 10255 5777 50  0000 C CNN
+F 2 "" H 10250 5950 50  0001 C CNN
+F 3 "" H 10250 5950 50  0001 C CNN
+	1    10250 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 5950 10250 5900
+$Comp
+L power:GND #PWR?
+U 1 1 5F7038F8
+P 9750 5950
+AR Path="/5E15C0BA/5F7038F8" Ref="#PWR?"  Part="1" 
+AR Path="/5DFD59AE/5F7038F8" Ref="#PWR?"  Part="1" 
+AR Path="/5DFC63AE/5F7038F8" Ref="#PWR0296"  Part="1" 
+F 0 "#PWR0296" H 9750 5700 50  0001 C CNN
+F 1 "GND" H 9755 5777 50  0000 C CNN
+F 2 "" H 9750 5950 50  0001 C CNN
+F 3 "" H 9750 5950 50  0001 C CNN
+	1    9750 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 5950 9750 5900
+Wire Wire Line
+	7300 1250 7950 1250
+Wire Wire Line
+	7300 1750 7950 1750
+Text Label 7950 1250 2    50   ~ 0
+M2_LED1
+Text Label 7950 1750 2    50   ~ 0
+M2_LED2
+$Comp
+L Device:R_Small R12
+U 1 1 5F757771
+P 10250 5450
+F 0 "R12" V 10054 5450 50  0000 C CNN
+F 1 "10k" V 10145 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 10250 5450 50  0001 C CNN
+F 3 "~" H 10250 5450 50  0001 C CNN
+	1    10250 5450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 5600 10250 5550
+$Comp
+L Device:R_Small R11
+U 1 1 5F7FEAEF
+P 9750 5450
+F 0 "R11" V 9554 5450 50  0000 C CNN
+F 1 "10k" V 9645 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9750 5450 50  0001 C CNN
+F 3 "~" H 9750 5450 50  0001 C CNN
+	1    9750 5450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 5550 9750 5600
+Wire Wire Line
+	10250 5350 10250 5300
+Wire Wire Line
+	9750 5350 9750 5200
+Text Label 10850 5200 2    50   ~ 0
+M2_LED1
+Text Label 10850 5300 2    50   ~ 0
+M2_LED2
+Wire Wire Line
+	10250 5300 10850 5300
+Wire Wire Line
+	9750 5200 10850 5200
 $EndSCHEMATC
