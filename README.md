@@ -46,10 +46,7 @@ The major features of this board include:
    - Accepts connectivity options in the 2230 form factor.
    - Both PCIe lanes are routed to the FPGA SERDES.
    - GPIO, UART, SDIO and PCM interfaces.
- * Qorvo ACT8846 power manager.
-   - Up to 2.8A of 3.3V regulated power available via P9
-   - Programmable LVDS IO voltage for P8
-   - Programmable ADC range.
+ * MaxLinear MXL7704 power manager.
  * STM32L452 to provide programming and debug interfaces.
 
 Work In Progress

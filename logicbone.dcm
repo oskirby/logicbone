@@ -76,8 +76,24 @@ K DDR LDO
 F http://www.ti.com/lit/ds/symlink/tps51200.pdf
 $ENDCMP
 #
+$CMP TPS51206
+D Sink and Source DDR Termination Regulator, VSON-10
+K DDR LDO
+F http://www.ti.com/lit/ds/symlink/tps51200.pdf
+$ENDCMP
+#
 $CMP VADC
 D Power flag, ADC Analog Power Supply
+K power-flag
+$ENDCMP
+#
+$CMP VCC1V8
+D Power flag, VCC at 1.8V
+K power-flag
+$ENDCMP
+#
+$CMP VCC3V3
+D Power flag, VCC at 3.3V
 K power-flag
 $ENDCMP
 #
@@ -93,11 +109,6 @@ $ENDCMP
 #
 $CMP VCCIOA
 D Power flag, VCCIO Group A
-K power-flag
-$ENDCMP
-#
-$CMP VCCIOB
-D Power flag, VCCIO Group B
 K power-flag
 $ENDCMP
 #
