@@ -152,28 +152,28 @@ Wire Wire Line
 Wire Wire Line
 	10100 2500 9450 2500
 Wire Wire Line
-	10100 2000 9450 2000
+	10100 2400 9450 2400
 Wire Wire Line
-	10100 1900 9450 1900
-Wire Wire Line
-	10100 1800 9450 1800
-Wire Wire Line
-	10100 1700 9450 1700
+	10100 2300 9450 2300
 Wire Wire Line
 	10100 1600 9450 1600
 Wire Wire Line
 	10100 1500 9450 1500
-Text Label 9450 1500 0    50   ~ 0
+Wire Wire Line
+	10100 1400 9450 1400
+Wire Wire Line
+	10100 1300 9450 1300
+Text Label 9450 1300 0    50   ~ 0
 P8_LVDS1p
-Text Label 9450 1600 0    50   ~ 0
+Text Label 9450 1400 0    50   ~ 0
 P8_LVDS2p
-Text Label 9450 1700 0    50   ~ 0
+Text Label 9450 1500 0    50   ~ 0
 P8_LVDS3p
-Text Label 9450 1800 0    50   ~ 0
+Text Label 9450 1600 0    50   ~ 0
 P8_LVDS4p
-Text Label 9450 1900 0    50   ~ 0
+Text Label 9450 2300 0    50   ~ 0
 P8_LVDS5p
-Text Label 9450 2000 0    50   ~ 0
+Text Label 9450 2400 0    50   ~ 0
 P8_LVDS6p
 Text Label 9450 2500 0    50   ~ 0
 P8_LVDS7p
@@ -216,28 +216,28 @@ Wire Wire Line
 Wire Wire Line
 	10600 2500 11250 2500
 Wire Wire Line
-	10600 2000 11250 2000
+	10600 2400 11250 2400
 Wire Wire Line
-	10600 1900 11250 1900
-Wire Wire Line
-	10600 1800 11250 1800
-Wire Wire Line
-	10600 1700 11250 1700
+	10600 2300 11250 2300
 Wire Wire Line
 	10600 1600 11250 1600
 Wire Wire Line
 	10600 1500 11250 1500
-Text Label 11250 1500 2    50   ~ 0
+Wire Wire Line
+	10600 1400 11250 1400
+Wire Wire Line
+	10600 1300 11250 1300
+Text Label 11250 1300 2    50   ~ 0
 P8_LVDS1n
-Text Label 11250 1600 2    50   ~ 0
+Text Label 11250 1400 2    50   ~ 0
 P8_LVDS2n
-Text Label 11250 1700 2    50   ~ 0
+Text Label 11250 1500 2    50   ~ 0
 P8_LVDS3n
-Text Label 11250 1800 2    50   ~ 0
+Text Label 11250 1600 2    50   ~ 0
 P8_LVDS4n
-Text Label 11250 1900 2    50   ~ 0
+Text Label 11250 2300 2    50   ~ 0
 P8_LVDS5n
-Text Label 11250 2000 2    50   ~ 0
+Text Label 11250 2400 2    50   ~ 0
 P8_LVDS6n
 Text Label 11250 2500 2    50   ~ 0
 P8_LVDS7n
@@ -882,23 +882,6 @@ Wire Wire Line
 	9200 4350 9200 4300
 $Comp
 L Device:C_Small C?
-U 1 1 5EBB22C7
-P 8400 4450
-AR Path="/5DFC5A69/5EBB22C7" Ref="C?"  Part="1" 
-AR Path="/6202D981/5EBB22C7" Ref="C220"  Part="1" 
-F 0 "C220" H 8492 4496 50  0000 L CNN
-F 1 "100nF" H 8492 4405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 8400 4450 50  0001 C CNN
-F 3 "~" H 8400 4450 50  0001 C CNN
-	1    8400 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8400 4550 8400 4600
-Wire Wire Line
-	8400 4350 8400 4300
-$Comp
-L Device:C_Small C?
 U 1 1 5EBB22D0
 P 8800 4450
 AR Path="/5DFC5A69/5EBB22D0" Ref="C?"  Part="1" 
@@ -914,35 +897,28 @@ Wire Wire Line
 	8800 4550 8800 4600
 Wire Wire Line
 	8800 4350 8800 4300
-Connection ~ 8800 4300
-Wire Wire Line
-	8800 4300 8400 4300
 Connection ~ 9200 4300
 Wire Wire Line
 	9200 4300 8800 4300
 Wire Wire Line
 	9600 4300 9200 4300
-Connection ~ 8800 4600
-Wire Wire Line
-	8800 4600 8400 4600
 Wire Wire Line
 	9200 4600 8800 4600
 $Comp
 L power:GND #PWR?
 U 1 1 5EBB22E1
-P 8400 4650
+P 8800 4650
 AR Path="/5DFC5A69/5EBB22E1" Ref="#PWR?"  Part="1" 
 AR Path="/6202D981/5EBB22E1" Ref="#PWR0257"  Part="1" 
-F 0 "#PWR0257" H 8400 4400 50  0001 C CNN
-F 1 "GND" H 8405 4477 50  0000 C CNN
-F 2 "" H 8400 4650 50  0001 C CNN
-F 3 "" H 8400 4650 50  0001 C CNN
-	1    8400 4650
+F 0 "#PWR0257" H 8800 4400 50  0001 C CNN
+F 1 "GND" H 8805 4477 50  0000 C CNN
+F 2 "" H 8800 4650 50  0001 C CNN
+F 3 "" H 8800 4650 50  0001 C CNN
+	1    8800 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 4650 8400 4600
-Connection ~ 8400 4600
+	8800 4650 8800 4600
 $Comp
 L Device:C_Small C?
 U 1 1 5EBD2BD0
@@ -1279,4 +1255,25 @@ Wire Wire Line
 	6250 1500 6250 1600
 Wire Wire Line
 	4300 1600 6250 1600
+Text Label 11650 2000 2    50   ~ 0
+SPARE_XX
+Text Label 11650 2200 2    50   ~ 0
+SPARE_YY
+Wire Wire Line
+	10600 2000 11650 2000
+Wire Wire Line
+	10600 2200 11650 2200
+Wire Notes Line
+	9450 1650 11250 1650
+Wire Notes Line
+	11250 1650 11250 2200
+Wire Notes Line
+	11250 2200 9450 2200
+Wire Notes Line
+	9450 2200 9450 1650
+Text Notes 9550 2050 0    50   ~ 0
+Hole left by\nBeablebone\neMMC pins
+Text Notes 11350 1850 0    50   ~ 0
+P8-18 and P8-22 are available on the Beaglebone,\nbut we ran out of pins on the ECP5
+Connection ~ 8800 4600
 $EndSCHEMATC
