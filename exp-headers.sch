@@ -679,7 +679,7 @@ Wire Wire Line
 	1450 5450 2000 5450
 Wire Wire Line
 	3300 5150 3850 5150
-Text Label 3850 4750 2    50   ~ 0
+Text Label 3850 4450 2    50   ~ 0
 P9_GPIO21
 Text Label 1450 5650 0    50   ~ 0
 P9_GPIO23
@@ -1072,7 +1072,7 @@ Wire Wire Line
 	2150 6450 1600 6450
 Wire Wire Line
 	2150 6550 1600 6550
-Text Label 3850 4450 2    50   ~ 0
+Text Label 3850 4750 2    50   ~ 0
 ADC_SCLK
 Text Label 3850 4550 2    50   ~ 0
 ADC_MISO

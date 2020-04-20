@@ -64,6 +64,11 @@ K usb universal serial bus type-C USB2.0
 F https://gct.co/files/drawings/usb4110.pdf
 $ENDCMP
 #
+$CMP LM94023
+D Dual-Gain Analog Temperature Sensor
+F https://www.ti.com/lit/ds/symlink/lm94023.pdf
+$ENDCMP
+#
 $CMP Micro_SD_MEM2075
 D Micro SD Card Socket
 K connector SD microsd
