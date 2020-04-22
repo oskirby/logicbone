@@ -47,7 +47,6 @@ The major features of this board include:
    - Both PCIe lanes are routed to the FPGA SERDES.
    - GPIO, UART, SDIO and PCM interfaces.
  * MaxLinear MXL7704 power manager.
- * STM32L452 to provide programming and debug interfaces.
 
 Work In Progress
 ----------------
