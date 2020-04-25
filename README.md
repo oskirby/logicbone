@@ -36,12 +36,13 @@ The major features of this board include:
    - 2 dual channel 3Gbps SERDES
  * Beaglebone Black mechanical and header compatibility.
    - P9 is fully supported via the FPGA.
-   - 12-bit 1MSPS muxed ADC for the analog pins.
+   - 12-bit 1MSPS muxed ADC on P9 analog pins.
    - P8 supports up to 16 high speed LVDS pairs.
  * 8Gb on-board DDR3L RAM
  * KSZ9031 Gigabit Ethernet PHY.
  * microSD card slot.
  * USB-C upstream facing port for power and programming.
+ * USB-C downstream facing port for SERDES breakout.
  * M.2 E-Keyed expansion interface:
    - Accepts connectivity options in the 2230 form factor.
    - Both PCIe lanes are routed to the FPGA SERDES.

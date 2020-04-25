@@ -472,12 +472,12 @@ Connection ~ 6850 4100
 $Comp
 L power:GNDA #PWR0196
 U 1 1 5E064518
-P 3600 2650
-F 0 "#PWR0196" H 3600 2400 50  0001 C CNN
-F 1 "GNDA" H 3605 2477 50  0000 C CNN
-F 2 "" H 3600 2650 50  0001 C CNN
-F 3 "" H 3600 2650 50  0001 C CNN
-	1    3600 2650
+P 3650 2650
+F 0 "#PWR0196" H 3650 2400 50  0001 C CNN
+F 1 "GNDA" H 3655 2477 50  0000 C CNN
+F 2 "" H 3650 2650 50  0001 C CNN
+F 3 "" H 3650 2650 50  0001 C CNN
+	1    3650 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -509,8 +509,6 @@ Text Label 3750 6900 2    50   ~ 0
 P9_AIN5
 Text Label 3750 7000 2    50   ~ 0
 P9_AIN6
-Wire Wire Line
-	3250 7250 3150 7250
 $Comp
 L power:GND #PWR0202
 U 1 1 5E2E3931
@@ -530,25 +528,10 @@ Text Label 1600 6550 0    50   ~ 0
 ADC_MOSI
 Text Label 1600 6250 0    50   ~ 0
 ~ADC_CSEL
-$Comp
-L Logicbone:VADC #PWR0203
-U 1 1 5E3C823E
-P 3600 2400
-F 0 "#PWR0203" H 3600 2250 50  0001 C CNN
-F 1 "VADC" H 3617 2573 50  0000 C CNN
-F 2 "" H 3600 2400 50  0001 C CNN
-F 3 "" H 3600 2400 50  0001 C CNN
-	1    3600 2400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3600 2400 3600 2500
+	3650 2400 3650 2500
 Wire Wire Line
-	3600 2500 2900 2500
-Wire Wire Line
-	3600 2650 3600 2600
-Wire Wire Line
-	2900 2600 3600 2600
+	3650 2650 3650 2600
 Wire Wire Line
 	2400 2600 1850 2600
 Text Label 1850 2600 0    50   ~ 0
@@ -646,7 +629,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 5450 3850 5450
 Wire Wire Line
-	3300 4750 3850 4750
+	3300 4550 3850 4550
 Wire Wire Line
 	3300 5250 3850 5250
 Text Label 3850 5550 2    50   ~ 0
@@ -1005,14 +988,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5ECF3333
-P 4150 6650
+P 4650 7350
 AR Path="/5DFC5A69/5ECF3333" Ref="#PWR?"  Part="1" 
 AR Path="/6202D981/5ECF3333" Ref="#PWR0260"  Part="1" 
-F 0 "#PWR0260" H 4150 6400 50  0001 C CNN
-F 1 "GND" H 4155 6477 50  0000 C CNN
-F 2 "" H 4150 6650 50  0001 C CNN
-F 3 "" H 4150 6650 50  0001 C CNN
-	1    4150 6650
+F 0 "#PWR0260" H 4650 7100 50  0001 C CNN
+F 1 "GND" H 4655 7177 50  0000 C CNN
+F 2 "" H 4650 7350 50  0001 C CNN
+F 3 "" H 4650 7350 50  0001 C CNN
+	1    4650 7350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1031,8 +1014,6 @@ Wire Wire Line
 Connection ~ 2100 6950
 Wire Wire Line
 	4150 6350 4150 6250
-Wire Wire Line
-	4150 6650 4150 6600
 $Comp
 L Logicbone:ECP5UM-CABGA381 IC?
 U 3 1 5E628336
@@ -1072,11 +1053,11 @@ Wire Wire Line
 	2150 6450 1600 6450
 Wire Wire Line
 	2150 6550 1600 6550
-Text Label 3850 4750 2    50   ~ 0
+Text Label 1450 5350 0    50   ~ 0
 ADC_SCLK
 Text Label 3850 4550 2    50   ~ 0
 ADC_MISO
-Text Label 1450 5350 0    50   ~ 0
+Text Label 3850 4750 2    50   ~ 0
 ADC_MOSI
 Text Label 1450 4750 0    50   ~ 0
 ~ADC_CSEL
@@ -1085,7 +1066,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 4450 3850 4450
 Wire Wire Line
-	3300 4550 3850 4550
+	3300 4750 3850 4750
 Wire Wire Line
 	2000 5350 1450 5350
 $Comp
@@ -1204,16 +1185,16 @@ Wire Wire Line
 Text Label 3700 6250 2    50   ~ 0
 VADC
 Wire Wire Line
-	3250 7350 3250 7250
+	4150 7350 4150 7250
 $Comp
 L power:GNDA #PWR0200
 U 1 1 5E2CFBE1
-P 3250 7350
-F 0 "#PWR0200" H 3250 7100 50  0001 C CNN
-F 1 "GNDA" H 3255 7177 50  0000 C CNN
-F 2 "" H 3250 7350 50  0001 C CNN
-F 3 "" H 3250 7350 50  0001 C CNN
-	1    3250 7350
+P 4150 7350
+F 0 "#PWR0200" H 4150 7100 50  0001 C CNN
+F 1 "GNDA" H 4155 7177 50  0000 C CNN
+F 2 "" H 4150 7350 50  0001 C CNN
+F 3 "" H 4150 7350 50  0001 C CNN
+	1    4150 7350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1276,4 +1257,47 @@ Hole left by\nBeablebone\neMMC pins
 Text Notes 8600 1650 0    50   ~ 0
 P8-18 and P8-22 are available on the Beaglebone,\nbut we ran out of pins on the ECP5
 Connection ~ 6050 4400
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5F01A30E
+P 4450 7250
+AR Path="/5DFC5A69/5F01A30E" Ref="FB?"  Part="1" 
+AR Path="/6202D981/5F01A30E" Ref="FB6"  Part="1" 
+F 0 "FB6" V 4500 7100 50  0000 C CNN
+F 1 " MPZ1608S600" V 4500 7600 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 4380 7250 50  0001 C CNN
+F 3 "~" H 4450 7250 50  0001 C CNN
+	1    4450 7250
+	0    1    -1   0   
+$EndComp
+Connection ~ 4150 7250
+Wire Wire Line
+	4650 7350 4650 7250
+Wire Wire Line
+	4150 6600 4150 7250
+Wire Wire Line
+	3150 7250 4150 7250
+Wire Wire Line
+	4150 7250 4350 7250
+Wire Wire Line
+	4550 7250 4650 7250
+Text Notes 3750 2650 0    50   ~ 0
+Note: The AM33x beaglebones\nhave VDD_ADC=1.8V, but on the\nbeaglebone AI it is selectable.
+$Comp
+L Logicbone:VCC1V8 #PWR0203
+U 1 1 5F40AEB8
+P 3650 2400
+F 0 "#PWR0203" H 3650 2250 50  0001 C CNN
+F 1 "VCC1V8" H 3667 2573 50  0000 C CNN
+F 2 "" H 3650 2400 50  0001 C CNN
+F 3 "" H 3650 2400 50  0001 C CNN
+	1    3650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2500 3650 2500
+Wire Wire Line
+	2900 2600 3650 2600
+Text Notes 4300 6950 0    50   ~ 0
+This feels like overkill\nfor power filtering
 $EndSCHEMATC

@@ -20,6 +20,9 @@ F0 "FPGA Power" 50
 F1 "fpga-power.sch" 50
 F2 "SCL" I R 3150 5300 50 
 F3 "SDA" I R 3150 5400 50 
+F4 "PGOOD" I R 3150 5650 50 
+F5 "USB_D-" I L 1550 5400 50 
+F6 "USB_D+" I L 1550 5300 50 
 $EndSheet
 $Sheet
 S 3950 3150 1600 1500
@@ -166,14 +169,13 @@ $EndComp
 $Sheet
 S 1550 1350 1550 1550
 U 5E15C0BA
-F0 "FPGA Programming" 50
+F0 "USB and Programming" 50
 F1 "supervisor.sch" 50
 F2 "PWR_BUTTON" I R 3100 1850 50 
 F3 "~SYS_RESET" I R 3100 1950 50 
 F4 "SDA" I R 3100 2250 50 
 F5 "SCL" I R 3100 2350 50 
-F6 "USB_D+" I L 1550 2250 50 
-F7 "USB_D-" I L 1550 2350 50 
+F6 "~FPGA_INIT" I R 3100 1650 50 
 $EndSheet
 Wire Wire Line
 	3700 3500 3700 5300
@@ -186,19 +188,106 @@ Wire Wire Line
 	3800 5400 3800 3400
 Connection ~ 3800 3400
 Wire Wire Line
-	1550 2350 1400 2350
-Wire Wire Line
-	1400 2350 1400 3500
-Wire Wire Line
-	1400 3500 1550 3500
-Wire Wire Line
-	1550 3600 1300 3600
-Wire Wire Line
-	1300 3600 1300 2250
-Wire Wire Line
-	1300 2250 1550 2250
-Wire Wire Line
 	3950 4200 3150 4200
 Wire Wire Line
 	3950 4300 3150 4300
+Wire Notes Line
+	5500 4850 5500 6450
+Wire Notes Line
+	5500 6450 4000 6450
+Wire Notes Line
+	4000 6450 4000 4850
+Wire Notes Line
+	4000 4850 5500 4850
+Text Notes 4150 6250 0    50   ~ 0
+INIT will drive the red\nLED on in case of error.
+$Comp
+L Device:R R?
+U 1 1 5ED0656C
+P 4250 5400
+AR Path="/5E15C0BA/5ED0656C" Ref="R?"  Part="1" 
+AR Path="/5ED0656C" Ref="R10"  Part="1" 
+F 0 "R10" V 4150 5400 50  0000 C CNN
+F 1 "470" V 4250 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4180 5400 50  0001 C CNN
+F 3 "~" H 4250 5400 50  0001 C CNN
+	1    4250 5400
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5ED06575
+P 4250 5200
+AR Path="/5E15C0BA/5ED06575" Ref="#PWR?"  Part="1" 
+AR Path="/5ED06575" Ref="#PWR0195"  Part="1" 
+F 0 "#PWR0195" H 4250 5050 50  0001 C CNN
+F 1 "+3V3" H 4265 5373 50  0000 C CNN
+F 2 "" H 4250 5200 50  0001 C CNN
+F 3 "" H 4250 5200 50  0001 C CNN
+	1    4250 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Dual_ACAC D1
+U 1 1 5ED071E3
+P 4650 5750
+F 0 "D1" H 4650 5403 50  0000 C CNN
+F 1 "LED_Dual_ACAC" H 4650 5494 50  0000 C CNN
+F 2 "KiCAD_Magic:LED_0603_DUAL" H 4680 5750 50  0001 C CNN
+F 3 "~" H 4680 5750 50  0001 C CNN
+	1    4650 5750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4350 5650 4250 5650
+Wire Wire Line
+	4250 5650 4250 5550
+Wire Wire Line
+	4350 5850 4250 5850
+Wire Wire Line
+	4250 5850 4250 5650
+Connection ~ 4250 5650
+Wire Wire Line
+	4250 5250 4250 5200
+$Comp
+L power:GND #PWR0221
+U 1 1 5ED0F97F
+P 5300 5950
+F 0 "#PWR0221" H 5300 5700 50  0001 C CNN
+F 1 "GND" H 5305 5777 50  0000 C CNN
+F 2 "" H 5300 5950 50  0001 C CNN
+F 3 "" H 5300 5950 50  0001 C CNN
+	1    5300 5950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 5850 5300 5950
+Wire Wire Line
+	3150 5650 4250 5650
+Wire Wire Line
+	3100 1650 3350 1650
+Wire Wire Line
+	3350 1650 3350 1000
+Wire Wire Line
+	3350 1000 6000 1000
+Wire Wire Line
+	6000 1000 6000 5650
+Wire Wire Line
+	4950 5650 6000 5650
+Text Notes 4500 5250 0    50   ~ 0
+Releasing PGOOD will\nenable the green LED.
+Wire Wire Line
+	4950 5850 5300 5850
+Wire Wire Line
+	1550 3600 1400 3600
+Wire Wire Line
+	1400 3600 1400 5300
+Wire Wire Line
+	1400 5300 1550 5300
+Wire Wire Line
+	1300 3500 1300 5400
+Wire Wire Line
+	1300 5400 1550 5400
+Wire Wire Line
+	1300 3500 1550 3500
 $EndSCHEMATC
