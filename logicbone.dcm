@@ -75,6 +75,12 @@ K connector SD microsd
 F http://katalog.we-online.de/em/datasheet/693072010801.pdf
 $ENDCMP
 #
+$CMP TLA2518
+D Small,8-Channel,12-BitADC With SPI Interfaceand GPIOs
+K ADC
+F http://www.ti.com/lit/ds/symlink/tla2518.pdf
+$ENDCMP
+#
 $CMP TPS51200
 D Sink and Source DDR Termination Regulator, VSON-10
 K DDR LDO

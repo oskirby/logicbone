@@ -1262,24 +1262,15 @@ Text Label 9300 2700 2    50   ~ 0
 ETH_LDO
 Text HLabel 9500 4600 2    50   Input ~ 0
 25M_REFCLK
-Wire Wire Line
-	6450 6900 7300 6900
-Connection ~ 6450 6900
-Wire Wire Line
-	6450 6700 6450 6900
-Wire Wire Line
-	5050 6900 6450 6900
-Wire Wire Line
-	6650 6250 6650 6300
 $Comp
 L Logicbone:VCC3V3 #PWR0233
 U 1 1 5EB6B253
-P 6650 6250
-F 0 "#PWR0233" H 6650 6100 50  0001 C CNN
-F 1 "VCC3V3" H 6667 6423 50  0000 C CNN
-F 2 "" H 6650 6250 50  0001 C CNN
-F 3 "" H 6650 6250 50  0001 C CNN
-	1    6650 6250
+P 5950 6200
+F 0 "#PWR0233" H 5950 6050 50  0001 C CNN
+F 1 "VCC3V3" H 5967 6373 50  0000 C CNN
+F 2 "" H 5950 6200 50  0001 C CNN
+F 3 "" H 5950 6200 50  0001 C CNN
+	1    5950 6200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1293,8 +1284,6 @@ F 3 "" H 7150 6500 50  0001 C CNN
 	1    7150 6500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 7000 6350 7000
 Wire Wire Line
 	6250 7200 7300 7200
 Connection ~ 6250 7200
@@ -1315,19 +1304,6 @@ Wire Wire Line
 	5050 7400 6150 7400
 Wire Wire Line
 	5050 7200 6250 7200
-$Comp
-L Device:R_Network08 RN?
-U 1 1 5E8ADF9D
-P 6250 6500
-AR Path="/5DFC5A6C/5E8ADF9D" Ref="RN?"  Part="1" 
-AR Path="/5DFD59AE/5E8ADF9D" Ref="RN10"  Part="1" 
-F 0 "RN10" V 6750 6500 50  0000 C CNN
-F 1 "10k" V 6650 6500 50  0000 C CNN
-F 2 "KiCAD_Magic:EXBD-1206" V 6725 6500 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6250 6500 50  0001 C CNN
-	1    6250 6500
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 6700 6250 7200
 Wire Wire Line
@@ -1793,16 +1769,90 @@ $EndComp
 Wire Wire Line
 	11000 5600 11000 5700
 Connection ~ 11000 5700
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 5F325FDA
+P 6150 6500
+AR Path="/5E15C0BA/5F325FDA" Ref="RN?"  Part="1" 
+AR Path="/5DFD59AE/5F325FDA" Ref="RN6"  Part="1" 
+F 0 "RN6" H 5870 6546 50  0000 R CNN
+F 1 "10k" H 5870 6455 50  0000 R CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 6425 6500 50  0001 C CNN
+F 3 "~" H 6150 6500 50  0001 C CNN
+	1    6150 6500
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5050 6800 6550 6800
+	5950 6200 5950 6250
 Wire Wire Line
-	6350 6700 6350 7000
-Connection ~ 6350 7000
+	5950 6250 6050 6250
 Wire Wire Line
-	6350 7000 7300 7000
+	6250 6250 6250 6300
+Connection ~ 5950 6250
 Wire Wire Line
-	6550 6700 6550 6800
-Connection ~ 6550 6800
+	5950 6250 5950 6300
 Wire Wire Line
-	6550 6800 7300 6800
+	6150 6300 6150 6250
+Connection ~ 6150 6250
+Wire Wire Line
+	6150 6250 6250 6250
+Wire Wire Line
+	6050 6300 6050 6250
+Connection ~ 6050 6250
+Wire Wire Line
+	6050 6250 6150 6250
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 5F40632B
+P 6500 6500
+AR Path="/5E15C0BA/5F40632B" Ref="RN?"  Part="1" 
+AR Path="/5DFD59AE/5F40632B" Ref="RN8"  Part="1" 
+F 0 "RN8" H 6220 6546 50  0000 R CNN
+F 1 "10k" H 6220 6455 50  0000 R CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 6775 6500 50  0001 C CNN
+F 3 "~" H 6500 6500 50  0001 C CNN
+	1    6500 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 6700 6400 6900
+Wire Wire Line
+	5050 6900 6400 6900
+Wire Wire Line
+	6400 6300 6400 6250
+Wire Wire Line
+	6400 6250 6250 6250
+Connection ~ 6250 6250
+Wire Wire Line
+	6500 6300 6500 6250
+Wire Wire Line
+	6500 6250 6400 6250
+Connection ~ 6400 6250
+Wire Wire Line
+	6600 6300 6600 6250
+Wire Wire Line
+	6600 6250 6500 6250
+Connection ~ 6500 6250
+Wire Wire Line
+	6700 6300 6700 6250
+Wire Wire Line
+	6700 6250 6600 6250
+Connection ~ 6600 6250
+Wire Wire Line
+	5050 7000 6500 7000
+Wire Wire Line
+	5050 6800 6600 6800
+Connection ~ 6400 6900
+Connection ~ 6500 7000
+Wire Wire Line
+	6500 7000 7300 7000
+Wire Wire Line
+	6600 6700 6600 6800
+Connection ~ 6600 6800
+Wire Wire Line
+	6600 6800 7300 6800
+Wire Wire Line
+	6400 6900 7300 6900
+Wire Wire Line
+	6500 6700 6500 7000
 $EndSCHEMATC

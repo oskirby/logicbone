@@ -19,7 +19,7 @@ The ultimate objective of this board is to instantiate a soft core processor, su
 the RISC-V, and use it to boot a Linux operating system with networking.
 
 To that effect, this board is designed to be mechanically and electrically compatible
-with the Beaglebone Black, but featureing a Lattice ECP5 FPGA, which is available in
+with the Beaglebone Black, but featuring a Lattice ECP5 FPGA, which is available in
 logic sizes up to 85k LUTs, and a selection of hardware blocks for DDR3 DQS acceleration,
 MIPI interfaces, DSPs and 3Gbps SERDES.
 

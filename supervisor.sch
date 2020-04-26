@@ -99,8 +99,6 @@ Wire Notes Line
 Wire Wire Line
 	4250 6450 4250 6500
 Wire Wire Line
-	1300 6400 2750 6400
-Wire Wire Line
 	4150 6600 4250 6600
 Wire Wire Line
 	4050 6500 4250 6500
@@ -111,14 +109,10 @@ Wire Wire Line
 Connection ~ 4150 6600
 Wire Wire Line
 	4150 6600 4150 6400
-Text Label 1300 5750 0    50   ~ 0
+Text Label 1650 5750 0    50   ~ 0
 FLASH_D3
-Text Label 1300 5850 0    50   ~ 0
+Text Label 1650 5850 0    50   ~ 0
 FLASH_D2
-Wire Wire Line
-	2750 5750 1300 5750
-Wire Wire Line
-	2750 5850 1300 5850
 $Comp
 L Logicbone:ECP5UM-CABGA381 IC?
 U 7 1 5E4FC03A
@@ -172,60 +166,38 @@ Wire Wire Line
 Wire Wire Line
 	4050 5250 4650 5250
 Wire Wire Line
-	5200 5750 4050 5750
-Wire Wire Line
-	5200 4900 5200 5150
-Wire Wire Line
-	5150 5150 5200 5150
-Wire Wire Line
-	5150 5050 5300 5050
-Wire Wire Line
-	5150 4950 5300 4950
-Wire Wire Line
-	5300 5050 5300 5250
-Connection ~ 5300 5050
-Wire Wire Line
-	5300 4950 5300 5050
-Wire Wire Line
-	5150 5250 5300 5250
-Wire Wire Line
-	5200 5350 5200 5750
+	5250 4850 5250 4950
 Text Notes 9350 7250 0    50   ~ 0
 TODO:\n - Are ESD diodes enough for short-to-Vbus protection?\n - Fun feature for the future: USB DRP and sink mode?\n - Termination resistors for DP/DM lines?\n - 15k pulldowns for DP/DM lines in host mode?
-Wire Wire Line
-	5150 5350 5200 5350
-Wire Wire Line
-	5300 5250 5300 5450
-Connection ~ 5300 5250
 $Comp
 L power:GND #PWR0220
 U 1 1 5EBB62B8
-P 5300 5450
-F 0 "#PWR0220" H 5300 5200 50  0001 C CNN
-F 1 "GND" H 5305 5277 50  0000 C CNN
-F 2 "" H 5300 5450 50  0001 C CNN
-F 3 "" H 5300 5450 50  0001 C CNN
-	1    5300 5450
+P 5250 5450
+F 0 "#PWR0220" H 5250 5200 50  0001 C CNN
+F 1 "GND" H 5255 5277 50  0000 C CNN
+F 2 "" H 5250 5450 50  0001 C CNN
+F 3 "" H 5250 5450 50  0001 C CNN
+	1    5250 5450
 	1    0    0    -1  
 $EndComp
-Text Label 4550 5250 2    50   ~ 0
-FPGA_TDO
 Text Label 4550 5150 2    50   ~ 0
+FPGA_TDO
+Text Label 4550 5250 2    50   ~ 0
 FPGA_TDI
-Text Label 4550 5050 2    50   ~ 0
-FPGA_TMS
 Text Label 4550 4950 2    50   ~ 0
+FPGA_TMS
+Text Label 4550 5050 2    50   ~ 0
 FPGA_TCK
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J4
 U 1 1 5EB3E7BC
-P 4850 5150
-F 0 "J4" H 4900 5450 50  0000 C CNN
-F 1 "TC2050-IDC-NL" H 4850 4850 50  0000 C CNN
-F 2 "Connector:Tag-Connect_TC2050-IDC-NL_2x05_P1.27mm_Vertical" H 4850 5150 50  0001 C CNN
-F 3 "~" H 4850 5150 50  0001 C CNN
-	1    4850 5150
-	1    0    0    -1  
+P 4950 5150
+F 0 "J4" H 5000 5450 50  0000 C CNN
+F 1 "TC2050-IDC-NL" H 5150 4850 50  0000 C CNN
+F 2 "Connector:Tag-Connect_TC2050-IDC-NL_2x05_P1.27mm_Vertical" H 4950 5150 50  0001 C CNN
+F 3 "~" H 4950 5150 50  0001 C CNN
+	1    4950 5150
+	-1   0    0    -1  
 $EndComp
 Connection ~ 2450 4750
 Wire Wire Line
@@ -233,20 +205,16 @@ Wire Wire Line
 Wire Wire Line
 	2450 4700 2450 4750
 Wire Wire Line
-	1300 6050 2750 6050
-Wire Wire Line
-	1300 5950 2750 5950
-Wire Wire Line
 	2600 5050 2750 5050
 Text Notes 4400 6600 0    50   ~ 0
 Strapped for SPI\nMaster Programming
 Wire Wire Line
 	4250 6650 4250 6600
-Text Label 1300 6400 0    50   ~ 0
+Text Label 1650 6400 0    50   ~ 0
 ~FLASH_CSEL
-Text Label 1300 6050 0    50   ~ 0
+Text Label 1650 6050 0    50   ~ 0
 FLASH_MOSI
-Text Label 1300 5950 0    50   ~ 0
+Text Label 1650 5950 0    50   ~ 0
 FLASH_MISO
 $Comp
 L power:GND #PWR0171
@@ -285,12 +253,12 @@ $EndComp
 $Comp
 L Logicbone:VCC3V3 #PWR0212
 U 1 1 5F05EAE5
-P 5200 4900
-F 0 "#PWR0212" H 5200 4750 50  0001 C CNN
-F 1 "VCC3V3" H 5217 5073 50  0000 C CNN
-F 2 "" H 5200 4900 50  0001 C CNN
-F 3 "" H 5200 4900 50  0001 C CNN
-	1    5200 4900
+P 5250 4850
+F 0 "#PWR0212" H 5250 4700 50  0001 C CNN
+F 1 "VCC3V3" H 5267 5023 50  0000 C CNN
+F 2 "" H 5250 4850 50  0001 C CNN
+F 3 "" H 5250 4850 50  0001 C CNN
+	1    5250 4850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -319,21 +287,18 @@ Wire Wire Line
 	2450 5000 2450 5050
 Text HLabel 5300 5750 2    50   Input ~ 0
 ~SYS_RESET
-Wire Wire Line
-	5300 5750 5200 5750
-Text HLabel 1200 5650 0    50   Input ~ 0
+Text HLabel 1550 5650 0    50   Input ~ 0
 SDA
-Text HLabel 1200 5550 0    50   Input ~ 0
+Text HLabel 1550 5550 0    50   Input ~ 0
 SCL
-Text Label 1300 5550 0    50   ~ 0
+Text Label 1650 5550 0    50   ~ 0
 I2C_SCL
-Text Label 1300 5650 0    50   ~ 0
+Text Label 1650 5650 0    50   ~ 0
 I2C_SDA
 Text HLabel 5300 5850 2    50   Input ~ 0
 ~FPGA_INIT
 Wire Wire Line
 	4050 5850 5300 5850
-Connection ~ 5200 5750
 Wire Wire Line
 	2200 2500 2200 2600
 Wire Wire Line
@@ -589,16 +554,14 @@ Wire Wire Line
 	11700 4450 11700 4550
 Wire Wire Line
 	11700 4550 11750 4550
-Text Label 9350 4450 0    50   ~ 0
-USB_DFP+
-Text Label 9350 4350 0    50   ~ 0
-USB_DFP-
-Wire Wire Line
-	2750 5450 1300 5450
-Text Label 1300 5350 0    50   ~ 0
-USB_DFP+
-Text Label 1300 5450 0    50   ~ 0
-USB_DFP-
+Text Label 8450 4450 0    50   ~ 0
+FPGA_USB_DFP+
+Text Label 8450 4350 0    50   ~ 0
+FPGA_USB_DFP-
+Text Label 1650 5350 0    50   ~ 0
+FPGA_USB_DFP+
+Text Label 1650 5450 0    50   ~ 0
+FPGA_USB_DFP-
 Wire Wire Line
 	7000 6700 7000 7050
 Connection ~ 7000 7050
@@ -623,29 +586,18 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 629D842C
-P 2050 6200
+P 9350 4700
 AR Path="/5DFD59AE/629D842C" Ref="R?"  Part="1" 
 AR Path="/5E15C0BA/629D842C" Ref="R17"  Part="1" 
-F 0 "R17" V 1950 6200 50  0000 C CNN
-F 1 "1.5k" V 2050 6200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1980 6200 50  0001 C CNN
-F 3 "~" H 2050 6200 50  0001 C CNN
-	1    2050 6200
-	0    1    1    0   
+F 0 "R17" V 9250 4700 50  0000 C CNN
+F 1 "1.5k" V 9350 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9280 4700 50  0001 C CNN
+F 3 "~" H 9350 4700 50  0001 C CNN
+	1    9350 4700
+	-1   0    0    1   
 $EndComp
-Text Label 2200 6200 0    50   ~ 0
+Text Label 1650 6200 0    50   ~ 0
 USB_DFP_PULL
-Wire Wire Line
-	2200 6200 2750 6200
-Wire Wire Line
-	2750 5350 1850 5350
-Wire Wire Line
-	1850 5350 1850 6200
-Wire Wire Line
-	1850 6200 1900 6200
-Connection ~ 1850 5350
-Wire Wire Line
-	1850 5350 1300 5350
 Wire Wire Line
 	5450 2050 5450 1950
 Wire Wire Line
@@ -865,22 +817,16 @@ Wire Wire Line
 	10750 5100 11050 5100
 Wire Wire Line
 	10800 4800 10800 5000
-Wire Wire Line
-	9350 4350 9950 4350
 Connection ~ 11700 4350
-Wire Wire Line
-	9350 4450 9850 4450
 Connection ~ 11700 4450
 Wire Wire Line
 	9850 4900 9850 4450
 Wire Wire Line
 	9850 4900 10050 4900
-Connection ~ 9850 4450
 Wire Wire Line
 	9850 4450 11700 4450
 Wire Wire Line
 	9950 5100 9950 4350
-Connection ~ 9950 4350
 Wire Wire Line
 	9950 4350 11700 4350
 $Comp
@@ -903,12 +849,12 @@ USB_DFP_VBUS
 $Comp
 L power:GND #PWR0254
 U 1 1 6391F9FE
-P 9200 4150
-F 0 "#PWR0254" H 9200 3900 50  0001 C CNN
-F 1 "GND" H 9205 3977 50  0000 C CNN
-F 2 "" H 9200 4150 50  0001 C CNN
-F 3 "" H 9200 4150 50  0001 C CNN
-	1    9200 4150
+P 9200 4100
+F 0 "#PWR0254" H 9200 3850 50  0001 C CNN
+F 1 "GND" H 9205 3927 50  0000 C CNN
+F 2 "" H 9200 4100 50  0001 C CNN
+F 3 "" H 9200 4100 50  0001 C CNN
+	1    9200 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1006,8 +952,6 @@ F 3 "" H 8650 2900 50  0001 C CNN
 	1    9700 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9200 4150 9200 4050
 Wire Wire Line
 	9200 3950 9200 4050
 Connection ~ 9200 4050
@@ -1158,14 +1102,6 @@ Wire Wire Line
 	9000 2350 9000 3200
 Wire Wire Line
 	9000 3200 9250 3200
-Wire Wire Line
-	2750 6500 1300 6500
-Wire Wire Line
-	1300 6600 2750 6600
-Wire Wire Line
-	1200 5650 2750 5650
-Wire Wire Line
-	1200 5550 2750 5550
 $Comp
 L Device:R R?
 U 1 1 5EF16872
@@ -1226,14 +1162,116 @@ Wire Wire Line
 	8300 2850 9250 2850
 Wire Wire Line
 	8300 3000 9250 3000
-Wire Wire Line
-	1200 6300 2750 6300
-Text HLabel 1200 6300 0    50   Input ~ 0
+Text HLabel 1550 6300 0    50   Input ~ 0
 PWR_BUTTON
-Text Label 1300 6500 0    50   ~ 0
+Text Label 1650 6500 0    50   ~ 0
 ~USB_INT
-Text Label 1300 6600 0    50   ~ 0
+Text Label 1650 6600 0    50   ~ 0
 USB_ORIENT
 Text Notes 10100 3200 0    50   ~ 0
 USB-C PD Controller\nI2C Address 0x50
+$Comp
+L Device:R R?
+U 1 1 5F77A49D
+P 9600 4450
+AR Path="/5DFD59AE/5F77A49D" Ref="R?"  Part="1" 
+AR Path="/5E15C0BA/5F77A49D" Ref="R6"  Part="1" 
+F 0 "R6" V 9700 4450 50  0000 C CNN
+F 1 "20" V 9600 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9530 4450 50  0001 C CNN
+F 3 "~" H 9600 4450 50  0001 C CNN
+	1    9600 4450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F77A4A3
+P 9600 4350
+AR Path="/5DFD59AE/5F77A4A3" Ref="R?"  Part="1" 
+AR Path="/5E15C0BA/5F77A4A3" Ref="R37"  Part="1" 
+F 0 "R37" V 9500 4350 50  0000 C CNN
+F 1 "20" V 9600 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9530 4350 50  0001 C CNN
+F 3 "~" H 9600 4350 50  0001 C CNN
+	1    9600 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 4100 9200 4050
+Wire Wire Line
+	9750 4450 9850 4450
+Connection ~ 9850 4450
+Wire Wire Line
+	9750 4350 9950 4350
+Connection ~ 9950 4350
+Text Label 8450 4950 0    50   ~ 0
+USB_DFP_PULL
+Wire Wire Line
+	1650 6200 2750 6200
+Wire Wire Line
+	1650 6600 2750 6600
+Wire Wire Line
+	1650 6500 2750 6500
+Wire Wire Line
+	1650 6400 2750 6400
+Wire Wire Line
+	1550 6300 2750 6300
+Wire Wire Line
+	1650 5750 2750 5750
+Wire Wire Line
+	1650 5850 2750 5850
+Wire Wire Line
+	1650 5950 2750 5950
+Wire Wire Line
+	1650 6050 2750 6050
+Wire Wire Line
+	1550 5650 2750 5650
+Wire Wire Line
+	2750 5550 1550 5550
+Wire Wire Line
+	1650 5450 2750 5450
+Wire Wire Line
+	1650 5350 2750 5350
+Wire Wire Line
+	9350 4850 9350 4950
+Wire Wire Line
+	9350 4550 9350 4450
+Wire Wire Line
+	9350 4450 9450 4450
+Text Label 10250 4450 0    50   ~ 0
+USBC_DFP+
+Text Label 10250 4350 0    50   ~ 0
+USBC_DFP-
+Wire Wire Line
+	8450 4350 9450 4350
+Wire Wire Line
+	8450 4450 9350 4450
+Connection ~ 9350 4450
+Wire Wire Line
+	8450 4950 9350 4950
+Wire Wire Line
+	4050 5750 4150 5750
+Wire Wire Line
+	5150 4950 5250 4950
+Wire Wire Line
+	5150 5050 5250 5050
+Wire Wire Line
+	5250 5050 5250 5150
+Wire Wire Line
+	5150 5150 5250 5150
+Connection ~ 5250 5150
+Wire Wire Line
+	5250 5150 5250 5350
+Wire Wire Line
+	5150 5350 5250 5350
+Connection ~ 5250 5350
+Wire Wire Line
+	5250 5350 5250 5450
+Wire Wire Line
+	4650 5350 4150 5350
+Wire Wire Line
+	4150 5350 4150 5750
+Connection ~ 4150 5750
+Wire Wire Line
+	4150 5750 5300 5750
 $EndSCHEMATC

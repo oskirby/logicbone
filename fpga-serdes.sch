@@ -252,7 +252,7 @@ U 1 1 6053B8DE
 P 2550 6950
 F 0 "H5" H 2650 6999 50  0000 L CNN
 F 1 "MountingHole_Pad" H 2650 6908 50  0000 L CNN
-F 2 "KiCAD_Magic:Keystone-4881" H 2550 6950 50  0001 C CNN
+F 2 "Logicbone:wurth-9774025360" H 2550 6950 50  0001 C CNN
 F 3 "~" H 2550 6950 50  0001 C CNN
 	1    2550 6950
 	1    0    0    -1  
@@ -569,21 +569,6 @@ F 3 "" H 1450 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 7500 5650 7500
-Wire Wire Line
-	6000 7500 6050 7500
-$Comp
-L Device:R R6
-U 1 1 5EEE664A
-P 5850 7500
-F 0 "R6" V 5750 7500 50  0000 C CNN
-F 1 "10k" V 5850 7500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5780 7500 50  0001 C CNN
-F 3 "~" H 5850 7500 50  0001 C CNN
-	1    5850 7500
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
 	7450 6600 7800 6600
 Wire Wire Line
 	7450 6500 8100 6500
@@ -650,8 +635,6 @@ F 3 "" H 7550 7450 50  0001 C CNN
 $EndComp
 Text HLabel 4900 7400 0    50   Input ~ 0
 25M_REFCLK
-Wire Wire Line
-	6050 7500 6050 7550
 Connection ~ 8100 7100
 Wire Wire Line
 	7800 7100 7800 6600
@@ -1131,19 +1114,6 @@ Wire Wire Line
 	7450 7300 7550 7300
 Wire Wire Line
 	7450 7400 7550 7400
-$Comp
-L power:GND #PWR?
-U 1 1 5E17556D
-P 6050 7550
-AR Path="/5DFC5A69/5E17556D" Ref="#PWR?"  Part="1" 
-AR Path="/5DFC63AE/5E17556D" Ref="#PWR0182"  Part="1" 
-F 0 "#PWR0182" H 6050 7300 50  0001 C CNN
-F 1 "GND" H 6055 7377 50  0000 C CNN
-F 2 "" H 6050 7550 50  0001 C CNN
-F 3 "" H 6050 7550 50  0001 C CNN
-	1    6050 7550
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	7750 5200 7750 5300
 Connection ~ 7750 5200
@@ -1403,15 +1373,8 @@ Connection ~ 9500 6000
 Wire Wire Line
 	9500 6000 9500 3800
 Connection ~ 9600 6100
-Wire Wire Line
-	5650 7500 5650 7400
 Text Label 5050 7400 0    50   ~ 0
 25M_REFCLK
-Connection ~ 5650 7400
-Wire Wire Line
-	5650 7400 6150 7400
-Wire Wire Line
-	4900 7400 5650 7400
 Text Label 10250 3300 0    50   ~ 0
 25M_REFCLK
 Text HLabel 8150 1250 2    50   Input ~ 0
@@ -1428,4 +1391,6 @@ Wire Wire Line
 	12150 4350 12750 4350
 Text Notes 4850 850  0    50   ~ 0
 Note: USB FS/LS need 3.3V IO, so they\nmust find a home on another IO bank.
+Wire Wire Line
+	4900 7400 6150 7400
 $EndSCHEMATC
