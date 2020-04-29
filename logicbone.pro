@@ -1,4 +1,4 @@
-update=Thu 23 Apr 2020 01:21:46 AM
+update=Tue 28 Apr 2020 09:07:11 PM
 version=1
 last_client=kicad
 [general]
@@ -282,6 +282,17 @@ dPairWidth=0.2
 dPairGap=0.125
 dPairViaGap=0.25
 [pcbnew/Netclasses/4]
+Name=ETH
+Clearance=0.08
+TrackWidth=0.175
+ViaDiameter=0.5
+ViaDrill=0.2
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.175
+dPairGap=0.125
+dPairViaGap=0.25
+[pcbnew/Netclasses/5]
 Name=PCIE
 Clearance=0.08
 TrackWidth=0.14
@@ -292,7 +303,29 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.125
 dPairViaGap=0.25
-[pcbnew/Netclasses/5]
+[pcbnew/Netclasses/6]
+Name=REFCLK
+Clearance=0.08
+TrackWidth=0.135
+ViaDiameter=0.5
+ViaDrill=0.2
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.135
+dPairGap=0.125
+dPairViaGap=0.25
+[pcbnew/Netclasses/7]
+Name=USBHS
+Clearance=0.08
+TrackWidth=0.135
+ViaDiameter=0.5
+ViaDrill=0.2
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.125
+dPairViaGap=0.25
+[pcbnew/Netclasses/8]
 Name=USBSS
 Clearance=0.08
 TrackWidth=0.135
