@@ -242,8 +242,6 @@ Text Label 4750 5750 2    50   ~ 0
 ~FPGA_RESET
 Text Label 4750 5850 2    50   ~ 0
 ~FPGA_INIT
-Wire Wire Line
-	4050 5950 4750 5950
 $Comp
 L Logicbone:VCC3V3 #PWR0180
 U 1 1 5F01E4B9
@@ -290,7 +288,7 @@ F 3 "" H 4250 6450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2450 5000 2450 5050
-Text HLabel 5300 5750 2    50   Input ~ 0
+Text HLabel 5050 5750 2    50   Input ~ 0
 ~SYS_RESET
 Text HLabel 6500 5300 0    50   Input ~ 0
 SDA
@@ -300,10 +298,8 @@ Text Label 1650 5550 0    50   ~ 0
 I2C_SCL
 Text Label 1650 5650 0    50   ~ 0
 I2C_SDA
-Text HLabel 5300 5850 2    50   Input ~ 0
+Text HLabel 5050 5850 2    50   Input ~ 0
 ~FPGA_INIT
-Wire Wire Line
-	4050 5850 5300 5850
 Wire Wire Line
 	2200 2500 2200 2600
 Wire Wire Line
@@ -1270,9 +1266,6 @@ Wire Wire Line
 	4650 5350 4150 5350
 Wire Wire Line
 	4150 5350 4150 5750
-Connection ~ 4150 5750
-Wire Wire Line
-	4150 5750 5300 5750
 $Comp
 L Device:R R32
 U 1 1 5F99CEC1
@@ -1524,4 +1517,24 @@ Wire Wire Line
 Connection ~ 10450 2000
 Wire Wire Line
 	10450 2000 10600 2000
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5EABA0B4
+P 5750 5850
+F 0 "TP1" H 5808 5968 50  0000 L CNN
+F 1 "DONE" H 5808 5877 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5950 5850 50  0001 C CNN
+F 3 "~" H 5950 5850 50  0001 C CNN
+	1    5750 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5850 5750 5950
+Wire Wire Line
+	4050 5950 5750 5950
+Wire Wire Line
+	4150 5750 5050 5750
+Connection ~ 4150 5750
+Wire Wire Line
+	5050 5850 4050 5850
 $EndSCHEMATC

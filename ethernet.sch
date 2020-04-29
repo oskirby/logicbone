@@ -599,9 +599,9 @@ Wire Wire Line
 	12300 3750 12450 3750
 Wire Wire Line
 	12300 4050 12650 4050
-Text Label 13150 3850 2    50   ~ 0
-ETH_LED_L
 Text Label 13150 4150 2    50   ~ 0
+ETH_LED_L
+Text Label 13150 3850 2    50   ~ 0
 ETH_LED_R
 Wire Wire Line
 	6200 4300 5500 4300
@@ -1441,7 +1441,7 @@ Wire Wire Line
 	3600 7550 4300 7550
 Text Label 4300 7550 2    50   ~ 0
 MDIO_DATA
-Text Label 4300 7650 2    50   ~ 0
+Text Label 1600 6650 0    50   ~ 0
 MDIO_CLK
 Wire Wire Line
 	3600 6250 4300 6250
@@ -1467,7 +1467,7 @@ Wire Wire Line
 	4300 7450 3600 7450
 Wire Wire Line
 	2300 6650 1600 6650
-Text Label 1600 6650 0    50   ~ 0
+Text Label 4300 7650 2    50   ~ 0
 ETH_REFCLK
 Text Label 4300 6350 2    50   ~ 0
 LED_USER2

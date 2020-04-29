@@ -666,86 +666,6 @@ Text Label 3850 4850 2    50   ~ 0
 P9_GPIO42
 Wire Wire Line
 	3850 5050 3300 5050
-Text HLabel 5050 1400 2    50   Input ~ 0
-~SYS_RESET
-Text HLabel 1200 1400 0    50   Input ~ 0
-PWR_BUTTON
-$Comp
-L Switch:SW_SPST SW2
-U 1 1 5E196174
-P 4850 1750
-F 0 "SW2" V 4804 1848 50  0000 L CNN
-F 1 "SW_SPST" V 4895 1848 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_PTS810" H 4850 1750 50  0001 C CNN
-F 3 "https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS810/documents/datasheet.pdf" H 4850 1750 50  0001 C CNN
-F 4 "C&K Switches" V 4850 1750 50  0001 C CNN "Manufacturer"
-F 5 "PTS810 SJK 250 SMTR LFS" V 4850 1750 50  0001 C CNN "MPN"
-	1    4850 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0244
-U 1 1 5E1962BF
-P 4850 2000
-F 0 "#PWR0244" H 4850 1750 50  0001 C CNN
-F 1 "GND" H 4855 1827 50  0000 C CNN
-F 2 "" H 4850 2000 50  0001 C CNN
-F 3 "" H 4850 2000 50  0001 C CNN
-	1    4850 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 2000 4850 1950
-Text Notes 5100 2100 0    50   ~ 0
-Reset\nButton
-Wire Notes Line
-	4750 2250 4750 1500
-Wire Wire Line
-	4850 1400 4850 1550
-Wire Notes Line
-	5450 2250 5450 1500
-Wire Notes Line
-	4750 2250 5450 2250
-Wire Notes Line
-	4750 1500 5450 1500
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5E2DF8FA
-P 1350 1750
-F 0 "SW1" V 1304 1848 50  0000 L CNN
-F 1 "SW_SPST" V 1395 1848 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_PTS810" H 1350 1750 50  0001 C CNN
-F 3 "https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS810/documents/datasheet.pdf" H 1350 1750 50  0001 C CNN
-F 4 "C&K Switches" V 1350 1750 50  0001 C CNN "Manufacturer"
-F 5 "PTS810 SJK 250 SMTR LFS" V 1350 1750 50  0001 C CNN "MPN"
-	1    1350 1750
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:GND #PWR0245
-U 1 1 5E2DF900
-P 1350 2000
-F 0 "#PWR0245" H 1350 1750 50  0001 C CNN
-F 1 "GND" H 1355 1827 50  0000 C CNN
-F 2 "" H 1350 2000 50  0001 C CNN
-F 3 "" H 1350 2000 50  0001 C CNN
-	1    1350 2000
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 2000 1350 1950
-Text Notes 1100 2100 2    50   ~ 0
-Power\nButton
-Wire Notes Line
-	1450 2250 1450 1500
-Wire Wire Line
-	1350 1400 1350 1550
-Wire Notes Line
-	750  2250 750  1500
-Wire Notes Line
-	1450 2250 750  2250
-Wire Notes Line
-	1450 1500 750  1500
 Wire Wire Line
 	3050 6150 3650 6150
 Wire Wire Line
@@ -786,9 +706,6 @@ SYS_5V
 Wire Wire Line
 	4200 950  4650 950 
 Connection ~ 4200 950 
-Connection ~ 1350 1400
-Wire Wire Line
-	1350 1400 2400 1400
 Text HLabel 3550 1900 2    50   Input ~ 0
 SDA
 Wire Wire Line
@@ -797,37 +714,6 @@ Text HLabel 1750 1900 0    50   Input ~ 0
 SCL
 Wire Wire Line
 	1750 1900 2400 1900
-Wire Wire Line
-	5050 1400 4850 1400
-Connection ~ 4850 1400
-$Comp
-L Device:R R29
-U 1 1 5EAB8C69
-P 1350 1150
-F 0 "R29" H 1420 1196 50  0000 L CNN
-F 1 "10k" H 1420 1105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1280 1150 50  0001 C CNN
-F 3 "~" H 1350 1150 50  0001 C CNN
-	1    1350 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 1300 1350 1400
-$Comp
-L power:+3V3 #PWR0256
-U 1 1 5EAD7C82
-P 1350 900
-F 0 "#PWR0256" H 1350 750 50  0001 C CNN
-F 1 "+3V3" H 1365 1073 50  0000 C CNN
-F 2 "" H 1350 900 50  0001 C CNN
-F 3 "" H 1350 900 50  0001 C CNN
-	1    1350 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 900  1350 1000
-Wire Wire Line
-	1200 1400 1350 1400
 $Comp
 L Device:C_Small C?
 U 1 1 5EBB22BE
@@ -1118,34 +1004,6 @@ F 3 "" H 6850 4000 50  0001 C CNN
 	1    6850 4000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R19
-U 1 1 5FE07CC4
-P 4850 1150
-F 0 "R19" H 4920 1196 50  0000 L CNN
-F 1 "10k" H 4920 1105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4780 1150 50  0001 C CNN
-F 3 "~" H 4850 1150 50  0001 C CNN
-	1    4850 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0197
-U 1 1 5FE24F06
-P 4850 900
-F 0 "#PWR0197" H 4850 750 50  0001 C CNN
-F 1 "+3V3" H 4865 1073 50  0000 C CNN
-F 2 "" H 4850 900 50  0001 C CNN
-F 3 "" H 4850 900 50  0001 C CNN
-	1    4850 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 900  4850 1000
-Wire Wire Line
-	4850 1300 4850 1400
-Wire Wire Line
-	2900 1400 4850 1400
 Text Label 8900 1800 2    50   ~ 0
 SPARE_XX
 Text Label 8900 2000 2    50   ~ 0
@@ -1264,4 +1122,146 @@ F 3 "" H 3650 2650 50  0001 C CNN
 	1    3650 2650
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	4850 900  4850 1000
+$Comp
+L power:+3V3 #PWR0197
+U 1 1 5FE24F06
+P 4850 900
+F 0 "#PWR0197" H 4850 750 50  0001 C CNN
+F 1 "+3V3" H 4865 1073 50  0000 C CNN
+F 2 "" H 4850 900 50  0001 C CNN
+F 3 "" H 4850 900 50  0001 C CNN
+	1    4850 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5FE07CC4
+P 4850 1150
+F 0 "R19" H 4920 1196 50  0000 L CNN
+F 1 "10k" H 4920 1105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4780 1150 50  0001 C CNN
+F 3 "~" H 4850 1150 50  0001 C CNN
+	1    4850 1150
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4750 1500 5450 1500
+Wire Notes Line
+	4750 2250 5450 2250
+Wire Notes Line
+	5450 2250 5450 1500
+Wire Notes Line
+	4750 2250 4750 1500
+Text Notes 5100 2100 0    50   ~ 0
+Reset\nButton
+Wire Wire Line
+	4850 2000 4850 1950
+$Comp
+L power:GND #PWR0244
+U 1 1 5E1962BF
+P 4850 2000
+F 0 "#PWR0244" H 4850 1750 50  0001 C CNN
+F 1 "GND" H 4855 1827 50  0000 C CNN
+F 2 "" H 4850 2000 50  0001 C CNN
+F 3 "" H 4850 2000 50  0001 C CNN
+	1    4850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5E196174
+P 4850 1750
+F 0 "SW2" V 4804 1848 50  0000 L CNN
+F 1 "SW_SPST" V 4895 1848 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPST_PTS810" H 4850 1750 50  0001 C CNN
+F 3 "https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS810/documents/datasheet.pdf" H 4850 1750 50  0001 C CNN
+F 4 "C&K Switches" V 4850 1750 50  0001 C CNN "Manufacturer"
+F 5 "PTS810 SJK 250 SMTR LFS" V 4850 1750 50  0001 C CNN "MPN"
+	1    4850 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 900  1350 1000
+$Comp
+L power:+3V3 #PWR0256
+U 1 1 5EAD7C82
+P 1350 900
+F 0 "#PWR0256" H 1350 750 50  0001 C CNN
+F 1 "+3V3" H 1365 1073 50  0000 C CNN
+F 2 "" H 1350 900 50  0001 C CNN
+F 3 "" H 1350 900 50  0001 C CNN
+	1    1350 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R29
+U 1 1 5EAB8C69
+P 1350 1150
+F 0 "R29" H 1420 1196 50  0000 L CNN
+F 1 "10k" H 1420 1105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1280 1150 50  0001 C CNN
+F 3 "~" H 1350 1150 50  0001 C CNN
+	1    1350 1150
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1450 1500 750  1500
+Wire Notes Line
+	1450 2250 750  2250
+Wire Notes Line
+	750  2250 750  1500
+Wire Notes Line
+	1450 2250 1450 1500
+Text Notes 1100 2100 2    50   ~ 0
+Power\nButton
+Wire Wire Line
+	1350 2000 1350 1950
+$Comp
+L power:GND #PWR0245
+U 1 1 5E2DF900
+P 1350 2000
+F 0 "#PWR0245" H 1350 1750 50  0001 C CNN
+F 1 "GND" H 1355 1827 50  0000 C CNN
+F 2 "" H 1350 2000 50  0001 C CNN
+F 3 "" H 1350 2000 50  0001 C CNN
+	1    1350 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5E2DF8FA
+P 1350 1750
+F 0 "SW1" V 1304 1848 50  0000 L CNN
+F 1 "SW_SPST" V 1395 1848 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPST_PTS810" H 1350 1750 50  0001 C CNN
+F 3 "https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS810/documents/datasheet.pdf" H 1350 1750 50  0001 C CNN
+F 4 "C&K Switches" V 1350 1750 50  0001 C CNN "Manufacturer"
+F 5 "PTS810 SJK 250 SMTR LFS" V 1350 1750 50  0001 C CNN "MPN"
+	1    1350 1750
+	0    -1   1    0   
+$EndComp
+Connection ~ 1350 1400
+Wire Wire Line
+	1350 1300 1350 1400
+Wire Wire Line
+	1350 1400 1350 1550
+Wire Wire Line
+	1200 1400 1350 1400
+Text HLabel 1200 1400 0    50   Input ~ 0
+PWR_BUTTON
+Wire Wire Line
+	1350 1400 2400 1400
+Connection ~ 4850 1400
+Wire Wire Line
+	4850 1300 4850 1400
+Wire Wire Line
+	4850 1400 4850 1550
+Wire Wire Line
+	5050 1400 4850 1400
+Text HLabel 5050 1400 2    50   Input ~ 0
+~SYS_RESET
+Wire Wire Line
+	2900 1400 4850 1400
 $EndSCHEMATC

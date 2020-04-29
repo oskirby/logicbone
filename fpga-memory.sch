@@ -1137,14 +1137,10 @@ Wire Wire Line
 	9300 1250 9350 1250
 Wire Wire Line
 	6600 5950 6050 5950
-Text HLabel 3100 6400 2    50   Input ~ 0
+Text HLabel 3450 6400 2    50   Input ~ 0
 REFCLK+
-Text HLabel 3100 6500 2    50   Input ~ 0
+Text HLabel 3450 6500 2    50   Input ~ 0
 REFCLK-
-Wire Wire Line
-	3100 6400 2850 6400
-Wire Wire Line
-	3100 6500 2850 6500
 $Comp
 L Device:R R14
 U 1 1 5FA5C298
@@ -1472,6 +1468,32 @@ Wire Wire Line
 Wire Wire Line
 	6150 4550 6150 4450
 Connection ~ 6150 4450
+$Comp
+L Device:R R39
+U 1 1 5EC8D1AB
+P 3100 6650
+F 0 "R39" V 3000 6650 50  0000 C CNN
+F 1 "100" V 3100 6650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3030 6650 50  0001 C CNN
+F 3 "~" H 3100 6650 50  0001 C CNN
+	1    3100 6650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 6400 3300 6400
+Wire Wire Line
+	2850 6500 2900 6500
+Wire Wire Line
+	2950 6650 2900 6650
+Wire Wire Line
+	2900 6650 2900 6500
+Connection ~ 2900 6500
+Wire Wire Line
+	2900 6500 3450 6500
+Wire Wire Line
+	3250 6650 3300 6650
+Wire Wire Line
+	3300 6650 3300 6400
 Wire Bus Line
 	1000 700  10650 700 
 Wire Bus Line
@@ -1486,4 +1508,7 @@ Wire Bus Line
 	4100 800  4100 2550
 Wire Bus Line
 	900  800  900  2550
+Connection ~ 3300 6400
+Wire Wire Line
+	3300 6400 3450 6400
 $EndSCHEMATC

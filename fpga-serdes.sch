@@ -735,7 +735,7 @@ Wire Wire Line
 Wire Wire Line
 	7450 7100 7550 7100
 Text Notes 2900 4900 0    50   ~ 0
-Not sure how to terminate this thing
+Not sure if termination is needed
 Wire Wire Line
 	3300 3200 5000 3200
 Wire Wire Line

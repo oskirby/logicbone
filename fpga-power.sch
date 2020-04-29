@@ -841,7 +841,7 @@ F 3 "" H 7650 6350 50  0001 C CNN
 	1    7650 6350
 	1    0    0    -1  
 $EndComp
-Text Notes 5100 6250 0    50   ~ 0
+Text Notes 6250 6250 0    50   ~ 0
 Bulk Capacitance
 $Comp
 L Device:C_Small C?
@@ -3143,4 +3143,59 @@ Wire Notes Line
 	10950 5700 10950 4300
 Wire Notes Line
 	10950 4300 8850 4300
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5ED97623
+P 5250 6350
+F 0 "TP2" H 5308 6468 50  0000 L CNN
+F 1 "VCORE" H 5308 6377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5450 6350 50  0001 C CNN
+F 3 "~" H 5450 6350 50  0001 C CNN
+	1    5250 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 6350 5250 6400
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5EE1EFDC
+P 6100 1850
+F 0 "TP3" H 6158 1968 50  0000 L CNN
+F 1 "VCCAUX" H 6158 1877 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6300 1850 50  0001 C CNN
+F 3 "~" H 6300 1850 50  0001 C CNN
+	1    6100 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1850 6100 1950
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5EF9782B
+P 8050 6350
+F 0 "TP4" H 8108 6468 50  0000 L CNN
+F 1 "VDDR" H 8108 6377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8250 6350 50  0001 C CNN
+F 3 "~" H 8250 6350 50  0001 C CNN
+	1    8050 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 6350 8050 6400
+Wire Wire Line
+	6100 1950 5750 1950
+Connection ~ 5750 1950
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5F4E08A1
+P 6450 7250
+F 0 "TP5" H 6508 7368 50  0000 L CNN
+F 1 "VCC1V8" H 6508 7277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6650 7250 50  0001 C CNN
+F 3 "~" H 6650 7250 50  0001 C CNN
+	1    6450 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 7250 6450 7300
 $EndSCHEMATC
