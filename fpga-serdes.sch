@@ -882,7 +882,7 @@ P 1800 4050
 AR Path="/5DFC5A69/5EDD3C8F" Ref="C?"  Part="1" 
 AR Path="/5DFC63AE/5EDD3C8F" Ref="C259"  Part="1" 
 F 0 "C259" H 1892 4096 50  0000 L CNN
-F 1 "1nF" H 1892 4005 50  0000 L CNN
+F 1 "10nF" H 1892 4005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1800 4050 50  0001 C CNN
 F 3 "~" H 1800 4050 50  0001 C CNN
 	1    1800 4050
@@ -1404,5 +1404,23 @@ Wire Wire Line
 Text Notes 4850 850  0    50   ~ 0
 Note: USB FS/LS need 3.3V IO, so they\nmust find a home on another IO bank.
 Wire Wire Line
-	4900 7400 6150 7400
+	4900 7400 5650 7400
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EC18B3E
+P 5650 7350
+AR Path="/5DFC5A69/5EC18B3E" Ref="TP?"  Part="1" 
+AR Path="/5DFC63AE/5EC18B3E" Ref="TP6"  Part="1" 
+F 0 "TP6" H 5708 7468 50  0000 L CNN
+F 1 "25MREF" H 5708 7377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 7350 50  0001 C CNN
+F 3 "~" H 5850 7350 50  0001 C CNN
+	1    5650 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 7350 5650 7400
+Connection ~ 5650 7400
+Wire Wire Line
+	5650 7400 6150 7400
 $EndSCHEMATC

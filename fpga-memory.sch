@@ -1494,6 +1494,9 @@ Wire Wire Line
 	3250 6650 3300 6650
 Wire Wire Line
 	3300 6650 3300 6400
+Connection ~ 3300 6400
+Wire Wire Line
+	3300 6400 3450 6400
 Wire Bus Line
 	1000 700  10650 700 
 Wire Bus Line
@@ -1508,7 +1511,4 @@ Wire Bus Line
 	4100 800  4100 2550
 Wire Bus Line
 	900  800  900  2550
-Connection ~ 3300 6400
-Wire Wire Line
-	3300 6400 3450 6400
 $EndSCHEMATC

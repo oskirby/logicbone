@@ -208,7 +208,7 @@ P 4250 5400
 AR Path="/5E15C0BA/5ED0656C" Ref="R?"  Part="1" 
 AR Path="/5ED0656C" Ref="R10"  Part="1" 
 F 0 "R10" V 4150 5400 50  0000 C CNN
-F 1 "470" V 4250 5400 50  0000 C CNN
+F 1 "240" V 4250 5400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4180 5400 50  0001 C CNN
 F 3 "~" H 4250 5400 50  0001 C CNN
 	1    4250 5400
@@ -227,26 +227,10 @@ F 3 "" H 4250 5200 50  0001 C CNN
 	1    4250 5200
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:LED_Dual_ACAC D1
-U 1 1 5ED071E3
-P 4650 5750
-F 0 "D1" H 4650 5403 50  0000 C CNN
-F 1 "LED_Dual_ACAC" H 4650 5494 50  0000 C CNN
-F 2 "KiCAD_Magic:LED_0603_DUAL" H 4680 5750 50  0001 C CNN
-F 3 "~" H 4680 5750 50  0001 C CNN
-	1    4650 5750
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	4350 5650 4250 5650
 Wire Wire Line
 	4250 5650 4250 5550
 Wire Wire Line
 	4350 5850 4250 5850
-Wire Wire Line
-	4250 5850 4250 5650
-Connection ~ 4250 5650
 Wire Wire Line
 	4250 5250 4250 5200
 $Comp
@@ -272,8 +256,6 @@ Wire Wire Line
 	3350 1000 6000 1000
 Wire Wire Line
 	6000 1000 6000 5650
-Wire Wire Line
-	4950 5650 6000 5650
 Text Notes 4500 5250 0    50   ~ 0
 Releasing PGOOD will\nenable the green LED.
 Wire Wire Line
@@ -290,4 +272,90 @@ Wire Wire Line
 	1300 5400 1550 5400
 Wire Wire Line
 	1300 3500 1550 3500
+Wire Wire Line
+	6000 5650 4950 5650
+Wire Wire Line
+	4350 5650 4250 5650
+Connection ~ 4250 5650
+Wire Wire Line
+	4250 5850 4250 5650
+$Comp
+L Device:LED_Dual_CACA D1
+U 1 1 5EAB3789
+P 4650 5750
+F 0 "D1" H 4650 6175 50  0000 C CNN
+F 1 "LED_RED_GREEN" H 4650 6084 50  0000 C CNN
+F 2 "KiCAD_Magic:LED_0805_DUAL" H 4680 5750 50  0001 C CNN
+F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Bi-Color%20Top%20View/IN-S85DATRG_V1.0.pdf" H 4680 5750 50  0001 C CNN
+F 4 "Inolux" H 4650 5750 50  0001 C CNN "Manufacturer"
+F 5 "IN-S85DATRG" H 4650 5750 50  0001 C CNN "MPN"
+	1    4650 5750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 5EC37DFC
+P 8950 4800
+F 0 "FID4" H 9035 4846 50  0000 L CNN
+F 1 "Fiducial" H 9035 4755 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.75mm_Mask1.5mm" H 8950 4800 50  0001 C CNN
+F 3 "~" H 8950 4800 50  0001 C CNN
+	1    8950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID5
+U 1 1 5EC38DAD
+P 8950 5050
+F 0 "FID5" H 9035 5096 50  0000 L CNN
+F 1 "Fiducial" H 9035 5005 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.75mm_Mask1.5mm" H 8950 5050 50  0001 C CNN
+F 3 "~" H 8950 5050 50  0001 C CNN
+	1    8950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID6
+U 1 1 5EC3A23F
+P 8950 5300
+F 0 "FID6" H 9035 5346 50  0000 L CNN
+F 1 "Fiducial" H 9035 5255 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.75mm_Mask1.5mm" H 8950 5300 50  0001 C CNN
+F 3 "~" H 8950 5300 50  0001 C CNN
+	1    8950 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5EC3A249
+P 8450 5300
+F 0 "FID3" H 8535 5346 50  0000 L CNN
+F 1 "Fiducial" H 8535 5255 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.75mm_Mask1.5mm" H 8450 5300 50  0001 C CNN
+F 3 "~" H 8450 5300 50  0001 C CNN
+	1    8450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5EC3C400
+P 8450 4800
+F 0 "FID1" H 8535 4846 50  0000 L CNN
+F 1 "Fiducial" H 8535 4755 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.75mm_Mask1.5mm" H 8450 4800 50  0001 C CNN
+F 3 "~" H 8450 4800 50  0001 C CNN
+	1    8450 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5EC3C40A
+P 8450 5050
+F 0 "FID2" H 8535 5096 50  0000 L CNN
+F 1 "Fiducial" H 8535 5005 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.75mm_Mask1.5mm" H 8450 5050 50  0001 C CNN
+F 3 "~" H 8450 5050 50  0001 C CNN
+	1    8450 5050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
