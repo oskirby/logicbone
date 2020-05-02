@@ -1,0 +1,4 @@
+gerbers/* linguist-generated=true
+*.kicad_pcb linguist-detectable=true
+*.kicad_mod linguist-detectable=true
+*.sch linguist-detectable=true
