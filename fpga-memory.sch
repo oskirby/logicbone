@@ -428,11 +428,11 @@ Wire Wire Line
 Wire Wire Line
 	2850 2850 3400 2850
 Text Label 3400 2850 2    50   ~ 0
-DDR3_ODT0
+DDR3_ODT
 Wire Wire Line
 	6050 2850 6600 2850
 Text Label 6600 2850 2    50   ~ 0
-DDR3_ODT1
+DDR3_ODT
 Wire Wire Line
 	2850 3050 3400 3050
 Text Label 3400 3050 2    50   ~ 0
@@ -481,35 +481,29 @@ Text Label 1000 4850 0    50   ~ 0
 DDR3_DQ0
 Text Label 4200 5500 0    50   ~ 0
 DDR3_A12
-Text Label 6600 5850 2    50   ~ 0
-DDR3_A11
 Text Label 4200 6200 0    50   ~ 0
 DDR3_A10
 Text Label 6600 5050 2    50   ~ 0
 DDR3_A9
-Text Label 6600 5500 2    50   ~ 0
-DDR3_A8
 Text Label 6600 4950 2    50   ~ 0
 DDR3_A7
 Text Label 6600 5300 2    50   ~ 0
 DDR3_A6
-Text Label 6600 5150 2    50   ~ 0
-DDR3_A5
 Text Label 6600 6400 2    50   ~ 0
 DDR3_A4
 Text Label 4200 6300 0    50   ~ 0
 DDR3_A3
-Text Label 6600 4850 2    50   ~ 0
+Text Label 6600 5600 2    50   ~ 0
 DDR3_A2
 Text Label 6600 6200 2    50   ~ 0
 DDR3_A1
-Text Label 6600 5400 2    50   ~ 0
+Text Label 6600 5850 2    50   ~ 0
 DDR3_A0
 Text Label 3500 5750 2    50   ~ 0
 DDR3_BA2
 Text Label 4200 5950 0    50   ~ 0
 DDR3_BA1
-Text Label 6600 5600 2    50   ~ 0
+Text Label 6600 5400 2    50   ~ 0
 DDR3_BA0
 Text Label 3500 5950 2    50   ~ 0
 ~DDR3_RAS
@@ -553,8 +547,6 @@ Text Label 1000 6400 0    50   ~ 0
 DDR3_DM0
 Text Label 1000 5400 0    50   ~ 0
 DDR3_DM1
-Text Label 3500 5300 2    50   ~ 0
-DDR3_ODT0
 Wire Wire Line
 	6150 4350 6150 4450
 Wire Wire Line
@@ -582,8 +574,6 @@ Entry Wire Line
 	6900 6200 7000 6100
 Entry Wire Line
 	6900 4850 7000 4750
-Entry Wire Line
-	7000 5050 6900 5150
 Entry Wire Line
 	7000 4950 6900 5050
 Entry Wire Line
@@ -625,7 +615,7 @@ Text Label 10400 1450 2    50   ~ 0
 DDR3_A9
 Text Label 10400 1650 2    50   ~ 0
 DDR3_A8
-Text Label 8350 1350 0    50   ~ 0
+Text Label 8350 1250 0    50   ~ 0
 DDR3_A7
 Text Label 10400 1950 2    50   ~ 0
 DDR3_A6
@@ -815,7 +805,7 @@ Wire Wire Line
 	9650 5650 9650 5600
 Connection ~ 9650 5600
 Text Label 10400 2500 2    50   ~ 0
-DDR3_ODT0
+DDR3_ODT
 Wire Wire Line
 	9450 1250 9350 1250
 $Comp
@@ -985,15 +975,11 @@ Wire Wire Line
 Wire Wire Line
 	2850 4950 3500 4950
 Wire Wire Line
-	2850 5300 3500 5300
-Wire Wire Line
 	2850 5850 3500 5850
 Wire Wire Line
 	2850 5750 3500 5750
 Wire Wire Line
 	2850 5950 3500 5950
-Wire Wire Line
-	6900 5150 6050 5150
 Wire Wire Line
 	6900 5050 6050 5050
 Wire Wire Line
@@ -1018,15 +1004,11 @@ Entry Wire Line
 	6900 5850 7000 5750
 Entry Wire Line
 	6900 6050 7000 5950
-Wire Wire Line
-	9350 1250 9350 1350
 Connection ~ 9350 2100
 Text Label 8250 3300 0    50   ~ 0
 DDR3_CK+
 Text Label 8250 3400 0    50   ~ 0
 DDR3_CK-
-Wire Wire Line
-	8350 1250 9000 1250
 Wire Wire Line
 	6150 4300 6150 4350
 Connection ~ 6150 4350
@@ -1070,7 +1052,7 @@ Text Label 6600 6050 2    50   ~ 0
 DDR3_A14
 Entry Wire Line
 	7000 6400 6900 6500
-Text Label 6600 6500 2    50   ~ 0
+Text Label 6600 4850 2    50   ~ 0
 DDR3_A13
 Wire Wire Line
 	6050 6500 6900 6500
@@ -1100,10 +1082,8 @@ Wire Wire Line
 	9850 2800 10650 2800
 Wire Wire Line
 	9350 3800 9350 3750
-Text Label 8350 1250 0    50   ~ 0
-DDR3_ODT1
 Wire Wire Line
-	8350 1350 9000 1350
+	8350 1250 9000 1250
 Entry Wire Line
 	10650 3250 10750 3150
 Wire Wire Line
@@ -1118,25 +1098,10 @@ Wire Wire Line
 	1000 5400 1550 5400
 Wire Wire Line
 	1000 6200 1550 6200
-Text Label 6600 5950 2    50   ~ 0
-DDR3_ODT1
+Text Label 6600 5150 2    50   ~ 0
+DDR3_ODT
 Wire Wire Line
 	3500 5400 2850 5400
-$Comp
-L Device:R R9
-U 1 1 5E579A3A
-P 9150 1250
-F 0 "R9" V 9050 1250 50  0000 C CNN
-F 1 "47" V 9150 1250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 9080 1250 50  0001 C CNN
-F 3 "~" H 9150 1250 50  0001 C CNN
-	1    9150 1250
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	9300 1250 9350 1250
-Wire Wire Line
-	6600 5950 6050 5950
 Text HLabel 3450 6400 2    50   Input ~ 0
 REFCLK+
 Text HLabel 3450 6500 2    50   Input ~ 0
@@ -1144,16 +1109,16 @@ REFCLK-
 $Comp
 L Device:R R14
 U 1 1 5FA5C298
-P 9150 1350
-F 0 "R14" V 9050 1350 50  0000 C CNN
-F 1 "47" V 9150 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 9080 1350 50  0001 C CNN
-F 3 "~" H 9150 1350 50  0001 C CNN
-	1    9150 1350
+P 9150 1250
+F 0 "R14" V 9050 1250 50  0000 C CNN
+F 1 "47" V 9150 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9080 1250 50  0001 C CNN
+F 3 "~" H 9150 1250 50  0001 C CNN
+	1    9150 1250
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	9300 1350 9350 1350
+	9300 1250 9350 1250
 $Comp
 L Device:R R15
 U 1 1 5FB1515C
@@ -1189,7 +1154,6 @@ Wire Wire Line
 Connection ~ 9350 3400
 Wire Wire Line
 	9350 3400 9350 3550
-Connection ~ 9350 1350
 Wire Wire Line
 	8600 4800 9000 4800
 Wire Wire Line
@@ -1353,8 +1317,6 @@ Wire Wire Line
 	7650 2100 8050 2100
 Connection ~ 8050 2100
 Wire Wire Line
-	9350 1350 9350 2100
-Wire Wire Line
 	6050 5400 6900 5400
 Wire Wire Line
 	6600 5600 6050 5600
@@ -1497,6 +1459,20 @@ Wire Wire Line
 Connection ~ 3300 6400
 Wire Wire Line
 	3300 6400 3450 6400
+Text Label 6600 5500 2    50   ~ 0
+DDR3_A8
+Text Label 6600 6500 2    50   ~ 0
+DDR3_A11
+Entry Wire Line
+	7000 5850 6900 5950
+Text Label 6600 5950 2    50   ~ 0
+DDR3_A5
+Wire Wire Line
+	6050 5950 6900 5950
+Wire Wire Line
+	9350 1250 9350 2100
+Wire Wire Line
+	6050 5150 6600 5150
 Wire Bus Line
 	1000 700  10650 700 
 Wire Bus Line
