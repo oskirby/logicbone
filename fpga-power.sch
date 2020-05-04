@@ -168,7 +168,7 @@ Connection ~ 8650 2100
 Text Notes 3050 2200 0    50   ~ 0
 DDR3L Memory Supply\n1.35V/2.5A\nPower-Up #3
 Text Notes 3050 2650 0    50   ~ 0
-FPGA Core Voltage\n1.1V/4A\nPower-Up #3
+FPGA Core Voltage\n1.2V/4A\nPower-Up #3
 Text Notes 3050 1750 0    50   ~ 0
 1.8V User IO Bank\n1.8V/1.5A\nPower-Up #2
 Text Notes 3050 1300 0    50   ~ 0
@@ -176,7 +176,7 @@ Text Notes 3050 1300 0    50   ~ 0
 Text Notes 5600 1450 0    50   ~ 0
 Auxilliary SERDES Supply\n2.5V/300mA\nPower-Up #2
 Text Notes 5600 3050 0    50   ~ 0
-SERDES Buffer Supply\n1.1V/200mA\nPower-Up #2
+SERDES Buffer Supply\n1.2V/200mA\nPower-Up #2
 Connection ~ 2900 2050
 $Comp
 L Logicbone:VDDR #PWR0108
@@ -1494,9 +1494,11 @@ P 12450 2250
 AR Path="/5E415F62" Ref="IC1"  Part="11" 
 AR Path="/5DFC5A69/5E415F62" Ref="IC1"  Part="11" 
 F 0 "IC1" H 12450 3415 50  0000 C CNN
-F 1 "ECP5UM-CABGA381" H 12450 3324 50  0000 C CNN
+F 1 "LFE5UM5G-45F-CABGA381" H 12450 3324 50  0000 C CNN
 F 2 "Logicbone:caBGA-381_20x20_17.0x17.0mm" H 16850 2650 50  0001 C CNN
 F 3 "" H 16850 2650 50  0001 C CNN
+F 4 "LFE5UM5G-45F-8BG381C" H 12450 2250 50  0001 C CNN "MPN"
+F 5 "Lattice Semiconductor" H 12450 2250 50  0001 C CNN "Manufacturer"
 	11   12450 2250
 	1    0    0    -1  
 $EndComp
@@ -1507,9 +1509,11 @@ P 12450 5050
 AR Path="/5E41607D" Ref="IC1"  Part="12" 
 AR Path="/5DFC5A69/5E41607D" Ref="IC1"  Part="12" 
 F 0 "IC1" H 12450 6215 50  0000 C CNN
-F 1 "ECP5UM-CABGA381" H 12450 6124 50  0000 C CNN
+F 1 "LFE5UM5G-45F-CABGA381" H 12450 6124 50  0000 C CNN
 F 2 "Logicbone:caBGA-381_20x20_17.0x17.0mm" H 16850 5450 50  0001 C CNN
 F 3 "" H 16850 5450 50  0001 C CNN
+F 4 "LFE5UM5G-45F-8BG381C" H 12450 5050 50  0001 C CNN "MPN"
+F 5 "Lattice Semiconductor" H 12450 5050 50  0001 C CNN "Manufacturer"
 	12   12450 5050
 	1    0    0    -1  
 $EndComp
@@ -1576,6 +1580,8 @@ F 0 "IC4" H 1750 3415 50  0000 C CNN
 F 1 "MXL7704" H 1750 3324 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.65x3.65mm" H 300 1050 50  0001 C CNN
 F 3 "https://www.maxlinear.com/ds/mxl7704.pdf" H 300 1050 50  0001 C CNN
+F 4 "MxL7704-AQB-R" H 1750 2150 50  0001 C CNN "MPN"
+F 5 "MaxLinear" H 1750 2150 50  0001 C CNN "Manufacturer"
 	1    1750 2150
 	1    0    0    -1  
 $EndComp
@@ -1697,11 +1703,11 @@ L Logicbone:NCP110 IC17
 U 1 1 5E889A9C
 P 5050 2850
 F 0 "IC17" H 5050 3215 50  0000 C CNN
-F 1 "NCP110AMX110" H 5050 3124 50  0000 C CNN
+F 1 "NCP110AMX120" H 5050 3124 50  0000 C CNN
 F 2 "Package_DFN_QFN:UDFN-4-1EP_1x1mm_P0.65mm_EP0.48x0.48mm" H 4500 2650 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/NCP110-D.PDF" H 4500 2650 50  0001 C CNN
 F 4 "ON Semiconductor" H 5050 2850 50  0001 C CNN "Manufacturer"
-F 5 "NCP110AMX110TBG" H 5050 2850 50  0001 C CNN "MPN"
+F 5 "NCP110AMX120TBG" H 5050 2850 50  0001 C CNN "MPN"
 	1    5050 2850
 	1    0    0    -1  
 $EndComp
@@ -1910,7 +1916,7 @@ F 3 "" H 750 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 9350 7050 0    50   ~ 0
-Notes:\n - VCORE and SERDES Transciever supply should be 1.2V for ECP5-5G\n - VCCAUX should power up with group 2, but with a slight delay for PG1 to rise.
+Notes:\n - VCORE and SERDES Transciever supply should be 1.1V for the non-5G parts\n - VCCAUX should power up with group 2, but with a slight delay for PG1 to rise.
 $Comp
 L Device:C_Small C?
 U 1 1 5E6C0C32
@@ -2409,7 +2415,7 @@ Wire Wire Line
 	2250 5150 4650 5150
 Connection ~ 2250 5150
 Text Notes 5600 3850 0    50   ~ 0
-SERDES Analog Supply\n1.1V/200mA\nPower-Up #2
+SERDES Analog Supply\n1.2V/200mA\nPower-Up #2
 Connection ~ 4600 3550
 Wire Wire Line
 	4600 3750 4600 3550
@@ -2420,11 +2426,11 @@ L Logicbone:NCP110 IC18
 U 1 1 5E9CE361
 P 5050 3650
 F 0 "IC18" H 5050 4015 50  0000 C CNN
-F 1 "NCP110AMX110" H 5050 3924 50  0000 C CNN
+F 1 "NCP110AMX120" H 5050 3924 50  0000 C CNN
 F 2 "Package_DFN_QFN:UDFN-4-1EP_1x1mm_P0.65mm_EP0.48x0.48mm" H 4500 3450 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/NCP110-D.PDF" H 4500 3450 50  0001 C CNN
 F 4 "ON Semiconductor" H 5050 3650 50  0001 C CNN "Manufacturer"
-F 5 "NCP110AMX110TBG" H 5050 3650 50  0001 C CNN "MPN"
+F 5 "NCP110AMX120TBG" H 5050 3650 50  0001 C CNN "MPN"
 	1    5050 3650
 	1    0    0    -1  
 $EndComp
@@ -2514,11 +2520,11 @@ P 9400 2300
 AR Path="/5E415DEC" Ref="IC1"  Part="10" 
 AR Path="/5DFC5A69/5E415DEC" Ref="IC1"  Part="10" 
 F 0 "IC1" H 9400 3465 50  0000 C CNN
-F 1 "ECP5UM-CABGA381" H 9400 3374 50  0000 C CNN
+F 1 "LFE5UM5G-45F-CABGA381" H 9400 3374 50  0000 C CNN
 F 2 "Logicbone:caBGA-381_20x20_17.0x17.0mm" H 13800 2700 50  0001 C CNN
 F 3 "" H 13800 2700 50  0001 C CNN
 F 4 "Lattice Semiconductor" H 9400 2300 50  0001 C CNN "Manufacturer"
-F 5 "LFE5UM-85F-8BG381C" H 9400 2300 50  0001 C CNN "MPN"
+F 5 "LFE5UM5G-45F-8BG381C" H 9400 2300 50  0001 C CNN "MPN"
 	10   9400 2300
 	-1   0    0    -1  
 $EndComp

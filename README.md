@@ -27,34 +27,34 @@ Features
 --------
 
 The major features of this board include:
- * Lattice ECP5 (LFE5UM-85-8BG381)
-   - 84k LUTs and 669 kbits of distributed RAM 
-   - 3744 kbits of embedded block RAM
-   - 205 IO pins
-   - 156 hardware multipliers
+ * Lattice ECP5 (LFE5UM5G-45F-8BG381C)
+   - 44k LUTs and 351 kbits of distributed RAM 
+   - 1944 kbits of embedded block RAM
+   - 203 IO pins
+   - 72 hardware multipliers
    - 4 PLLs
-   - 2 dual channel 3Gbps SERDES
+   - 2 dual channel 5Gbps SERDES
  * Beaglebone Black mechanical and header compatibility.
-   - P9 is fully supported via the FPGA.
+   - P9 is fully connected to the FPGA.
+   - P8 has 32 pins connected to the FPGA.
    - 12-bit 1MSPS muxed ADC on P9 analog pins.
-   - P8 supports up to 16 high speed LVDS pairs.
  * 8Gb on-board DDR3L RAM
- * KSZ9031 Gigabit Ethernet PHY.
- * microSD card slot.
- * USB-C upstream facing port for power and programming.
- * USB-C downstream facing port for SERDES breakout.
+ * KSZ9031 Gigabit Ethernet PHY
+ * microSD card slot
+ * USB-C upstream facing port for power and programming
+ * USB-C downstream facing port with USB Superspeed support
  * M.2 E-Keyed expansion interface:
-   - Accepts connectivity options in the 2230 form factor.
-   - Both PCIe lanes are routed to the FPGA SERDES.
-   - GPIO, UART, SDIO and PCM interfaces.
- * MaxLinear MXL7704 power manager.
+   - Accepts connectivity options in the 2230 form factor
+   - Both PCIe lanes are routed to the FPGA SERDES
+   - GPIO, UART, SDIO and PCM interfaces
+ * MaxLinear MxL7704 power manager
 
 Work In Progress
 ----------------
-This project is still in the PCB layout phase, and changes are still being
-made to the design as issues are identified and resolved. In the meantime,
-we have a [schematic](logicbone.pdf) and some renders of the board that
-might satisfy your curiosity.
+This project has completed the PCB layout phase, and we are moving into hardware
+prototyping. While we wait for the first boards to arrive, we have a 
+[schematic](logicbone.pdf) and some renders of the board that might satisfy your
+curiosity.
 
 We would be happy to accept any feedback and review on the design that you
 might be willing to provide.
