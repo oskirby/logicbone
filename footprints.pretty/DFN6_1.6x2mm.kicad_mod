@@ -1,4 +1,5 @@
-(module DFN6_1.6x2mm (layer F.Cu) (tedit 5EABF341)
+(module DFN6_1.6x2mm (layer F.Cu) (tedit 5ED53D44)
+  (attr smd)
   (fp_text reference REF** (at 0 1.75) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

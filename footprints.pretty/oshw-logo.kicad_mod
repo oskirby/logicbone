@@ -1,7 +1,7 @@
-(module oshw-logo (layer F.Cu) (tedit 5EA0AD04)
+(module oshw-logo (layer F.Cu) (tedit 5ED53D81)
   (descr "Imported from oshw-logo.svg")
   (tags svg2mod)
-  (attr smd)
+  (attr virtual)
   (fp_text reference oshw-logo (at 0 -5.43356) (layer F.SilkS) hide
     (effects (font (size 1.524 1.524) (thickness 0.3048)))
   )
