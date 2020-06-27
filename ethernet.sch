@@ -4,14 +4,14 @@ EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
 Sheet 4 8
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Logicbone ECP5"
+Date "2020-06-27"
+Rev "rev0"
+Comp "https://github.com/oskirby/logicbone"
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Licensed under CERN OHL v1.2"
+Comment4 "Designed By: Owen Kirby"
 $EndDescr
 Text Label 850  1550 0    50   ~ 0
 ETH_LED_R
@@ -630,55 +630,51 @@ ETH_REFCLK
 $Comp
 L Logicbone:74AUC1G07 IC12
 U 1 1 5E6A0A87
-P 4300 4700
-F 0 "IC12" H 4450 4800 50  0000 L CNN
-F 1 "74LVC1G07" H 4350 4600 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 4300 4700 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC1G07.pdf" H 4300 4700 50  0001 C CNN
-F 4 "Nexperia" H 4300 4700 50  0001 C CNN "Manufacturer"
-F 5 "74LVC1G07GW,125" H 4300 4700 50  0001 C CNN "MPN"
-	1    4300 4700
+P 4200 4700
+F 0 "IC12" H 4350 4800 50  0000 L CNN
+F 1 "74LVC1G07" H 4250 4600 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 4200 4700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC1G07.pdf" H 4200 4700 50  0001 C CNN
+F 4 "Nexperia" H 4200 4700 50  0001 C CNN "Manufacturer"
+F 5 "74LVC1G07GW,125" H 4200 4700 50  0001 C CNN "MPN"
+	1    4200 4700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0230
 U 1 1 5E6AA208
-P 4250 4900
-F 0 "#PWR0230" H 4250 4650 50  0001 C CNN
-F 1 "GND" H 4255 4727 50  0000 C CNN
-F 2 "" H 4250 4900 50  0001 C CNN
-F 3 "" H 4250 4900 50  0001 C CNN
-	1    4250 4900
+P 4150 4900
+F 0 "#PWR0230" H 4150 4650 50  0001 C CNN
+F 1 "GND" H 4155 4727 50  0000 C CNN
+F 2 "" H 4150 4900 50  0001 C CNN
+F 3 "" H 4150 4900 50  0001 C CNN
+	1    4150 4900
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 4900 4250 4850
+	4150 4900 4150 4850
 Wire Wire Line
-	4000 4700 3900 4700
-Text HLabel 3900 4700 0    50   Input ~ 0
+	3900 4700 3800 4700
+Text HLabel 3800 4700 0    50   Input ~ 0
 ~SYS_RESET
-Wire Wire Line
-	4550 4700 4750 4700
 $Comp
 L Device:R R13
 U 1 1 5E711214
-P 4500 4500
-F 0 "R13" V 4400 4500 50  0000 C CNN
-F 1 "10k" V 4500 4500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4430 4500 50  0001 C CNN
-F 3 "~" H 4500 4500 50  0001 C CNN
-	1    4500 4500
+P 4400 4500
+F 0 "R13" V 4300 4500 50  0000 C CNN
+F 1 "10k" V 4400 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4330 4500 50  0001 C CNN
+F 3 "~" H 4400 4500 50  0001 C CNN
+	1    4400 4500
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	4250 4450 4250 4500
+	4150 4450 4150 4500
 Wire Wire Line
-	4350 4500 4250 4500
-Connection ~ 4250 4500
+	4250 4500 4150 4500
+Connection ~ 4150 4500
 Wire Wire Line
-	4250 4500 4250 4550
-Wire Wire Line
-	4650 4500 4750 4500
+	4150 4500 4150 4550
 Wire Wire Line
 	4750 4500 4750 4700
 $Comp
@@ -1230,12 +1226,12 @@ Connection ~ 7500 5150
 $Comp
 L Logicbone:VCC3V3 #PWR0242
 U 1 1 5EB86101
-P 4250 4450
-F 0 "#PWR0242" H 4250 4300 50  0001 C CNN
-F 1 "VCC3V3" H 4267 4623 50  0000 C CNN
-F 2 "" H 4250 4450 50  0001 C CNN
-F 3 "" H 4250 4450 50  0001 C CNN
-	1    4250 4450
+P 4150 4450
+F 0 "#PWR0242" H 4150 4300 50  0001 C CNN
+F 1 "VCC3V3" H 4167 4623 50  0000 C CNN
+F 2 "" H 4150 4450 50  0001 C CNN
+F 3 "" H 4150 4450 50  0001 C CNN
+	1    4150 4450
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1877,4 +1873,28 @@ Wire Wire Line
 	6400 6900 7300 6900
 Wire Wire Line
 	6500 6700 6500 7000
+Text Notes 3200 2650 0    50   ~ 0
+See: https://github.com/oskirby/logicbone/issues/9\nWorkaround MDIO issue by adding 5.1k pullup from\nMDIO_DATA to VCC3V3
+Text Notes 3200 4100 0    50   ~ 0
+See: https://github.com/oskirby/logicbone/issues/7\nMultiboot requires the FPGA to assert ~SYS_RESET~ but\nthere is no pin to do it. Workaround by removing\nIC12 and bridging ~ETH_RESET~ to ~SYS_RESET~
+Wire Wire Line
+	4450 4700 4750 4700
+Wire Wire Line
+	4550 4500 4750 4500
+Wire Notes Line rgb(194, 0, 0)
+	3150 2350 5300 2350
+Wire Notes Line rgb(194, 0, 0)
+	5300 2350 5300 2700
+Wire Notes Line rgb(194, 0, 0)
+	5300 2700 3150 2700
+Wire Notes Line rgb(194, 0, 0)
+	3150 2700 3150 2350
+Wire Notes Line rgb(194, 0, 0)
+	5300 3750 5300 4150
+Wire Notes Line rgb(194, 0, 0)
+	3150 4150 3150 3750
+Wire Notes Line rgb(194, 0, 0)
+	3150 3750 5300 3750
+Wire Notes Line rgb(194, 0, 0)
+	5300 4150 3150 4150
 $EndSCHEMATC

@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 8
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Logicbone ECP5"
+Date "2020-06-27"
+Rev "rev0"
+Comp "https://github.com/oskirby/logicbone"
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Licensed under CERN OHL v1.2"
+Comment4 "Designed By: Owen Kirby"
 $EndDescr
 Entry Wire Line
 	4050 3050 3950 3150
@@ -1481,6 +1481,16 @@ Wire Wire Line
 	9350 1250 9350 2100
 Wire Wire Line
 	6050 5150 6600 5150
+Text Notes 1200 7450 0    50   ~ 0
+See: https://github.com/oskirby/logicbone/issues/8\nThe Data mask (DDR3_DM0/1) signals are incorrectly\nplaced, and need to be a part of their respective DQS\ngroup. Furthermore, the DM balls of the TFBGA-78\nschematic symbol are wrong. This has been worked\naround in software by enabling TDQS mode.
+Wire Notes Line rgb(194, 0, 0)
+	1150 6900 3350 6900
+Wire Notes Line rgb(194, 0, 0)
+	3350 6900 3350 7500
+Wire Notes Line rgb(194, 0, 0)
+	3350 7500 1150 7500
+Wire Notes Line rgb(194, 0, 0)
+	1150 7500 1150 6900
 Wire Bus Line
 	1000 700  10650 700 
 Wire Bus Line

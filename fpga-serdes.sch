@@ -4,14 +4,14 @@ EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
 Sheet 3 8
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Logicbone ECP5"
+Date "2020-06-27"
+Rev "rev0"
+Comp "https://github.com/oskirby/logicbone"
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Licensed under CERN OHL v1.2"
+Comment4 "Designed By: Owen Kirby"
 $EndDescr
 Connection ~ 10300 2500
 Wire Wire Line
@@ -1313,7 +1313,7 @@ F 5 "2199230-4" H 6800 2750 50  0001 C CNN "MPN"
 	1    6800 2750
 	-1   0    0    1   
 $EndComp
-Text Notes 9350 7000 0    50   ~ 0
+Text Notes 9300 6700 0    50   ~ 0
 TODO for M.2 Connector:\n - Can't find a way to route M.2 USB signals. Maybe we will just do without.
 Text Label 5600 1100 0    50   ~ 0
 M2_USB_DP

@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 8
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Logicbone ECP5"
+Date "2020-06-27"
+Rev "rev0"
+Comp "https://github.com/oskirby/logicbone"
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Licensed under CERN OHL v1.2"
+Comment4 "Designed By: Owen Kirby"
 $EndDescr
 $Sheet
 S 1550 4950 1600 1550
@@ -112,8 +112,6 @@ Wire Wire Line
 Connection ~ 3700 2350
 Wire Wire Line
 	3700 2350 3950 2350
-Text Notes 7000 7100 0    50   ~ 0
-Component Numbering Scheme:\n C100-149: Miscellaneous Capacitors\n C150-C199: Bulk Power Capacitance\n C200-C299: FPGA IO Decoupling\n C300-C399: Ethernet PHY Decoupling\n C400-C499: DDR3 Memory Decoupling\n C500-C599: FPGA Core Decoupling
 Wire Wire Line
 	5550 3500 6600 3500
 Wire Wire Line

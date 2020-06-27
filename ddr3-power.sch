@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 8
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Logicbone ECP5"
+Date "2020-06-27"
+Rev "rev0"
+Comp "https://github.com/oskirby/logicbone"
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Licensed under CERN OHL v1.2"
+Comment4 "Designed By: Owen Kirby"
 $EndDescr
 $Comp
 L power:GND #PWR?

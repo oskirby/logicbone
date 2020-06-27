@@ -4,14 +4,14 @@ EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
 Sheet 8 8
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Logicbone ECP5"
+Date "2020-06-27"
+Rev "rev0"
+Comp "https://github.com/oskirby/logicbone"
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Licensed under CERN OHL v1.2"
+Comment4 "Designed By: Owen Kirby"
 $EndDescr
 $Comp
 L power:GND #PWR0170
@@ -172,8 +172,8 @@ Wire Wire Line
 	4050 5250 4650 5250
 Wire Wire Line
 	5250 4850 5250 4950
-Text Notes 9350 7250 0    50   ~ 0
-TODO:\n - Are ESD diodes enough for short-to-Vbus protection?\n - Fun feature for the future: USB DRP and sink mode?\n - Termination resistors for DP/DM lines?\n - 15k pulldowns for DP/DM lines in host mode?
+Text Notes 9300 6700 0    50   ~ 0
+TODO:\n - Are ESD diodes enough for short-to-Vbus protection?\n - Fun feature for the future: USB DRP and sink mode?\n - 15k pulldowns for DP/DM lines in host mode?
 $Comp
 L power:GND #PWR0220
 U 1 1 5EBB62B8

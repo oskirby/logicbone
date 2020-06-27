@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 8
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Logicbone ECP5"
+Date "2020-06-27"
+Rev "rev0"
+Comp "https://github.com/oskirby/logicbone"
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Licensed under CERN OHL v1.2"
+Comment4 "Designed By: Owen Kirby"
 $EndDescr
 $Comp
 L Connector_Generic:Conn_02x23_Odd_Even P8
@@ -984,14 +984,6 @@ F 3 "" H 6850 4000 50  0001 C CNN
 	1    6850 4000
 	1    0    0    -1  
 $EndComp
-Text Label 8900 1800 2    50   ~ 0
-SPARE_XX
-Text Label 8900 2000 2    50   ~ 0
-SPARE_YY
-Wire Wire Line
-	7850 1800 8900 1800
-Wire Wire Line
-	7850 2000 8900 2000
 Wire Notes Line
 	6700 1450 8500 1450
 Wire Notes Line
@@ -1002,8 +994,8 @@ Wire Notes Line
 	6700 2000 6700 1450
 Text Notes 6800 1850 0    50   ~ 0
 Hole left by\nBeablebone\neMMC pins
-Text Notes 8600 1650 0    50   ~ 0
-P8-18 and P8-22 are available on the Beaglebone,\nbut we ran out of pins on the ECP5
+Text Notes 8650 1850 0    50   ~ 0
+See: https://github.com/oskirby/logicbone/issues/4\nP8 pinout gaps left by the Beaglebone eMMC pins are\nwrong, and are likely to be changed in a future revision.
 Connection ~ 6050 4400
 Wire Wire Line
 	3150 7050 3150 6950
@@ -1263,4 +1255,12 @@ Wire Wire Line
 	4000 1200 4000 1300
 Wire Wire Line
 	4450 1400 4300 1400
+Wire Notes Line rgb(194, 0, 0)
+	8600 1550 10900 1550
+Wire Notes Line rgb(194, 0, 0)
+	10900 1550 10900 1900
+Wire Notes Line rgb(194, 0, 0)
+	10900 1900 8600 1900
+Wire Notes Line rgb(194, 0, 0)
+	8600 1900 8600 1550
 $EndSCHEMATC

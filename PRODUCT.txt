@@ -1,0 +1,4 @@
+Contact point wishing to receive information about manufactured Products
+(see section 4.2 of CERN OHL v1.2)
+ - Owen Kirby <oskirby<NOSPAM>gmail.com>
+ 
